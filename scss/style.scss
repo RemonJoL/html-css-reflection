@@ -1,11 +1,9 @@
 //Main partials
-@import
-  "main/main"
-  ;
+@use "main/main";
 
 
 //Components partials
-@import
-  "components/buttons",
-  "components/images"
-  ;
+@use "components/buttons";
+@use "components/images";
+@use "components/forms";
+@use "components/icons";

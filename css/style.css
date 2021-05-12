@@ -1,43 +1,61 @@
-/* line 1, ../../../Documents/GitHub/html-css-reflection/scss/main/_main.scss */
 body {
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-/* line 6, ../../../Documents/GitHub/html-css-reflection/scss/main/_main.scss */
 header {
   font-size: 1.125rem;
 }
 
-/* line 11, ../../../Documents/GitHub/html-css-reflection/scss/main/_main.scss */
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100%;
+}
+
 .searchbar {
   color: #999aa2;
 }
 
-/* line 1, ../../../Documents/GitHub/html-css-reflection/scss/components/_buttons.scss */
 .btn {
   text-decoration: none;
   padding: 5px 15px;
   color: #fff;
 }
 
-/* line 7, ../../../Documents/GitHub/html-css-reflection/scss/components/_buttons.scss */
 .btn-support {
   background: #4183d7;
 }
 
-/* line 11, ../../../Documents/GitHub/html-css-reflection/scss/components/_buttons.scss */
 .btn-contact {
   background: #999aa2;
 }
 
-/* line 16, ../../../Documents/GitHub/html-css-reflection/scss/components/_buttons.scss */
 .btn-submit {
   background: #999aa2;
 }
 
-/* line 21, ../../../Documents/GitHub/html-css-reflection/scss/components/_buttons.scss */
 .btn-menu {
   background: #333645;
 }
 
-/*# sourceMappingURL=style.css.map */
+.logo {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+i {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
