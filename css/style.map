@@ -9,10 +9,10 @@
 	],
 	"sourcesContent": [
 		"//Main partials\r\n@import\r\n  \"main/main\"\r\n  ;\r\n\r\n\r\n//Components partials\r\n@import\r\n  \"components/buttons\",\r\n  \"components/images\"\r\n  ;\r\n",
-		"body {\r\n}\r\n",
-		"",
+		"body {\r\n  font-family: 'poppins', sans-serif;\r\n\r\n}\r\n\r\nheader {\r\n  font-size: 1.125rem;\r\n\r\n}\r\n\r\n.searchbar {\r\n  color: #999aa2;\r\n\r\n}\r\n",
+		".btn {\r\n  text-decoration: none;\r\n  padding: 5px 15px;\r\n  color: #fff;\r\n}\r\n\r\n.btn-support {\r\n  background: #4183d7;\r\n}\r\n\r\n.btn-contact {\r\n  background: #999aa2;\r\n\r\n}\r\n\r\n.btn-submit {\r\n  background: #999aa2;\r\n\r\n}\r\n\r\n.btn-menu {\r\n  background: #333645;\r\n\r\n}\r\n",
 		"img {\r\n}\r\n"
 	],
 	"names": [],
-	"mappings": ""
+	"mappings": ";ACAA,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,qBAAqB;CAEnC;;;AAED,AAAA,MAAM,CAAC;EACL,SAAS,EAAE,QAAQ;CAEpB;;;AAED,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,OAAO;CAEf;;;ACbD,AAAA,IAAI,CAAC;EACH,eAAe,EAAE,IAAI;EACrB,OAAO,EAAE,QAAQ;EACjB,KAAK,EAAE,IAAI;CACZ;;;AAED,AAAA,YAAY,CAAC;EACX,UAAU,EAAE,OAAO;CACpB;;;AAED,AAAA,YAAY,CAAC;EACX,UAAU,EAAE,OAAO;CAEpB;;;AAED,AAAA,WAAW,CAAC;EACV,UAAU,EAAE,OAAO;CAEpB;;;AAED,AAAA,SAAS,CAAC;EACR,UAAU,EAAE,OAAO;CAEpB"
 }

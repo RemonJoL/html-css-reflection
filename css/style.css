@@ -1,2 +1,43 @@
+/* line 1, ../../../Documents/GitHub/html-css-reflection/scss/main/_main.scss */
+body {
+  font-family: 'poppins', sans-serif;
+}
+
+/* line 6, ../../../Documents/GitHub/html-css-reflection/scss/main/_main.scss */
+header {
+  font-size: 1.125rem;
+}
+
+/* line 11, ../../../Documents/GitHub/html-css-reflection/scss/main/_main.scss */
+.searchbar {
+  color: #999aa2;
+}
+
+/* line 1, ../../../Documents/GitHub/html-css-reflection/scss/components/_buttons.scss */
+.btn {
+  text-decoration: none;
+  padding: 5px 15px;
+  color: #fff;
+}
+
+/* line 7, ../../../Documents/GitHub/html-css-reflection/scss/components/_buttons.scss */
+.btn-support {
+  background: #4183d7;
+}
+
+/* line 11, ../../../Documents/GitHub/html-css-reflection/scss/components/_buttons.scss */
+.btn-contact {
+  background: #999aa2;
+}
+
+/* line 16, ../../../Documents/GitHub/html-css-reflection/scss/components/_buttons.scss */
+.btn-submit {
+  background: #999aa2;
+}
+
+/* line 21, ../../../Documents/GitHub/html-css-reflection/scss/components/_buttons.scss */
+.btn-menu {
+  background: #333645;
+}
 
 /*# sourceMappingURL=style.css.map */
