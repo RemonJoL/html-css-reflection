@@ -2,11 +2,17 @@
 	"version": 3,
 	"file": "style.css",
 	"sources": [
-		"../scss/style.scss"
+		"../scss/style.scss",
+		"../scss/main/_main.scss",
+		"../scss/components/_buttons.scss",
+		"../scss/components/_images.scss"
 	],
 	"sourcesContent": [
-		"body {\r\n  background-color: black;\r\n\r\n}\r\n"
+		"//Main partials\r\n@import\r\n  \"main/main\"\r\n  ;\r\n\r\n\r\n//Components partials\r\n@import\r\n  \"components/buttons\",\r\n  \"components/images\"\r\n  ;\r\n",
+		"body {\r\n}\r\n",
+		"",
+		"img {\r\n}\r\n"
 	],
 	"names": [],
-	"mappings": ";AAAA,AAAA,IAAI,CAAC;EACH,gBAAgB,EAAE,KAAK;CAExB"
+	"mappings": ""
 }

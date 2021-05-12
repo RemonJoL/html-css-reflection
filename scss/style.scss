@@ -1,4 +1,11 @@
-body {
-  background-color: black;
+//Main partials
+@import
+  "main/main"
+  ;
 
-}
+
+//Components partials
+@import
+  "components/buttons",
+  "components/images"
+  ;
