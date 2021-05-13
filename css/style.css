@@ -3,6 +3,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 header {
@@ -19,11 +21,71 @@ header {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 100%;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .searchbar {
+  width: 100%;
   color: #999aa2;
+}
+
+.main-nav {
+  width: 100vw;
+  background-color: #333645;
+  display: none;
+}
+
+.sub-nav {
+  display: none;
+}
+
+.webdesign-nav {
+  display: none;
+}
+
+.it-nav {
+  display: none;
+}
+
+.telecoms-nav {
+  display: none;
+}
+
+.software-nav {
+  display: none;
+}
+
+.marketing-nav {
+  display: none;
+}
+
+.security-nav {
+  display: none;
+}
+
+#signup {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#contact {
+  width: 100%;
+  background-color: #333645;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
+}
+
+#contact a {
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  background-color: #fff;
 }
 
 .btn {
@@ -52,6 +114,7 @@ header {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  max-width: 40%;
 }
 
 i {

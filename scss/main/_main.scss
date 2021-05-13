@@ -1,8 +1,11 @@
 body {
   font-family: 'poppins', sans-serif;
   display: flex;
+  flex-wrap: wrap;
 
 }
+
+
 
 header {
   font-size: 1.125rem;
@@ -12,12 +15,75 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 100%;
-
+  width: 100%;
+  justify-content: flex-start;
 
 }
 
 .searchbar {
+  width: 100%;
   color: #999aa2;
 
+}
+
+.main-nav {
+  width: 100vw;
+  background-color: #333645;
+  display: none;
+}
+
+.sub-nav {
+  display: none;
+}
+
+.webdesign-nav {
+  display: none;
+}
+
+.it-nav {
+  display: none;
+}
+
+.telecoms-nav {
+  display: none;
+}
+
+.software-nav {
+  display: none;
+}
+
+.marketing-nav {
+  display: none;
+}
+
+.security-nav {
+  display: none;
+}
+
+main {
+
+
+}
+
+#signup {
+  width: 100%;
+  background-color: #ddd;
+
+}
+
+#contact{
+  width: 100%;
+  background-color: #333645;
+  flex-wrap: wrap;
+  color: white;
+}
+
+#contact a {
+  text-decoration: none;
+
+}
+
+footer {
+  width: 100%;
+  background-color: #fff;
 }
