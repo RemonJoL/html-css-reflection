@@ -2,8 +2,13 @@
 
 .btn {
   text-decoration: none;
-  padding: 5px 15px;
+  padding: 1rem 1rem;
   color: #fff;
+}
+
+.btn-marketing {
+  background-color: colours.$clr-marketing;
+
 }
 
 .btn-support {
@@ -11,16 +16,28 @@
 }
 
 .btn-contact {
-  background: colours.$bg-light;
+  background: colours.$light-grey;
 
 }
 
 .btn-submit {
-  background: colours.$bg-light;
+  background: colours.$light-grey;
 
 }
 
 .btn-menu {
-  background: colours.$bg-dark;
+  background: colours.$dark-grey;
+  display: flex;
+  margin-bottom: auto;
+}
+
+.btn-culture {
+  color: colours.$dark-grey;
+  background-color: white;
+}
+
+.btn-subscribe {
+  color: white;
+  background: colours.$dark-grey;
 
 }
