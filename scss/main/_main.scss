@@ -3,33 +3,41 @@
 
 body {
   font-family: 'poppins', sans-serif;
-  display: flex;
-  flex-wrap: wrap;
+    max-width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 0;
+    overflow-x: hidden;
 }
 
 
 
 header {
   font-size: 1.125rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+
 .header-container {
+  max-width: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
   justify-content: flex-start;
 
 }
 
 .searchbar {
-  width: 100%;
   color: colours.$light-grey;
 
 }
 
 .main-nav {
-  width: 100vw;
+  max-width: auto;
   background-color: colours.$dark-grey;
   display: none;
 }
@@ -67,9 +75,13 @@ main {
 
 }
 
+.container {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
 .banner-img-container {
   height: 80vh;
-  width: 100vw;
   overflow: hidden;
   background-image: url(https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.webp);
   background-size: cover;
@@ -93,33 +105,43 @@ main {
 #about {
   background-color: colours.$dark-grey;
   color: white;
-
+  padding: 50px 15px;
 }
 
 #latest {
-  padding: 15px;
+  padding: 50px 0;
 
 }
 
 .latest-card {
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.latest-header {
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.latest-content {
   border-right: 1px solid colours.$dark-grey;
   border-bottom: 1px solid colours.$dark-grey;
   border-left: 1px solid colours.$dark-grey;
   padding: 30px;
-
 }
 
 #signup {
-  width: 100%;
   background-color: colours.$light-grey;
-
+  padding: 50px 30px;
 }
 
 #contact{
-  width: 100%;
   background-color: colours.$dark-grey;
   flex-wrap: wrap;
   color: white;
+  padding: 47px 43px;
+
 }
 
 #contact a {
@@ -145,6 +167,5 @@ main {
 }
 
 footer {
-  width: 100%;
   background-color: white;
 }
