@@ -1,3 +1,5 @@
+@use "utility/colours";
+
 .btn {
   text-decoration: none;
   padding: 5px 15px;
@@ -9,16 +11,16 @@
 }
 
 .btn-contact {
-  background: #999aa2;
+  background: colours.$bg-light;
 
 }
 
 .btn-submit {
-  background: #999aa2;
+  background: colours.$bg-light;
 
 }
 
 .btn-menu {
-  background: #333645;
+  background: colours.$bg-dark;
 
 }

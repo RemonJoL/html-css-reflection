@@ -29,7 +29,7 @@ header {
 
 .searchbar {
   width: 100%;
-  color: #999aa2;
+  color: #ddd;
 }
 
 .main-nav {
@@ -81,11 +81,12 @@ header {
 
 #contact a {
   text-decoration: none;
+  color: white;
 }
 
 footer {
   width: 100%;
-  background-color: #fff;
+  background-color: white;
 }
 
 .btn {
@@ -99,11 +100,11 @@ footer {
 }
 
 .btn-contact {
-  background: #999aa2;
+  background: #ddd;
 }
 
 .btn-submit {
-  background: #999aa2;
+  background: #ddd;
 }
 
 .btn-menu {
