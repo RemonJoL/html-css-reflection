@@ -3,17 +3,17 @@
 .btn {
   text-decoration: none;
   padding: 1rem 1rem;
-  color: #fff;
+  color:white;
   border-radius: 3px;
 }
 
-.btn-marketing {
+.marketing {
   background-color: colours.$clr-marketing;
 
 }
 
 .btn-support {
-  background: #4183d7;
+  background: colours.$clr-itsupport;
 }
 
 .btn-contact {
@@ -23,22 +23,35 @@
 
 .btn-submit {
   background: colours.$light-grey;
-
 }
 
-.btn-menu {
+.btn-dark-grey {
   background: colours.$dark-grey;
   display: flex;
   margin-bottom: auto;
 }
 
+.software {
+  background: colours.$clr-software;
+}
+
+.itsupport {
+  background: colours.$clr-itsupport;
+}
+
+.telecoms {
+  background: colours.$clr-telecoms;
+}
+
+.webdesign {
+  background: colours.$clr-webdesign;
+}
+
+.security {
+  background: colours.$clr-security;
+}
+
 .btn-culture {
   color: colours.$dark-grey;
   background-color: white;
-}
-
-.btn-subscribe {
-  color: white;
-  background: colours.$dark-grey;
-
 }
