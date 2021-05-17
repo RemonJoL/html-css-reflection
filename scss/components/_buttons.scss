@@ -1,18 +1,30 @@
 @use "utility/colours";
 
 .btn {
+  height: auto;
+  line-height: 35px;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 3px;
+  color: white;
+  font-size: 1.063rem;
+}
+
+.btn-inverse {
   text-decoration: none;
   padding: 1rem 1rem;
-  color:white;
   border-radius: 3px;
+  color: colours.$dark-grey;
+  background: white;
 }
 
 .marketing {
   background-color: colours.$clr-marketing;
+  margin: 0 auto;
 
 }
 
-.btn-support {
+.btn-itsupport {
   background: colours.$clr-itsupport;
 }
 
@@ -29,29 +41,35 @@
   background: colours.$dark-grey;
   display: flex;
   margin-bottom: auto;
+  color: white;
 }
 
 .software {
   background: colours.$clr-software;
+  margin: 0 auto;
 }
 
 .itsupport {
   background: colours.$clr-itsupport;
+  margin: 0 auto;
 }
 
 .telecoms {
   background: colours.$clr-telecoms;
+  margin: 0 auto;
 }
 
 .webdesign {
   background: colours.$clr-webdesign;
+  margin: 0 auto;
 }
 
 .security {
   background: colours.$clr-security;
+  margin: 0 auto;
 }
 
-.btn-culture {
-  color: colours.$dark-grey;
-  background-color: white;
-}
+// .btn-culture {
+//   color: colours.$dark-grey;
+//   background-color: white;
+// }
