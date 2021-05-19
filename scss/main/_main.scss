@@ -284,7 +284,7 @@ main {
   }
   .newsletter-field {
     padding: 15px;
-    border: none;
+    border: 1px solid #ccc;
   }
   .newsletter-field:focus {
     padding: 15px;
@@ -299,30 +299,31 @@ main {
     content:" *";
     color: red;
   }
+
+
   .checkbox-area {
     display: flex;
     margin: 0 0 15px;
   }
 
 .checkbox-cnt {
-  background-color: colours.$light-grey;
-  border: 3px solid colours.$dark-grey;
-  border-radius: 3px;
   width: 2rem;
   height: 2rem;
   margin: 0 20px 0 0;
   cursor: pointer;
 }
+
+
   .checkbox-cnt input {
   position: absolute;
-  visibility: hidden;
+  display: none;
   cursor: pointer;
 }
 
 
 .checkbox-style {
-  display: block;
-  background-color: colours.$dark-grey;
+  position: absolute;
+  background-color: colours.$light-grey;
   border: 3px solid colours.$dark-grey;
   border-radius: 3px;
   width: 2rem;
@@ -335,7 +336,7 @@ main {
 }
 
 .checkbox-style:after {
-  content: "✔";
+  content: "";
   position: absolute;
   display: none;
 }
@@ -345,12 +346,11 @@ main {
 }
 
 .checkbox-cnt .checkbox-style:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
+  top: -5px;
+  width: 8px;
+  height: 16px;
   border: solid white;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);

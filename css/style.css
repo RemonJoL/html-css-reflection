@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: "poppins", sans-serif;
   max-width: 100vw;
@@ -265,7 +264,7 @@ header {
 }
 #signup .newsletter-field {
   padding: 15px;
-  border: none;
+  border: 1px solid #ccc;
 }
 #signup .newsletter-field:focus {
   padding: 15px;
@@ -288,9 +287,6 @@ header {
   margin: 0 0 15px;
 }
 #signup .checkbox-cnt {
-  background-color: #ddd;
-  border: 3px solid #333645;
-  border-radius: 3px;
   width: 2rem;
   height: 2rem;
   margin: 0 20px 0 0;
@@ -298,12 +294,12 @@ header {
 }
 #signup .checkbox-cnt input {
   position: absolute;
-  visibility: hidden;
+  display: none;
   cursor: pointer;
 }
 #signup .checkbox-style {
-  display: block;
-  background-color: #333645;
+  position: absolute;
+  background-color: #ddd;
   border: 3px solid #333645;
   border-radius: 3px;
   width: 2rem;
@@ -314,7 +310,7 @@ header {
   background-color: #333645;
 }
 #signup .checkbox-style:after {
-  content: "✔";
+  content: "";
   position: absolute;
   display: none;
 }
@@ -322,12 +318,11 @@ header {
   display: block;
 }
 #signup .checkbox-cnt .checkbox-style:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
+  top: -5px;
+  width: 8px;
+  height: 16px;
   border: solid white;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
