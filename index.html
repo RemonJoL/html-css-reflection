@@ -282,8 +282,8 @@
 
       <!-- About -->
           <section id="about">
-            <div class="container-about">
-              <div class="section-container">
+            <div class="section-container">
+              <div class="container-about">
                 <span class="h1">NETMATTERS</span>
                 <p><strong>Netmatters Ltd is a leading web design, IT support and digital marketing agency based in Wymondham, Norfolk.</strong></p>
 
@@ -300,17 +300,26 @@
 
       <!-- Latest -->
           <section id="latest">
-            <div class="container">
+            <div class="latest-container">
+              <span>Latest</span>
+              <!-- Latest cards -->
             <div class="latest-card">
               <div class="latest-header">
                 <img class="latest-header-img" src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/congratulations-to-lloyd-D2cu.webp" alt"Graduation">
               </div>
               <div class="latest-content">
-                Congratulations to Lloyd Cox for Graduating t...
-    We are pleased to announce that after a year spent on our Netmatters Scion Coalition Scheme (...
-                <a class="btn btn-web" href="#" type="button" name="latest-btn-1">READ MORE</a>
-                Netmatters Ltd	Posted by Netmatters Ltd
-                10th May 2021
+                <h3>Congratulations to Lloyd Cox for Graduating t...</h3>
+                <p>We are pleased to announce that after a year spent on our Netmatters Scion Coalition Scheme (... </p>
+                <a class="btn webdesign" href="#" type="button" name="latest-btn-1">READ MORE</a>
+                <div class="user">
+                <div class="user-avatar">
+                <img src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.png" alt"Netmatters Ltd">
+                </div>
+                <div class="user-details">
+                  <strong>Posted by Netmatters Ltd</strong>
+                  10th May 2021
+                </div>
+                </div>
               </div>
             </div>
 
@@ -319,11 +328,18 @@
                 <img class="latest-header-img" src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/congratulations-to-lloyd-D2cu.webp" alt"Graduation">
               </div>
               <div class="latest-content">
-                Congratulations to Lloyd Cox for Graduating t...
-    We are pleased to announce that after a year spent on our Netmatters Scion Coalition Scheme (...
-                <a class="btn btn-web" href="#" type="button" name="latest-btn-1">READ MORE</a>
-                Netmatters Ltd	Posted by Netmatters Ltd
-                10th May 2021
+                <h3>Congratulations to Lloyd Cox for Graduating t...</h3>
+                <p>We are pleased to announce that after a year spent on our Netmatters Scion Coalition Scheme (... </p>
+                <a class="btn webdesign" href="#" type="button" name="latest-btn-1">READ MORE</a>
+                <div class="user">
+                <div class="user-avatar">
+                <img src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.png" alt"Netmatters Ltd">
+                </div>
+                <div class="user-details">
+                  <strong>Posted by Netmatters Ltd</strong>
+                  10th May 2021
+                </div>
+                </div>
               </div>
             </div>
 
@@ -332,14 +348,21 @@
                 <img class="latest-header-img" src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/congratulations-to-lloyd-D2cu.webp" alt"Graduation">
               </div>
               <div class="latest-content">
-                Congratulations to Lloyd Cox for Graduating t...
-    We are pleased to announce that after a year spent on our Netmatters Scion Coalition Scheme (...
-                <a class="btn btn-web" href="#" type="button" name="latest-btn-1">READ MORE</a>
-                Netmatters Ltd	Posted by Netmatters Ltd
-                10th May 2021
+                <h3>Congratulations to Lloyd Cox for Graduating t...</h3>
+                <p>We are pleased to announce that after a year spent on our Netmatters Scion Coalition Scheme (... </p>
+                <a class="btn webdesign" href="#" type="button" name="latest-btn-1">READ MORE</a>
+                <div class="user">
+                <div class="user-avatar">
+                <img src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.png" alt"Netmatters Ltd">
+                </div>
+                <div class="user-details">
+                  <strong>Posted by Netmatters Ltd</strong>
+                  10th May 2021
+                </div>
+                </div>
               </div>
             </div>
-
+              <!-- /Latest Cards -->
           </div>
 
           </div>
@@ -355,12 +378,38 @@
     <!-- Sign up -->
 
         <section id="signup">
+          <div class="signup-form">
+            <h2>Email Newsletter Sign-Up</h2>
 
-          Email Newsletter Sign-Up
-          Your Name
-          Your Email
-          Please tick this box if you wish to receive marketing information from us. Please see our <a href="#" alt="Privacy Policy">Privacy Policy</a> for more information on how we use your data.
-        <a class="btn btn-dark-grey btn-signup" href="#" type="button" name="btn-subscribe">SUBSCRIBE</a>
+              <div class="newsletter-textfields">
+                <form id="newsletter-name" action="index.html" name="user-name" method="post">
+                  <label class="required" for="user-name">Your Name</label>
+                  <input class="newsletter-field" type="text">
+                </form>
+              </div>
+              <div class="newsletter-textfields">
+                <form id="newsletter-email" action="index.html" name="user-email" method="post">
+                  <label class="required" for="user-email">Your Email</label>
+                  <input class="newsletter-field" type="text">
+                </form>
+              </div>
+
+              <div class="checkbox-area">
+                <label class="checkbox-cnt" for="newsletter-checkbox">
+                <input id="newsletter-checkbox" class="checkbox-cnt" type="checkbox">
+                <span class="checkbox-style"></span>
+                </label>
+                <!-- <div class="checkbox-cnt">
+              <span class="checkbox-style"></span>
+              <input type="checkbox" name="newsletter-button"> -->
+                <label class="checkbox-text" for="newsletter-checkbox">
+                  Please tick this box if you wish to receive marketing information from us. Please see our <a href="#" alt="Privacy Policy">Privacy Policy</a> for more information on how we use your data.
+                </label>
+              </div>
+
+            <span class="btn btn-dark-grey btn-signup" href="#" type="button" name="btn-subscribe">SUBSCRIBE</span>
+
+          </div>
         </section>
 
     <!-- /Sign up -->

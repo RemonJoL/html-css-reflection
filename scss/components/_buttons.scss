@@ -8,6 +8,7 @@
   border-radius: 3px;
   color: white;
   font-size: 1.063rem;
+  display: inline-block;
 }
 
 .btn-inverse {
@@ -16,6 +17,7 @@
   border-radius: 3px;
   color: colours.$dark-grey;
   background: white;
+  display: inline-block;
 }
 
 .marketing {
@@ -42,6 +44,7 @@
   display: flex;
   margin-bottom: auto;
   color: white;
+  display: inline-block;
 }
 
 .software {
@@ -69,7 +72,10 @@
   margin: 0 auto;
 }
 
-// .btn-culture {
-//   color: colours.$dark-grey;
-//   background-color: white;
-// }
+
+.newsletter-btn {
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
