@@ -4,7 +4,6 @@
 body {
   font-family: 'poppins', sans-serif;
     max-width: 100vw;
-    height: 100%;
     margin: 0 0;
     font-size: 1rem;
     letter-spacing: .4px;
@@ -16,10 +15,6 @@ body {
 
 // Text Styles
 
-a:visited {
-  color:inherit;
-}
-
 .p{
   font-size: 0.8125rem;
   font-weight: 400;
@@ -27,19 +22,9 @@ a:visited {
   margin-bottom: 13px;
 }
 
-
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: inherit;
   font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
 }
 .h1, h1 {
   font-size: 2.25rem;
@@ -89,7 +74,6 @@ span:after {
 
 header {
   font-size: 1.125rem;
-  color: white;
 }
 
 .section-container {
@@ -102,16 +86,45 @@ header {
 }
 
 .header-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  padding: 0 15px;
+}
 
+.header-wrapper {
+  width: 100%;
+  padding: 20px 0;
+  display: table;
+}
+
+.logo-container {
+  height: 70px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.header-phone {
+  height: 70px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.header-menu-btn {
+  color: white;
+margin-left: 15px;
+  font-size: 0.75rem;
+  height: 70px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.header-searchbar {
+  display: table-row;
 }
 
 .searchbar {
   color: colours.$light-grey;
-
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .main-nav {
@@ -153,7 +166,6 @@ main {
 }
 
 .container {
-  text-align: center;
 
 }
 
@@ -179,6 +191,7 @@ main {
 
   .services-cards {
     margin-top: -30px;
+    text-align: center;
   }
 
   .card {
@@ -226,6 +239,7 @@ main {
     font-weight: 400;
     line-height: 1.375rem;
     margin: 0 0 25px;
+    color: colours.$med-grey;
   }
 
   .latest-container {
@@ -238,19 +252,40 @@ main {
   }
 
   .latest-header {
-    display:flex;
+    position: relative;
+    display: flex;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+  }
 
+  .header-tag {
+  position: absolute;
+  z-index: 1;
+  height: 1rem;
+  padding: 3px;
+  margin-top: 10px;
+  right: 0;
+  color: white;
+  a:hover {
+    text-decoration: underline;
+  }
   }
 
   .latest-content {
     padding: 30px;
       border: 1px solid #ccc;
       border-top: none;
-      color: colours.$med-grey;
+      // color:white;
   }
 
   .user {
     margin: 30px 0 0;
+    hr {
+      background-color: #ccc;
+    }
+  }
+
+  .user-grid {
     padding: 30px 0 0;
     display: table;
     table-layout: auto;
@@ -261,10 +296,20 @@ main {
   vertical-align: middle;
   }
 
+  .avatar-img {
+  border-radius: 50%;
+  }
+
   .user-details {
+  line-height: 1.375rem;
+  text-align: left;
   display: table-cell;
-  text-align: right;
   vertical-align: middle;
+  padding-left: 15px;
+  color: colours.$med-grey;
+    strong {
+      color: colours.$dark-grey;
+    }
   }
 }
 
@@ -273,23 +318,32 @@ main {
   text-align: left;
   padding: 0 15px;
   h2 {
-    font-size: 2em;
+    font-size: 2rem;
   }
   .signup-form {
     padding: 50px 30px;
+  }
+
+  .textfield-group {
   }
 
   .newsletter-textfields {
     margin: 0 0 15px;
   }
   .newsletter-field {
-    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    height: 47px;
+    font-size: 14px;
+    padding: 5px 15px;
     border: 1px solid #ccc;
+    color: colours.$med-grey;
   }
   .newsletter-field:focus {
     padding: 15px;
     outline: none;
-    box-shadow: 0 0 4px 1px colours.$clr-itsupport;
+    box-shadow: 0 0 3px 1px colours.$clr-itsupport;
   }
   .required {
     display: block;
@@ -307,8 +361,8 @@ main {
   }
 
 .checkbox-cnt {
-  width: 2rem;
-  height: 2rem;
+  width: 32px;
+  height: 32px;
   margin: 0 20px 0 0;
   cursor: pointer;
 }
@@ -322,12 +376,12 @@ main {
 
 
 .checkbox-style {
-  position: absolute;
+  position: relative;
   background-color: colours.$light-grey;
   border: 3px solid colours.$dark-grey;
   border-radius: 3px;
-  width: 2rem;
-  height: 2rem;
+  width: 26px;
+  height: 26px;
   margin: 0 20px 0 0;
 }
 
@@ -373,30 +427,73 @@ main {
   background-color: colours.$dark-grey;
   flex-wrap: wrap;
   color: white;
-  padding: 47px 43px;
+  padding: 47px 0 43px;
   a {
     text-decoration: none;
     color: white;
   }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
 
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  columns: 1 1 1 1;
+}
+
+.col {
+  flex:1 50%;
+  text-align: left;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+.col2 {
+  flex:1 50%;
+  text-align: left;
+  padding: 0 15px;
+}
+
+.socialmedia-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+  margin-bottom: 20px;
 }
 
 .contact-info {
 
 }
 
-.about-links {
+.contact-info2 {
 
 }
 
-.website {
+.c-about-links {
 
 }
 
-.social-media {
+.c-website {
+
+}
+
+.c-social-media {
 
 }
 
 footer {
   background-color: white;
+
+  h4 {
+    margin: 0 0 26px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }

@@ -1,13 +1,14 @@
 @use "utility/colours";
+//Components partials
+
+@use "text/text";
+@use "components/buttons";
+@use "components/images";
+@use "components/forms";
+@use "components/icons";
+
 
 
 
 //Main partials
 @use "main/main";
-
-
-//Components partials
-@use "components/buttons";
-@use "components/images";
-@use "components/forms";
-@use "components/icons";

@@ -20,6 +20,16 @@
   display: inline-block;
 }
 
+.btn-menu {
+  background: colours.$dark-grey;
+height: 3rem;
+width: 3rem;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
 .marketing {
   background-color: colours.$clr-marketing;
   margin: 0 auto;
@@ -72,10 +82,16 @@
   margin: 0 auto;
 }
 
-
 .newsletter-btn {
   width: 2rem;
   height: 2rem;
   display: inline-block;
   margin: 0 20px 0 0;
+}
+
+.socialmedia-btn {
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  line-height: 3rem;
 }

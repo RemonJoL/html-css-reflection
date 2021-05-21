@@ -1,7 +1,9 @@
 $dark-grey: #333645;
 $med-grey: #666;
+$light-greyb: #ccc;
 $light-grey: #ddd;
 $btn-grey:#999aa2;
+$white: white;
 
 //colours
 $clr-software: #67809F;
@@ -10,3 +12,43 @@ $clr-marketing: #2ecc71;
 $clr-telecoms: #d64541;
 $clr-webdesign: #926fb1;
 $clr-security: #f62459;
+
+
+.software-txt {
+  color: $clr-software;
+}
+.itsupport-txt {
+  color: $clr-itsupport;
+}
+.marketing-txt {
+  color: $clr-marketing;
+}
+.telecoms-txt {
+  color: $clr-telecoms;
+}
+.webdesign-txt {
+  color: $clr-webdesign;
+}
+.security-txt {
+  color: $clr-security;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-light-greyb {
+  color: $light-greyb;
+}
+
+.text-light-grey {
+  color: $light-grey;
+}
+
+.text-med-grey {
+  color: $med-grey
+}
+
+.text-dark-grey {
+  color: $dark-grey;
+}

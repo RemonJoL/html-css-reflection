@@ -1,359 +1,53 @@
-body {
-  font-family: "poppins", sans-serif;
-  max-width: 100vw;
-  height: 100%;
-  margin: 0 0;
-  font-size: 1rem;
-  letter-spacing: 0.4px;
+.software-txt {
+  color: #67809F;
 }
 
-* :after, :before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.itsupport-txt {
+  color: #4183d7;
 }
 
-a:visited {
-  color: inherit;
+.marketing-txt {
+  color: #2ecc71;
 }
 
-.p {
-  font-size: 0.8125rem;
-  font-weight: 400;
-  line-height: 1.375rem;
-  margin-bottom: 13px;
+.telecoms-txt {
+  color: #d64541;
+}
+
+.webdesign-txt {
+  color: #926fb1;
+}
+
+.security-txt {
+  color: #f62459;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-light-greyb {
+  color: #ccc;
+}
+
+.text-light-grey {
+  color: #ddd;
+}
+
+.text-med-grey {
+  color: #666;
+}
+
+.text-dark-grey {
+  color: #333645;
 }
 
 a {
   text-decoration: none;
+}
+
+a:visited {
   color: inherit;
-}
-
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-}
-
-.h1, h1 {
-  font-size: 2.25rem;
-  font-weight: 400;
-  margin: 0 0 28px;
-}
-
-.h2, h2 {
-  font-size: 1.125rem;
-  margin: 0 0 15px;
-  position: relative;
-}
-
-.h2:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 28px;
-  height: 3px;
-  display: block;
-  background-color: #333645;
-}
-
-span {
-  display: inline-block;
-}
-
-span:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  display: block;
-  background-color: #333645;
-}
-
-header {
-  font-size: 1.125rem;
-  color: white;
-}
-
-.section-container {
-  padding: 50px 15px;
-  display: block;
-}
-
-.block {
-  border: 1px solid #ddd;
-}
-
-.header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.searchbar {
-  color: #ddd;
-}
-
-.main-nav {
-  background-color: #333645;
-  display: none;
-}
-
-.sub-nav {
-  display: none;
-}
-
-.webdesign-nav {
-  display: none;
-}
-
-.it-nav {
-  display: none;
-}
-
-.telecoms-nav {
-  display: none;
-}
-
-.software-nav {
-  display: none;
-}
-
-.marketing-nav {
-  display: none;
-}
-
-.security-nav {
-  display: none;
-}
-
-.container {
-  text-align: center;
-}
-
-.banner-img-container {
-  height: 80vh;
-  background-image: url(https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.webp);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: overlay;
-}
-
-#services {
-  padding: 0 -15px;
-  color: #666;
-  display: block;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-#services .h2 {
-  padding: 1rem;
-}
-#services .services-cards {
-  margin-top: -30px;
-}
-#services .card {
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  margin-top: 30px;
-  padding: 30px;
-  -webkit-box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-}
-#services .service-card-container {
-  display: block;
-}
-#services .button-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#about {
-  background-color: #333645;
-  color: white;
-}
-#about .container-about {
-  text-align: left;
-}
-#about a {
-  color: #333645;
-}
-#about p {
-  font-weight: 400;
-  line-height: 2rem;
-  margin: 0 0 25px;
-}
-
-#latest h3 {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  margin: 0 0 15px;
-}
-#latest p {
-  font-size: 0.8125rem;
-  font-weight: 400;
-  line-height: 1.375rem;
-  margin: 0 0 25px;
-}
-#latest .latest-container {
-  padding: 50px 15px;
-  text-align: left;
-}
-#latest .latest-card {
-  margin-top: 30px;
-}
-#latest .latest-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-#latest .latest-content {
-  padding: 30px;
-  border: 1px solid #ccc;
-  border-top: none;
-  color: #666;
-}
-#latest .user {
-  margin: 30px 0 0;
-  padding: 30px 0 0;
-  display: table;
-  table-layout: auto;
-}
-#latest .user-avatar {
-  display: table-cell;
-  vertical-align: middle;
-}
-#latest .user-details {
-  display: table-cell;
-  text-align: right;
-  vertical-align: middle;
-}
-
-#signup {
-  background-color: #ddd;
-  text-align: left;
-  padding: 0 15px;
-}
-#signup h2 {
-  font-size: 2em;
-}
-#signup .signup-form {
-  padding: 50px 30px;
-}
-#signup .newsletter-textfields {
-  margin: 0 0 15px;
-}
-#signup .newsletter-field {
-  padding: 15px;
-  border: 1px solid #ccc;
-}
-#signup .newsletter-field:focus {
-  padding: 15px;
-  outline: none;
-  -webkit-box-shadow: 0 0 4px 1px #4183d7;
-          box-shadow: 0 0 4px 1px #4183d7;
-}
-#signup .required {
-  display: block;
-  margin-bottom: 5px;
-}
-#signup .required:after {
-  content: " *";
-  color: red;
-}
-#signup .checkbox-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 0 15px;
-}
-#signup .checkbox-cnt {
-  width: 2rem;
-  height: 2rem;
-  margin: 0 20px 0 0;
-  cursor: pointer;
-}
-#signup .checkbox-cnt input {
-  position: absolute;
-  display: none;
-  cursor: pointer;
-}
-#signup .checkbox-style {
-  position: absolute;
-  background-color: #ddd;
-  border: 3px solid #333645;
-  border-radius: 3px;
-  width: 2rem;
-  height: 2rem;
-  margin: 0 20px 0 0;
-}
-#signup .checkbox-cnt input:checked ~ .checkbox-style {
-  background-color: #333645;
-}
-#signup .checkbox-style:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-#signup .checkbox-cnt input:checked ~ .checkbox-style:after {
-  display: block;
-}
-#signup .checkbox-cnt .checkbox-style:after {
-  top: -5px;
-  width: 8px;
-  height: 16px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-#signup .checkbox-text {
-  display: inline-block;
-  line-height: 2em;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-#signup .checkbox-text a {
-  text-decoration: underline;
-}
-#signup label {
-  font-weight: 600;
-}
-
-#contact {
-  background-color: #333645;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  color: white;
-  padding: 47px 43px;
-}
-#contact a {
-  text-decoration: none;
-  color: white;
-}
-
-footer {
-  background-color: white;
 }
 
 .btn {
@@ -374,6 +68,16 @@ footer {
   color: #333645;
   background: white;
   display: inline-block;
+}
+
+.btn-menu {
+  background: #333645;
+  height: 3rem;
+  width: 3rem;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-left: 15px;
 }
 
 .marketing {
@@ -435,15 +139,23 @@ footer {
   margin: 0 20px 0 0;
 }
 
+.socialmedia-btn {
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  line-height: 3rem;
+}
+
 .logo {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  max-width: 40%;
+  max-width: 100%;
 }
 
 .latest-header-img {
   max-width: 100%;
+}
+
+.fa-bars {
+  font-size: 2rem;
 }
 
 .icon {
@@ -463,6 +175,480 @@ footer {
 }
 
 .phone-top {
-  background-color: transparent;
+  margin-left: 15px;
+  vertical-align: middle;
+  font-size: 2rem;
+  display: block;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  max-width: 100vw;
+  margin: 0 0;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+}
+
+* :after, :before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.p {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.h1, h1 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin: 0 0 28px;
+}
+
+.h2, h2 {
+  font-size: 1.125rem;
+  margin: 0 0 15px;
+  position: relative;
+}
+
+.h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 28px;
+  height: 3px;
+  display: block;
+  background-color: #333645;
+}
+
+span {
+  display: inline-block;
+}
+
+span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  background-color: #333645;
+}
+
+header {
+  font-size: 1.125rem;
+}
+
+.section-container {
+  padding: 50px 15px;
+  display: block;
+}
+
+.block {
+  border: 1px solid #ddd;
+}
+
+.header-container {
+  padding: 0 15px;
+}
+
+.header-wrapper {
+  width: 100%;
+  padding: 20px 0;
+  display: table;
+}
+
+.logo-container {
+  height: 70px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.header-phone {
+  height: 70px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.header-menu-btn {
+  color: white;
+  margin-left: 15px;
+  font-size: 0.75rem;
+  height: 70px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.header-searchbar {
+  display: table-row;
+}
+
+.searchbar {
+  color: #ddd;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-nav {
+  background-color: #333645;
+  display: none;
+}
+
+.sub-nav {
+  display: none;
+}
+
+.webdesign-nav {
+  display: none;
+}
+
+.it-nav {
+  display: none;
+}
+
+.telecoms-nav {
+  display: none;
+}
+
+.software-nav {
+  display: none;
+}
+
+.marketing-nav {
+  display: none;
+}
+
+.security-nav {
+  display: none;
+}
+
+.banner-img-container {
+  height: 80vh;
+  background-image: url(https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.webp);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+#services {
+  padding: 0 -15px;
+  color: #666;
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#services .h2 {
+  padding: 1rem;
+}
+#services .services-cards {
+  margin-top: -30px;
+  text-align: center;
+}
+#services .card {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 30px;
+  padding: 30px;
+  -webkit-box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+#services .service-card-container {
+  display: block;
+}
+#services .button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#about {
+  background-color: #333645;
+  color: white;
+}
+#about .container-about {
+  text-align: left;
+}
+#about a {
+  color: #333645;
+}
+#about p {
+  font-weight: 400;
+  line-height: 2rem;
+  margin: 0 0 25px;
+}
+
+#latest h3 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0 0 15px;
+}
+#latest p {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  margin: 0 0 25px;
+  color: #666;
+}
+#latest .latest-container {
+  padding: 50px 15px;
+  text-align: left;
+}
+#latest .latest-card {
+  margin-top: 30px;
+}
+#latest .latest-header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+#latest .header-tag {
+  position: absolute;
+  z-index: 1;
+  height: 1rem;
+  padding: 3px;
+  margin-top: 10px;
+  right: 0;
+  color: white;
+}
+#latest .header-tag a:hover {
+  text-decoration: underline;
+}
+#latest .latest-content {
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+#latest .user {
+  margin: 30px 0 0;
+}
+#latest .user hr {
+  background-color: #ccc;
+}
+#latest .user-grid {
+  padding: 30px 0 0;
+  display: table;
+  table-layout: auto;
+}
+#latest .user-avatar {
+  display: table-cell;
+  vertical-align: middle;
+}
+#latest .avatar-img {
+  border-radius: 50%;
+}
+#latest .user-details {
+  line-height: 1.375rem;
+  text-align: left;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 15px;
+  color: #666;
+}
+#latest .user-details strong {
+  color: #333645;
+}
+
+#signup {
+  background-color: #ddd;
+  text-align: left;
+  padding: 0 15px;
+}
+#signup h2 {
+  font-size: 2rem;
+}
+#signup .signup-form {
+  padding: 50px 30px;
+}
+#signup .newsletter-textfields {
+  margin: 0 0 15px;
+}
+#signup .newsletter-field {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
   padding: 0;
+  height: 47px;
+  font-size: 14px;
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  color: #666;
+}
+#signup .newsletter-field:focus {
+  padding: 15px;
+  outline: none;
+  -webkit-box-shadow: 0 0 3px 1px #4183d7;
+          box-shadow: 0 0 3px 1px #4183d7;
+}
+#signup .required {
+  display: block;
+  margin-bottom: 5px;
+}
+#signup .required:after {
+  content: " *";
+  color: red;
+}
+#signup .checkbox-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 15px;
+}
+#signup .checkbox-cnt {
+  width: 32px;
+  height: 32px;
+  margin: 0 20px 0 0;
+  cursor: pointer;
+}
+#signup .checkbox-cnt input {
+  position: absolute;
+  display: none;
+  cursor: pointer;
+}
+#signup .checkbox-style {
+  position: relative;
+  background-color: #ddd;
+  border: 3px solid #333645;
+  border-radius: 3px;
+  width: 26px;
+  height: 26px;
+  margin: 0 20px 0 0;
+}
+#signup .checkbox-cnt input:checked ~ .checkbox-style {
+  background-color: #333645;
+}
+#signup .checkbox-style:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+#signup .checkbox-cnt input:checked ~ .checkbox-style:after {
+  display: block;
+}
+#signup .checkbox-cnt .checkbox-style:after {
+  top: -5px;
+  width: 8px;
+  height: 16px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#signup .checkbox-text {
+  display: inline-block;
+  line-height: 2em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+#signup .checkbox-text a {
+  text-decoration: underline;
+}
+#signup label {
+  font-weight: 600;
+}
+
+#contact {
+  background-color: #333645;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: white;
+  padding: 47px 0 43px;
+}
+#contact a {
+  text-decoration: none;
+  color: white;
+}
+#contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-columns: 1 1 1 1;
+     -moz-columns: 1 1 1 1;
+          columns: 1 1 1 1;
+}
+
+.col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 50%;
+          flex: 1 50%;
+  text-align: left;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+.col2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 50%;
+          flex: 1 50%;
+  text-align: left;
+  padding: 0 15px;
+}
+
+.socialmedia-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 30px 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+  margin-bottom: 20px;
+}
+
+.socialmedia-grid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.socialmedia-grid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.socialmedia-grid > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.socialmedia-grid > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+footer {
+  background-color: white;
+}
+footer h4 {
+  margin: 0 0 26px;
+}
+footer p {
+  font-size: 1rem;
 }
