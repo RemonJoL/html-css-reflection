@@ -22,12 +22,13 @@
 
 .btn-menu {
   background: colours.$dark-grey;
-height: 3rem;
-width: 3rem;
   color: white;
   padding: 5px 15px;
-  border-radius: 5px;
-  margin-left: 15px;
+  border-radius: 3px;
+  margin-left: 20px;
+  display: block;
+  position: relative;
+  height: 46px;
 }
 
 .marketing {

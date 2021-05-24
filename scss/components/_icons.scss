@@ -21,6 +21,33 @@ font-size: 1.3em;
 margin: auto;
 }
 
+.btn-menu-icon:before, .btn-menu-icon:after{
+  content: "";
+  background-color: white;
+  height: 3px;
+  width: 33px;
+  display: block;
+  position: absolute;
+}
+
+.btn-menu-icon{
+  content: "";
+  background-color: white;
+  height: 3px;
+  width: 33px;
+  top: 50%;
+  display: block;
+  position: absolute;
+}
+
+.btn-menu-icon:before {
+  top: -0.5rem;
+}
+
+.btn-menu-icon:after{
+  bottom: -0.5rem;
+}
+
 .fa-th {
 }
 
@@ -43,7 +70,7 @@ margin: auto;
 }
 
 .phone-top {
-    margin-left: 15px;
+    margin: 15px;
     vertical-align: middle;
     font-size: 2rem;
     display: block;
