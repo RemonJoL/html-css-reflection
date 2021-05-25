@@ -64,6 +64,27 @@
   display: inline-block;
 }
 
+.banner-button {
+  background: colours.$btn-grey;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  display: block;
+  position: relative;
+  border: 6px solid rgba(0,0,0,0.0);
+  background-clip: content-box;
+}
+
+.banner-button:focus {
+  background: colours.$white;
+  outline: none;
+  border: 5px solid rgba(0,0,0,0.0);
+  background-clip: content-box;
+  box-shadow:  0 0 0 1px white;
+  display: inline-block;
+
+}
+
 .software {
   background: colours.$clr-software;
   margin: 0 auto;
