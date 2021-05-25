@@ -392,6 +392,21 @@ nav .security-nav {
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
+  display: block;
+  position: relative;
+}
+
+.banner-content {
+  top: 15px;
+  padding: 0 15px;
+  text-align: center;
+  display: block;
+}
+.banner-content h1 {
+  margin-bottom: 25px;
+}
+.banner-content p {
+  margin-bottom: 25px;
 }
 
 #services {
@@ -402,6 +417,7 @@ nav .security-nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 #services .h2 {
   padding: 1rem;
@@ -430,6 +446,7 @@ nav .security-nav {
 }
 
 #about {
+  position: relative;
   background-color: #333645;
   color: white;
 }
@@ -445,6 +462,9 @@ nav .security-nav {
   margin: 0 0 25px;
 }
 
+#latest {
+  position: relative;
+}
 #latest h3 {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -523,6 +543,7 @@ nav .security-nav {
   background-color: #ddd;
   text-align: left;
   padding: 0 15px;
+  position: relative;
 }
 #signup h2 {
   font-size: 2rem;
@@ -624,6 +645,7 @@ nav .security-nav {
       flex-wrap: wrap;
   color: white;
   padding: 47px 0 43px;
+  position: relative;
 }
 #contact a {
   text-decoration: none;
@@ -695,6 +717,7 @@ nav .security-nav {
 }
 
 footer {
+  position: relative;
   background-color: white;
 }
 footer h4 {

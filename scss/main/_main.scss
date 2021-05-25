@@ -70,7 +70,9 @@ span {
 //   background-color: #333645;
 // }
 
-// /Text Styles
+// End Text Styles
+
+// header
 
 header {
 
@@ -139,30 +141,6 @@ header {
   display: block;
 }
 
-// .searchbar {
-//     box-sizing: border-box;
-//     margin-top: 0.75rem;
-//     background-color: #ddd;
-//     box-shadow: inset 0 0 0 1px #ddd;
-//     border: 2px solid #ccc;
-//     width: 100%;
-//     position: relative;
-//       padding: 5px 0 5px 15px;
-// }
-//
-// .main-search {
-//   background-color: #ddd;
-//   color: colours.$med-grey;
-//   border: none;
-//   position: relative;
-//   line-height: 2rem;
-//   padding-right: 25px;
-//
-//   .fa-search {
-//     color: colours.$med-grey;
-//   }
-// }
-
 .searchbar {
     box-sizing: border-box;
     margin-top: 11px;
@@ -197,10 +175,11 @@ header {
   color: colours.$med-grey;
   outline: none;
 }
-
-
-
 }
+
+// End header
+
+// Nav
 
 nav {
   font-size: 1.125rem;
@@ -241,6 +220,8 @@ nav {
 
 }
 
+// End nav
+
 main {
 
 
@@ -250,6 +231,7 @@ main {
 
 }
 
+// Banner
 
 .banner-img-container {
   height: 80vh;
@@ -257,13 +239,37 @@ main {
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
+  display: block;
+  position: relative;
 }
+
+.banner-content {
+  top: 15px;
+  padding: 0 15px;
+  text-align: center;
+  display: block;
+
+  h1 {
+    margin-bottom: 25px;
+  }
+
+  p {
+    margin-bottom: 25px;
+
+  }
+
+}
+
+// End Banner
+
+// Services
 
 #services {
   padding: 0 -15px;
   color: colours.$med-grey;
   display: block;
   flex-direction: column;
+  position: relative;
 
   .h2 {
     padding: 1rem;
@@ -293,7 +299,10 @@ main {
   }
 }
 
+// End Services
+
 #about {
+position: relative;
   background-color: colours.$dark-grey;
   color: white;
   .container-about {
@@ -310,6 +319,7 @@ main {
 }
 
 #latest {
+position: relative;
   h3 {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -398,6 +408,7 @@ main {
   background-color: colours.$light-grey;
   text-align: left;
   padding: 0 15px;
+  position: relative;
   h2 {
     font-size: 2rem;
   }
@@ -509,6 +520,7 @@ main {
   flex-wrap: wrap;
   color: white;
   padding: 47px 0 43px;
+  position: relative;
   a {
     text-decoration: none;
     color: white;
@@ -568,6 +580,7 @@ main {
 }
 
 footer {
+position: relative;
   background-color: white;
 
   h4 {
