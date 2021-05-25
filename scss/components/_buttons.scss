@@ -29,6 +29,7 @@
   display: block;
   position: relative;
   height: 46px;
+  box-sizing: content-box;
 }
 
 .marketing {
@@ -47,7 +48,12 @@
 }
 
 .btn-submit {
-  background: colours.$light-grey;
+  position: absolute;
+  font-size: 20px;
+  display: inline-block;
+  right: 0;
+  top: 0;
+  padding: 6px 6px;
 }
 
 .btn-dark-grey {
