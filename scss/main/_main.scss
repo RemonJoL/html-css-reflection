@@ -59,6 +59,11 @@ span {
 
 }
 
+
+.section-container {
+  padding: 50px 15px;
+  display: block;
+}
 // End Text Styles
 
 // header
@@ -68,11 +73,6 @@ header {
 .row {
   height: 70px;
   display: table;
-}
-
-.section-container {
-  padding: 50px 15px;
-  display: block;
 }
 
 .block {
@@ -333,27 +333,36 @@ position: relative;
 #latest {
 position: relative;
 
+.latest-mainheader {
+  position: relative;
+  width: 100%;
+    box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
+}
+
+.latest-cnt-header {
+    display: block;
+    position:  relative;
+    padding: 0 15px;
+
+  span {
+    padding: 40px 0;
+  }
+}
+
+
 .latestsp {
   position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-  margin: auto;
-  display: block;
-  padding: 15px 0;
+  text-transform: uppercase;
 }
 
 .latestsp:after {
   content: "";
-  position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: absolute;
   height: 5px;
-  margin: auto;
+  width: 100%;
   display: block;
   background-color: #333645;
+  bottom: 0;
 }
   h3 {
     font-size: 1rem;
@@ -370,10 +379,12 @@ position: relative;
 
   .latest-container {
     text-align: left;
+    margin-top: -30px;
   }
 
   .latest-card {
     margin-top: 30px;
+    box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
   }
 
   .latest-header {
@@ -441,13 +452,12 @@ position: relative;
 #signup {
   background-color: colours.$light-grey;
   text-align: left;
-  padding: 0 15px;
   position: relative;
   h2 {
     font-size: 2rem;
   }
   .signup-form {
-    padding: 50px 30px;
+    padding: 0 30px;
   }
 
   .textfield-group {
@@ -526,7 +536,8 @@ position: relative;
 }
 
 .checkbox-cnt .checkbox-style:after {
-  top: -5px;
+  right: 40%;
+  top: 10%;
   width: 8px;
   height: 16px;
   border: solid white;
@@ -553,7 +564,6 @@ position: relative;
   background-color: colours.$dark-grey;
   flex-wrap: wrap;
   color: white;
-  padding: 47px 0 43px;
   position: relative;
   a {
     text-decoration: none;
@@ -570,6 +580,7 @@ position: relative;
   display: flex;
   flex-wrap: wrap;
   columns: 1 1 1 1;
+  padding: 50px 0;
 }
 
 .col {
@@ -587,7 +598,7 @@ position: relative;
 
 .socialmedia-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 110px 110px;
   grid-template-rows: 1fr 1fr;
   grid-gap: 30px;
   margin-bottom: 20px;
