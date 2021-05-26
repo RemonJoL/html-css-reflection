@@ -234,6 +234,7 @@ a:visited {
   vertical-align: middle;
   font-size: 2rem;
   display: block;
+  margin: 0 15px;
 }
 
 body {
@@ -437,7 +438,7 @@ nav .security-nav {
 .banner-button-container {
   display: block;
   position: relative;
-  top: 80%;
+  top: 87%;
   padding: 0 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -452,7 +453,7 @@ nav .security-nav {
           box-sizing: border-box;
 }
 .banner-button-container li {
-  margin: 0 5px;
+  margin: 0 2px;
   display: inline-block;
   position: relative;
 }
@@ -513,6 +514,27 @@ nav .security-nav {
 #latest {
   position: relative;
 }
+#latest .latestsp {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  margin: auto;
+  display: block;
+  padding: 15px 0;
+}
+#latest .latestsp:after {
+  content: "";
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  margin: auto;
+  display: block;
+  background-color: #333645;
+}
 #latest h3 {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -526,7 +548,6 @@ nav .security-nav {
   color: #666;
 }
 #latest .latest-container {
-  padding: 50px 15px;
   text-align: left;
 }
 #latest .latest-card {

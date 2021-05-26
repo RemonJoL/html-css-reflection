@@ -59,17 +59,6 @@ span {
 
 }
 
-// span:after {
-//   content: "";
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   margin: auto;
-//   display: block;
-//   background-color: #333645;
-// }
-
 // End Text Styles
 
 // header
@@ -264,7 +253,7 @@ main {
 .banner-button-container {
   display: block;
   position: relative;
-  top: 80%;
+  top: 87%;
   padding: 0 15px;
   box-sizing: border-box;
 
@@ -277,7 +266,7 @@ main {
     box-sizing: border-box;
     }
   li {
-    margin: 0 5px;
+    margin: 0 2px;
     display: inline-block;
     position: relative;
   }
@@ -343,6 +332,29 @@ position: relative;
 
 #latest {
 position: relative;
+
+.latestsp {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  margin: auto;
+  display: block;
+  padding: 15px 0;
+}
+
+.latestsp:after {
+  content: "";
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  margin: auto;
+  display: block;
+  background-color: #333645;
+}
   h3 {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -357,7 +369,6 @@ position: relative;
   }
 
   .latest-container {
-    padding: 50px 15px;
     text-align: left;
   }
 
