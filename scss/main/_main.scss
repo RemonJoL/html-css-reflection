@@ -298,7 +298,7 @@ main {
     border-radius: 3px;
     margin-top: 30px;
     padding: 30px;
-    box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
+    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   }
 
 .service-card-container {
@@ -333,10 +333,39 @@ position: relative;
 #latest {
 position: relative;
 
+.section-container {
+  padding: 50px 0;
+}
+
+.latest-col-med {}
+
 .latest-mainheader {
   position: relative;
   width: 100%;
-    box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
+    // box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+
+.latest-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.article-list {
+  overflow: hidden;
+}
+
+.article-list-inner {
+margin: -30px -15px 0;
+}
+
+.latest-card-wrapper {
+
+}
+
+.latest-card {
+  margin-top: 30px;
+  position: relative;
 }
 
 .latest-cnt-header {
@@ -365,11 +394,13 @@ position: relative;
   bottom: 0;
 }
   h3 {
+    min-height: 3rem;
     font-size: 1rem;
     line-height: 1.5rem;
     margin: 0 0 15px;
   }
   p {
+    min-height: 4.5rem;
     font-size: 0.8125rem;
     font-weight: 400;
     line-height: 1.375rem;
@@ -377,21 +408,15 @@ position: relative;
     color: colours.$med-grey;
   }
 
-  .latest-container {
-    text-align: left;
-    margin-top: -30px;
-  }
-
-  .latest-card {
-    margin-top: 30px;
-    box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
-  }
-
   .latest-header {
     position: relative;
     display: flex;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
+
+    img {
+    width: 100%;
+    }
   }
 
   .header-tag {
@@ -411,7 +436,8 @@ position: relative;
     padding: 30px;
       border: 1px solid #ccc;
       border-top: none;
-      // color:white;
+      text-align: left;
+      box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   }
 
   .user {
@@ -598,7 +624,7 @@ position: relative;
 
 .socialmedia-grid {
   display: grid;
-  grid-template-columns: 110px 110px;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 30px;
   margin-bottom: 20px;
@@ -635,4 +661,83 @@ position: relative;
   p {
     font-size: 1rem;
   }
+}
+
+@media (min-width: 375px) {
+
+
+}
+
+@media (max-width: 479px) {
+
+.latest-card {
+  margin-top: 30px;
+}
+
+
+
+}
+
+@media (min-width: 640px) {
+
+// .latest-card {
+//   margin-top: 30px;
+//   max-width: 100%;
+// }
+
+
+}
+
+@media (max-width: 767px) {
+
+.socialmedia-btn {
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  line-height: 3rem;
+  max-width: 110px;
+}
+
+.socialmedia-grid {
+  display: grid;
+  grid-template-columns: 110px 110px;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 30px;
+  margin-bottom: 20px;
+}
+
+
+}
+
+@media (min-width: 768px) {
+
+.latest-container{
+    width: 750px;
+    box-sizing: border-box;
+}
+.article-list {
+  }
+
+.article-list-inner {
+  width: 750px;
+  display: flex;
+}
+
+.latest-card-wrapper {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 50%;
+}
+
+.latest-card {
+}
+
+}
+
+.latest-card-wrapper:nth-child(3){
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
 }
