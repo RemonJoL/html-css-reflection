@@ -87,9 +87,18 @@ margin: 0 -15px 0;
 
 header {
 
+  .top-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+
+  }
+
 .hrow {
   height: 70px;
-  display: table;
+  display: flex;
+  align-items: center;
 }
 
 .block {
@@ -98,6 +107,8 @@ header {
 
 .header-container {
   padding: 0 15px;
+  position: relative;
+
 }
 
 .header-wrapper {
@@ -106,18 +117,26 @@ header {
 }
 
 .logo-container {
-  display: table-cell;
-  vertical-align: middle;
 }
 
 .header-phone {
-  display: table-cell;
-  vertical-align: middle;
+}
+
+.inline-search {
+  margin-left: 20px;
+  display: flex;
+}
+
+.in-searchbar {
+width: 100%;
+
+}
+
+.in-search {
+
 }
 
 .header-menu {
-  display: table-cell;
-  vertical-align: middle;
   text-transform: uppercase;
   position: relative;
 }
@@ -234,8 +253,12 @@ main {
 
 // Banner
 
-.banner-img-container {
+#banner {
+
   height: 100%;
+}
+
+.banner-img-container {
   min-height: 590px;
   background: url(https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.webp),
   linear-gradient(to right, black, rgba(0,0,0,0.3));
@@ -245,11 +268,20 @@ main {
   display: block;
   position: relative;
   color: white;
+  height: 100%;
 }
 
+.banner-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+
 .banner-content {
-  top: 20%;
-  padding: 0 15px;
+  flex-grow: 1;
+  width: 100%;
   text-align: center;
   display: block;
   position: absolute;
@@ -264,19 +296,17 @@ main {
 }
 
 .banner-button-container {
+  flex-grow: 1;
   display: block;
   position: relative;
-  top: 87%;
-  padding: 0 15px;
-  box-sizing: border-box;
+  bottom: -42%;
 
   ul {
     list-style: none;
     text-align: center;
-    padding: 15px 0;
+    padding: 0 0;
     position: relative;
     margin: 0;
-    box-sizing: border-box;
     }
   li {
     margin: 0 2px;
@@ -700,6 +730,13 @@ position: relative;
 
 }
 
+@media (max-width: 767px) {
+.inline-search{
+  display: none;
+}
+}
+
+
 @media (min-width:481px) and (max-width: 767px) {
 
 
@@ -723,6 +760,10 @@ position: relative;
 // Header
 
 .header-searchbar {
+  display: none;
+}
+
+.header-phone {
   display: none;
 }
 

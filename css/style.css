@@ -175,14 +175,6 @@ a:visited {
   line-height: 3rem;
 }
 
-.logo {
-  max-width: 100%;
-}
-
-.latest-header-img {
-  max-width: 100%;
-}
-
 .fa-bars {
   font-size: 2rem;
 }
@@ -312,31 +304,47 @@ span {
   margin: 0 -15px 0;
 }
 
+header .top-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
 header .hrow {
   height: 70px;
-  display: table;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .block {
   border: 1px solid #ddd;
 }
 header .header-container {
   padding: 0 15px;
+  position: relative;
 }
 header .header-wrapper {
   width: 100%;
   padding: 20px 0;
 }
-header .logo-container {
-  display: table-cell;
-  vertical-align: middle;
+header .inline-search {
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-header .header-phone {
-  display: table-cell;
-  vertical-align: middle;
+header .in-searchbar {
+  width: 100%;
 }
 header .header-menu {
-  display: table-cell;
-  vertical-align: middle;
   text-transform: uppercase;
   position: relative;
 }
@@ -422,8 +430,11 @@ nav .security-nav {
   display: none;
 }
 
-.banner-img-container {
+#banner {
   height: 100%;
+}
+
+.banner-img-container {
   min-height: 590px;
   background: url(https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.webp), -webkit-gradient(linear, left top, right top, from(black), to(rgba(0, 0, 0, 0.3)));
   background: url(https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.webp), linear-gradient(to right, black, rgba(0, 0, 0, 0.3));
@@ -433,11 +444,24 @@ nav .security-nav {
   display: block;
   position: relative;
   color: white;
+  height: 100%;
+}
+
+.banner-inner {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .banner-content {
-  top: 20%;
-  padding: 0 15px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
   text-align: center;
   display: block;
   position: absolute;
@@ -451,21 +475,19 @@ nav .security-nav {
 }
 
 .banner-button-container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   display: block;
   position: relative;
-  top: 87%;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  bottom: -42%;
 }
 .banner-button-container ul {
   list-style: none;
   text-align: center;
-  padding: 15px 0;
+  padding: 0 0;
   position: relative;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 .banner-button-container li {
   margin: 0 2px;
@@ -829,6 +851,11 @@ footer p {
     margin-top: 30px;
   }
 }
+@media (max-width: 767px) {
+  .inline-search {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   .cardspacer {
     display: block;
@@ -841,6 +868,10 @@ footer p {
   }
 
   .header-searchbar {
+    display: none;
+  }
+
+  .header-phone {
     display: none;
   }
 
