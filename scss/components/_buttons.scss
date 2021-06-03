@@ -11,6 +11,19 @@
   display: inline-block;
 }
 
+.btn-lg {
+  line-height: 50px;
+  padding: 5px 20px;
+  display: none;
+}
+
+.btn-inline-search {
+  background-color: colours.$btn-grey;
+  line-height: 46px;
+  font-size: 1.5rem;
+  padding: 5px 20px;
+}
+
 .btn-inverse {
   text-decoration: none;
   padding: 1rem 1rem;
@@ -122,4 +135,10 @@
   background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
   line-height: 3rem;
+}
+
+@media (min-width: 768px) {
+  .btn-lg {
+    display: inline-block;
+  }
 }
