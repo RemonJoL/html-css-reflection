@@ -365,11 +365,9 @@ main {
 
   .col-serv1 {
     padding: 0 15px;
-
   }
 
   .col-serv2 {
-    width: 50%;
   }
 
   .services-cards {
@@ -556,36 +554,37 @@ padding-right: 15px;
 }
 
 #clients {
-  display: block;
+  position: relative;
+  display: none;
+
   box-shadow: inset 0 3px 35px rgba(0, 0, 0, 0.1);
-
-  .clients-inner {
-    display: flex;
-    padding: 0 15px;
-  }
-
-  .client-link {
-    padding: 0 20px;
-    position: relative;
-    flex-shrink: 1;
-  }
-
-  .client-link img:nth-child(1) {
-    display: none;
-  }
-
-  .client-link:hover img:nth-child(1) {
-    display: block;
-  }
-
-  .client-link:hover img:nth-child(2) {
-    display: none;
-  }
 
   img {
     max-width: 100%;
   }
 
+}
+
+.clients-inner {
+  display: flex;
+  padding: 0 15px;
+}
+
+.img-link {
+  padding: 0 20px;
+
+}
+
+.img-link img:nth-child(2) {
+  display: none;
+}
+
+.img-link:hover img:nth-child(2) {
+  display: block;
+}
+
+.img-link:hover img:nth-child(1) {
+  display: none;
 }
 
 
@@ -777,8 +776,38 @@ position: relative;
 }
 
 #accredations {
-  
+  display: none;
+
+.accredations-upper {
+  align-items: flex-start;
+  display: flex;
+  line-height: 20px;
 }
+
+.accredations-lower {
+  margin-top: 20px;
+  display: flex;
+}
+
+.accredations-img  {
+  padding: 0 20px;
+  flex: 1 1 auto;
+
+  img {
+    width: 100%;
+    height: auto;
+
+  }
+
+}
+
+    .googlepartner {
+      display: inline-block;
+    }
+}
+
+
+// Media Queries
 
 @media (min-width: 375px) {
 
@@ -804,10 +833,6 @@ position: relative;
 
 
 }
-
-@media (max-width: 767px) {
-}
-
 
 @media (min-width:481px) and (max-width: 767px) {
 
@@ -850,7 +875,12 @@ position: relative;
 
 // Services
 
+.col-serv1 {
+  padding: 0;
+}
+
 .col-serv2 {
+  max-width: 345px;
 
 }
 
@@ -889,10 +919,14 @@ flex-wrap: wrap;
 // clients
 
 
-#clients img {
+#clients {
+  display: block;
+
+  img {
   height: auto;
 }
 
+}
 // Contact
 
 #contact .row {
@@ -905,14 +939,48 @@ flex-wrap: wrap;
 }
 
 .col-wrapper2 {
-  position: relative;
-  width: 50%;
   margin-bottom: -30px;
 }
 
 .col {
 }
 
+// accredations
+
+#accredations {
+  display: block;
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
+
+}
+
+@media (max-width: 767px) {
+
+// Clients
+
+#clients {
+  display: none;
+}
+
+// contacts
+
+.col-wrapper {
+  position: relative;
+  width: auto;
+}
+
+.col-wrapper2 {
+  margin-bottom: -30px;
+}
+
+
+
+// accredations
+
+#accredations {
+  display: none;
+}
+
 
 }
