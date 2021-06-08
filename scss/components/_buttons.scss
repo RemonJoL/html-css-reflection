@@ -12,9 +12,9 @@
 }
 
 .btn-lg {
-  line-height: 50px;
-  padding: 5px 20px;
-  display: none;
+font-size: 1.25rem;
+line-height: 50px;
+padding: 5px 20px;
 }
 
 .btn-img {
@@ -30,11 +30,13 @@
 
 .btn-inverse {
   text-decoration: none;
-  padding: 1rem 1rem;
+  padding: 5px 15px;
   border-radius: 3px;
   color: colours.$dark-grey;
   background: white;
   display: inline-block;
+  line-height: 35px;
+  font-size: 1.063rem;
 }
 
 .btn-menu {
@@ -79,6 +81,7 @@
   margin-bottom: auto;
   color: white;
   display: inline-block;
+  letter-spacing: 0;
 }
 
 .banner-button {
@@ -136,13 +139,15 @@
 
 .socialmedia-btn {
   font-size: 2rem;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0,0,0,.25);
   text-align: center;
   line-height: 3rem;
 }
 
 @media (min-width: 768px) {
   .btn-lg {
+    line-height: 50px;
+    padding: 5px 20px;
     display: inline-block;
-  }
+    }
 }

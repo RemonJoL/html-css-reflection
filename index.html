@@ -2,13 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/5d11a4cc77.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <title>Netmatters | Full Service Digital Agency | Norwich, Norfolk | Netmatters</title>
   </head>
   <body>
-    <div>
+    <div id="page">
 
 <!-- Header -->
 
@@ -29,14 +31,15 @@
                 <!-- / Logo container -->
                 </div>
 
+                <div class="header-button-container">
+                <div class="header-button-inner">
+
                 <!-- Phone container -->
                 <div class="header-phone">
                   <i class="fas fa-phone-volume phone-top"></i>
                 </div>
                 <!-- / Phone container -->
 
-                <div class="header-button-container">
-                <div class="header-button-inner">
                 <!-- Inline searchbar -->
                 <div class="inline-search">
 
@@ -54,7 +57,6 @@
                     <span class="btn-menu-icon-cnt">
                       <span class="btn-menu-icon"></span>
                     </span>
-                    <br>
                     <span class="menu-title">
                       menu</span>
                 </div>
@@ -92,9 +94,13 @@
                   <!-- Banner content -->
                   <div class="banner-content">
                   <div class="container">
-                    <h1>Digital Marketing</h1>
-                    <p>Generating you new business through<br>
-                    results-driven marketing activities.</p>
+                    <div class="h1">
+                      Digital Marketing
+                    </div>
+                    <div class="p">
+                       Generating you new business through<br>
+                       results-driven marketing activities.
+                    </div>
                     <span class="btn btn-lg marketing" href="#" type="button" name="btn-marketing">SEE HOW WE CAN HELP YOU <i class="fas fa-arrow-right"></i></span>
                   </div>
                   </div>
@@ -315,7 +321,7 @@
                       <span class="h2">
                       Telecoms Services
                       </span>
-                      <span class="p">Stay connected with bespoke telecoms solutions when you need it most.</span>
+                      <span class="p">Stay connected with bespoke telecoms solutions when you need it most. <br class="cardspacer345">&nbsp;</span>
                       <span class="button-box">
                         <span class="btn telecoms" name="btn-telecoms">READ MORE</span>
                       </span>
@@ -357,7 +363,7 @@
                     <span class="h2">
                     Cyber Security
                     </span>
-                    <span class="p">Ensuring your online business stays secure 24/7, 365 days of the year. <br class="cardspacer"> &nbsp;</span>
+                    <span class="p">Ensuring your online business stays secure 24/7, 365 days of the year. <br class="cardspacer345">&nbsp;</span>
                     <span class="button-box">
                       <span class="btn security" name="btn-security">READ MORE</span>
                     </span>
@@ -453,8 +459,8 @@
                 <!-- / Latest card header -->
                 <!-- Latest card content -->
                 <div class="latest-content">
-                  <h3 class="itsupport-txt"><a href="#">Senior IT Support Technician <br class="cardspacer"> &nbsp;</a></h3>
-                  <p>Salary Ra... <br class="cardspacer"> &nbsp; <br class="cardspacer"> &nbsp; </p>
+                  <h3 class="itsupport-txt"><a href="#">Senior IT Support Technician <br class="cardspacer345">&nbsp;</a></h3>
+                  <p>Salary Ra... <br class="cardspacer345">&nbsp;<br class="cardspacer345">&nbsp;</p>
                   <span class="btn itsupport" href="#" type="button" name="latest-btn-1">READ MORE</span>
                   <!-- Latest card footer -->
                   <div class="user">
@@ -605,6 +611,8 @@
         <section id="signup">
           <!-- Newsletter Section Container -->
           <div class="section-container">
+          <!-- Newsletter container  -->
+          <div class="container">
           <!-- Newsletter form -->
           <div class="signup-form">
             <!-- Form title -->
@@ -646,6 +654,8 @@
 
           </div>
           <!-- / Newsletter form -->
+          </div>
+          <!-- / Newsletter container  -->
         </div>
         <!-- / Newsletter Section Container -->
         </section>
@@ -701,7 +711,7 @@
                 <li>NR18 0WZ</a></li>
                 <li> &nbsp; </li>
                 <li> &nbsp; </li>
-                <li>Tel: <a href="#">1603 70 40 20</a></li>
+                <li>Tel: <a href="#">01603 70 40 20</a></li>
               </ul>
           </div>
           <!-- / Address Wymondham -->
@@ -732,7 +742,7 @@
           <!-- Contact wrapper -->
           <div class="col-wrapper col-wrapper2">
           <!-- Social Media Buttons -->
-          <div class="c-social-media col">
+          <div class="c-social-media col2">
             <h4>SOCIAL media</h4>
             <div class="socialmedia-grid">
             <a class="btn btn-dark-grey socialmedia-btn" type="button" href="#"><i class="fab fa-facebook-f"></i></a>

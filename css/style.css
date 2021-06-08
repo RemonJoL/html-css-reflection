@@ -62,9 +62,9 @@ a:visited {
 }
 
 .btn-lg {
+  font-size: 1.25rem;
   line-height: 50px;
   padding: 5px 20px;
-  display: none;
 }
 
 .btn-img {
@@ -80,11 +80,13 @@ a:visited {
 
 .btn-inverse {
   text-decoration: none;
-  padding: 1rem 1rem;
+  padding: 5px 15px;
   border-radius: 3px;
   color: #333645;
   background: white;
   display: inline-block;
+  line-height: 35px;
+  font-size: 1.063rem;
 }
 
 .btn-menu {
@@ -130,6 +132,7 @@ a:visited {
   margin-bottom: auto;
   color: white;
   display: inline-block;
+  letter-spacing: 0;
 }
 
 .banner-button {
@@ -187,13 +190,15 @@ a:visited {
 
 .socialmedia-btn {
   font-size: 2rem;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.25);
   text-align: center;
   line-height: 3rem;
 }
 
 @media (min-width: 768px) {
   .btn-lg {
+    line-height: 50px;
+    padding: 5px 20px;
     display: inline-block;
   }
 }
@@ -257,14 +262,15 @@ a:visited {
   vertical-align: middle;
   font-size: 2rem;
   display: block;
-  margin: 0 15px;
+  margin-left: 15px;
+}
+
+#page {
+  overflow-x: hidden;
 }
 
 body {
   font-family: "poppins", sans-serif;
-  width: 100vw;
-  height: 100vh;
-  min-height: 700px;
   margin: 0 0;
   font-size: 1rem;
   letter-spacing: 0.4px;
@@ -291,12 +297,14 @@ body {
   font-size: 2.25rem;
   font-weight: 400;
   margin: 0 0 28px;
+  line-height: 1.1;
 }
 
 .h2, h2 {
   font-size: 1.125rem;
-  margin: 0 0 15px;
+  margin: 0 0 11px;
   position: relative;
+  line-height: 1.1;
 }
 
 .h2:after {
@@ -312,8 +320,13 @@ body {
   background-color: #333645;
 }
 
-.cardspacer {
+.cardspacer345 {
   display: none;
+}
+@media (min-width: 768px) {
+  .cardspacer345 {
+    display: block;
+  }
 }
 
 span {
@@ -330,6 +343,16 @@ span {
   margin-right: auto;
   padding: 0 15px;
 }
+@media (min-width: 768px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
 
 .row {
   margin: 0 -15px 0;
@@ -343,6 +366,11 @@ span {
       align-self: center;
   -webkit-box-shadow: inset 0 0 10px #999aa2;
           box-shadow: inset 0 0 10px #999aa2;
+}
+@media (min-width: 768px) {
+  .inline-search {
+    display: block;
+  }
 }
 
 header .top-page {
@@ -360,40 +388,69 @@ header .block {
   border: 1px solid #ddd;
 }
 header .header-wrapper {
-  width: 100%;
   padding: 20px 0;
   position: relative;
-  height: 70px;
+  height: auto;
+}
+@media (min-width: 768px) {
+  header .header-wrapper {
+    height: 70px;
+  }
+}
+header .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .header-logo-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+}
+@media (min-width: 768px) {
+  header .header-logo-container {
+    width: 50%;
+  }
 }
 header .logo-container {
-  padding: 0 15px;
+  padding-left: 15px;
 }
 header .header-button-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
   height: 70px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-right: 15px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+@media (min-width: 768px) {
+  header .header-button-container {
+    width: 50%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 header .header-button-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 768px) {
+  header .header-phone {
+    display: none;
+  }
 }
 header .in-searchbar {
   border-radius: 3px;
@@ -428,19 +485,18 @@ header .header-menu-btn {
   display: block;
 }
 header .btn-menu-icon-cnt {
-  position: absolute;
-  display: block;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  position: relative;
   height: 19px;
   width: 33px;
-  top: 8px;
+  top: 3px;
 }
 header .menu-title {
   position: relative;
   display: block;
-  font-size: 0.65rem;
-  line-height: 2.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  top: 4px;
+  letter-spacing: 0px;
 }
 header .searchbar {
   -webkit-box-sizing: border-box;
@@ -451,6 +507,11 @@ header .searchbar {
           box-shadow: inset 0 0 0 1px #ddd;
   border: 2px solid #ccc;
   position: relative;
+}
+@media (min-width: 768px) {
+  header .searchbar {
+    display: none;
+  }
 }
 header .main-search {
   background-color: #ddd;
@@ -530,23 +591,25 @@ nav .security-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .banner-content {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  width: 100%;
   text-align: center;
   display: block;
   position: absolute;
 }
-.banner-content h1 {
+.banner-content .h1 {
   font-size: 3rem;
   margin-bottom: 25px;
   text-transform: uppercase;
 }
-.banner-content p {
+.banner-content .p {
   margin: 0 0 35px;
   line-height: 2.25rem;
   font-size: 1.25rem;
@@ -579,10 +642,24 @@ nav .security-nav {
   position: relative;
 }
 #services .h2 {
-  padding: 1rem;
+  padding: 0 0 17px;
+}
+@media (min-width: 768px) {
+  #services .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 #services .col-serv1 {
   padding: 0 15px;
+}
+@media (min-width: 768px) {
+  #services .col-serv2 {
+    max-width: 345px;
+  }
 }
 #services .services-cards {
   margin-top: -30px;
@@ -620,15 +697,29 @@ nav .security-nav {
 }
 #about p {
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 1.875rem;
   margin: 0 0 25px;
 }
 
 #latest {
   position: relative;
 }
+@media (min-width: 768px) {
+  #latest .card-wrapper:nth-child(3) {
+    display: none;
+  }
+}
 #latest .row {
   margin-top: -30px;
+}
+@media (min-width: 768px) {
+  #latest .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 #latest .section-container {
   padding: 50px 0;
@@ -646,6 +737,11 @@ nav .security-nav {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media (min-width: 768px) {
+  #latest .card-wrapper {
+    max-width: 345px;
+  }
+}
 #latest .latest-card {
   margin-top: 30px;
   position: relative;
@@ -657,6 +753,9 @@ nav .security-nav {
 }
 #latest .latest-cnt-header span {
   padding: 40px 0;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 #latest .latestsp {
   position: relative;
@@ -739,6 +838,7 @@ nav .security-nav {
   vertical-align: middle;
   padding-left: 15px;
   color: #666;
+  font-size: 0.875rem;
 }
 #latest .user-details strong {
   color: #333645;
@@ -752,6 +852,11 @@ nav .security-nav {
 }
 #clients img {
   max-width: 100%;
+}
+@media (min-width: 768px) {
+  #clients {
+    display: block;
+  }
 }
 
 .clients-inner {
@@ -781,6 +886,7 @@ nav .security-nav {
   background-color: #ddd;
   text-align: left;
   position: relative;
+  color: #333645;
 }
 #signup h2 {
   font-size: 2rem;
@@ -790,6 +896,9 @@ nav .security-nav {
 }
 #signup .newsletter-textfields {
   margin: 0 0 15px;
+}
+#signup .required {
+  display: inline-block;
 }
 #signup .newsletter-field {
   -webkit-box-sizing: border-box;
@@ -869,6 +978,7 @@ nav .security-nav {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-bottom: 1rem;
 }
 #signup .checkbox-text a {
   text-decoration: underline;
@@ -892,6 +1002,21 @@ nav .security-nav {
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+}
+@media (min-width: 768px) {
+  #contact .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #contact .col-wrapper {
+    position: relative;
+    width: 50%;
+  }
 }
 
 .col {
@@ -908,7 +1033,6 @@ nav .security-nav {
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
   text-align: left;
-  margin-bottom: -30px;
   padding: 0 15px;
 }
 
@@ -949,6 +1073,7 @@ footer {
 }
 footer h4 {
   margin: 0 0 26px;
+  line-height: 1.1;
 }
 footer p {
   font-size: 1rem;
@@ -956,6 +1081,11 @@ footer p {
 
 #accredations {
   display: none;
+}
+@media (min-width: 768px) {
+  #accredations {
+    display: block;
+  }
 }
 #accredations .accredations-upper {
   -webkit-box-align: start;
@@ -984,110 +1114,4 @@ footer p {
 }
 #accredations .googlepartner {
   display: inline-block;
-}
-
-@media (max-width: 479px) {
-  .latest-card {
-    margin-top: 30px;
-  }
-}
-@media (min-width: 768px) {
-  .cardspacer {
-    display: block;
-  }
-
-  .container {
-    width: 750px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-
-  .header-searchbar {
-    display: none;
-  }
-
-  .inline-search {
-    display: block;
-  }
-
-  .header-phone {
-    display: none;
-  }
-
-  .col-serv1 {
-    padding: 0;
-  }
-
-  .col-serv2 {
-    max-width: 345px;
-  }
-
-  #services .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-
-  .card-wrapper {
-    width: 100%;
-    padding: 0 15px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-
-  .row {
-    width: 750px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-#latest .card-wrapper:nth-child(3) {
-  display: none;
-}
-
-#clients {
-  display: block;
-}
-#clients img {
-  height: auto;
-}
-
-#contact .row {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.col-wrapper {
-  position: relative;
-  width: 50%;
-}
-
-.col-wrapper2 {
-  margin-bottom: -30px;
-}
-
-#accredations {
-  display: block;
-}
-
-@media (max-width: 767px) {
-  #clients {
-    display: none;
-  }
-
-  .col-wrapper {
-    position: relative;
-    width: auto;
-  }
-
-  .col-wrapper2 {
-    margin-bottom: -30px;
-  }
-
-  #accredations {
-    display: none;
-  }
 }

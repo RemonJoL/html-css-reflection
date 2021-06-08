@@ -1,0 +1,69 @@
+@mixin bp($point) {
+
+//  Max-width
+  $bp-max375: "(max-width: 375px)";
+  $bp-max479: "(max-width: 479px)";
+  $bp-max767: "(max-width: 767px)";
+  $bp-max991: "(max-width: 991px)";
+  $bp-max1259: "(max-width: 1259px)";
+// Min-Max-width
+  $bp-min481max767: "(min-width: 481px) and (max-width: 767px)";
+  $bp-min768max991: "(min-width: 768px) and (max-width: 991px)";
+  $bp-min992max1259: "(min-width: 992px) and (max-width: 1259px)";
+// Min-width
+  $bp-min640: "(min-width: 640px)";
+  $bp-min768: "(min-width: 768px)";
+  $bp-min960: "(min-width: 960px)";
+  $bp-min992: "(min-width: 992px)";
+  $bp-min1200: "(min-width: 1200px)";
+  $bp-min1260: "min-width: 1260px)";
+  $bp-min1600: "(min-width: 1600px)";
+
+
+  @if $point == min1600 {
+    @media #{$bp-min1600} { @content; }
+  }
+  @else if $point == min1260 {
+    @media #{$bp-min1260} { @content; }
+  }
+  @else if $point == in1200 {
+    @media #{$bp-min1200} { @content; }
+  }
+  @else if $point == min992max1259 {
+    @media #{$bp-min992max1259} { @content; }
+  }
+  @else if $point == min992 {
+    @media #{$bp-min992}  { @content; }
+  }
+  @else if $point == min960 {
+    @media #{$bp-min960}  { @content; }
+  }
+  @else if $point == min768 {
+    @media #{$bp-min768} { @content; }
+  }
+  @else if $point == max1259 {
+    @media #{$bp-max1259} { @content; }
+  }
+  @else if $point == max991 {
+    @media #{$bp-max991} { @content; }
+  }
+  @else if $point == min768max991 {
+    @media #{$bp-min768max991} { @content; }
+  }
+  @else if $point == max767 {
+    @media #{$bp-max767} { @content; }
+  }
+  @else if $point == min640 {
+    @media #{$bp-min640} { @content; }
+  }
+  @else if $point == min481max767 {
+    @media #{$bp-min481max767} { @content; }
+  }
+  @else if $point == max479 {
+    @media #{$bp-max479} { @content; }
+  }
+  @else if $point == max375 {
+    @media #{$bp-max375} { @content; }
+  }
+
+}

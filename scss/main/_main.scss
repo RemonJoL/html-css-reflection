@@ -1,11 +1,82 @@
 @use "utility/colours";
+@use "utility/mixins";
 
+@mixin bp($point) {
+
+//  Max-width
+  $bp-max375: "(max-width: 375px)";
+  $bp-max479: "(max-width: 479px)";
+  $bp-max767: "(max-width: 767px)";
+  $bp-max991: "(max-width: 991px)";
+  $bp-max1259: "(max-width: 1259px)";
+// Min-Max-width
+  $bp-min481max767: "(min-width: 481px) and (max-width: 767px)";
+  $bp-min768max991: "(min-width: 768px) and (max-width: 991px)";
+  $bp-min992max1259: "(min-width: 992px) and (max-width: 1259px)";
+// Min-width
+  $bp-min640: "(min-width: 640px)";
+  $bp-min768: "(min-width: 768px)";
+  $bp-min960: "(min-width: 960px)";
+  $bp-min992: "(min-width: 992px)";
+  $bp-min1200: "(min-width: 1200px)";
+  $bp-min1260: "min-width: 1260px)";
+  $bp-min1600: "(min-width: 1600px)";
+
+
+  @if $point == min1600 {
+    @media #{$bp-min1600} { @content; }
+  }
+  @else if $point == min1260 {
+    @media #{$bp-min1260} { @content; }
+  }
+  @else if $point == in1200 {
+    @media #{$bp-min1200} { @content; }
+  }
+  @else if $point == min992max1259 {
+    @media #{$bp-min992max1259} { @content; }
+  }
+  @else if $point == min992 {
+    @media #{$bp-min992}  { @content; }
+  }
+  @else if $point == min960 {
+    @media #{$bp-min960}  { @content; }
+  }
+  @else if $point == min768 {
+    @media #{$bp-min768} { @content; }
+  }
+  @else if $point == max1259 {
+    @media #{$bp-max1259} { @content; }
+  }
+  @else if $point == max991 {
+    @media #{$bp-max991} { @content; }
+  }
+  @else if $point == min768max991 {
+    @media #{$bp-min768max991} { @content; }
+  }
+  @else if $point == max767 {
+    @media #{$bp-max767} { @content; }
+  }
+  @else if $point == min640 {
+    @media #{$bp-min640} { @content; }
+  }
+  @else if $point == min481max767 {
+    @media #{$bp-min481max767} { @content; }
+  }
+  @else if $point == max479 {
+    @media #{$bp-max479} { @content; }
+  }
+  @else if $point == max375 {
+    @media #{$bp-max375} { @content; }
+  }
+
+}
+
+#page {
+  overflow-x: hidden;
+}
 
 body {
   font-family: 'poppins', sans-serif;
-  width: 100vw;
-  height: 100vh;
-  min-height: 700px;
   margin: 0 0;
   font-size: 1rem;
   letter-spacing: .4px;
@@ -32,12 +103,14 @@ body {
   font-size: 2.25rem;
   font-weight: 400;
   margin: 0 0 28px;
+  line-height: 1.1;
 }
 
 .h2, h2{
   font-size: 1.125rem;
-  margin: 0 0 15px;
+  margin: 0 0 11px;
   position: relative;
+  line-height: 1.1;
 }
 
 
@@ -55,8 +128,12 @@ body {
   background-color: #333645;
 }
 
-.cardspacer {
+.cardspacer345 {
   display: none;
+
+    @include bp(min768) {
+      display: block;
+    }
 }
 
 span {
@@ -77,6 +154,15 @@ span {
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
+
+    @include bp(min768) {
+      width: 970px;
+    }
+
+    @include bp(min768) {
+      width: 720px;
+    }
+
 }
 
 .row {
@@ -90,6 +176,10 @@ margin: 0 -15px 0;
   display: none;
   align-self: center;
   box-shadow: inset 0 0 10px colours.$btn-grey;
+
+  @include bp(min768) {
+    display: block;
+  }
 }
 
 header {
@@ -106,44 +196,58 @@ header {
   border: 1px solid colours.$light-grey;
 }
 
-// .header-container {
-//   padding: 0 15px;
-//   position: relative;
-//
-// }
-
 .header-wrapper {
-  width: 100%;
   padding: 20px 0;
   position: relative;
-  height: 70px;
-  display: flex;
-  flex-shrink: 0;
+  height: auto;
+
+  @include bp(min768) {
+    height: 70px;
+  }
+
 }
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
 
 .header-logo-container {
   display: flex;
-  width: 50%;
 
+  @include bp(min768) {
+    width: 50%;
+  }
 }
 
 .logo-container {
-  padding: 0 15px;
+  padding-left: 15px;
 }
 
 .header-button-container{
   display: flex;
-  width: 50%;
   height: 70px;
-  align-items: center;
+  padding-right: 15px;
+  justify-content: flex-end;
+  flex:1;
+
+  @include bp(min768) {
+    width: 50%;
+    justify-content: flex-end;
+  }
 }
 
 .header-button-inner {
   display: flex;
-    padding: 0 15px;
+  align-items: center;
 }
 
 .header-phone {
+
+@include bp(min768) {
+  display: none;
+}
 }
 
 .in-searchbar {
@@ -179,19 +283,19 @@ align-self: center;
 }
 
 .btn-menu-icon-cnt {
-  position: absolute;
-  display: block;
-  box-sizing: content-box;
+  position: relative;
   height: 19px;
   width: 33px;
-  top: 8px;
+  top: 3px;
 }
 
 .menu-title{
   position: relative;
   display: block;
-  font-size: 0.65rem;
-  line-height: 2.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  top: 4px;
+  letter-spacing: 0px;
 }
 
 .header-searchbar {
@@ -205,6 +309,10 @@ align-self: center;
     border: 2px solid #ccc;
 
     position: relative;
+
+      @include bp(min768) {
+      display: none;
+    }
 }
 
 .main-search {
@@ -307,23 +415,21 @@ main {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-
-
-
 .banner-content {
   flex-grow: 1;
-  width: 100%;
   text-align: center;
   display: block;
   position: absolute;
-  h1 {
+
+  .h1 {
     font-size: 3rem;
     margin-bottom: 25px;
     text-transform: uppercase;
   }
 
-  p {
+  .p {
     margin: 0 0 35px;
     line-height: 2.25rem;
     font-size: 1.25rem;
@@ -360,7 +466,16 @@ main {
   position: relative;
 
   .h2 {
-    padding: 1rem;
+    padding: 0 0 17px;
+  }
+
+  .row {
+
+
+    @include bp(min768) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   .col-serv1 {
@@ -368,6 +483,10 @@ main {
   }
 
   .col-serv2 {
+
+  @include bp(min768) {
+    max-width: 345px;
+  }
   }
 
   .services-cards {
@@ -408,7 +527,7 @@ position: relative;
   }
   p {
     font-weight: 400;
-    line-height: 2rem;
+    line-height: 1.875rem;
     margin: 0 0 25px;
   }
 }
@@ -416,8 +535,19 @@ position: relative;
 #latest {
 position: relative;
 
+@include bp(min768) {
+  .card-wrapper:nth-child(3){
+  display: none;
+}
+}
+
 .row {
   margin-top: -30px;
+
+    @include bp(min768) {
+      display: flex;
+      flex-wrap: wrap;
+    }
 }
 
 .section-container {
@@ -441,6 +571,10 @@ position: relative;
 .card-wrapper {
 padding-left: 15px;
 padding-right: 15px;
+
+@include bp(min768) {
+  max-width: 345px;
+}
 }
 
 .latest-card {
@@ -455,6 +589,9 @@ padding-right: 15px;
 
   span {
     padding: 40px 0;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 600;
   }
 }
 
@@ -547,6 +684,7 @@ padding-right: 15px;
   vertical-align: middle;
   padding-left: 15px;
   color: colours.$med-grey;
+  font-size: 0.875rem;
     strong {
       color: colours.$dark-grey;
     }
@@ -563,6 +701,9 @@ padding-right: 15px;
     max-width: 100%;
   }
 
+  @include bp(min768) {
+    display: block;
+  }
 }
 
 .clients-inner {
@@ -594,6 +735,7 @@ padding-right: 15px;
   background-color: colours.$light-grey;
   text-align: left;
   position: relative;
+  color: colours.$dark-grey;
   h2 {
     font-size: 2rem;
   }
@@ -607,6 +749,11 @@ padding-right: 15px;
   .newsletter-textfields {
     margin: 0 0 15px;
   }
+
+  .required {
+    display: inline-block;
+  }
+
   .newsletter-field {
     box-sizing: border-box;
     width: 100%;
@@ -692,6 +839,7 @@ padding-right: 15px;
     display: inline-block;
     line-height: 2em;
     flex:1;
+    margin-bottom: 1rem;
     a {
       text-decoration: underline;
     }
@@ -714,7 +862,23 @@ padding-right: 15px;
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size: .8125rem;
+    line-height: 1.375rem;
   }
+
+  @include bp(min768) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-wrapper {
+    position: relative;
+    width: 50%;
+  }
+
+  }
+
 }
 
 .container {
@@ -730,7 +894,6 @@ padding-right: 15px;
 .col2 {
   flex: 1 0 50%;
   text-align: left;
-  margin-bottom: -30px;
   padding: 0 15px;
 }
 
@@ -768,6 +931,7 @@ position: relative;
 
   h4 {
     margin: 0 0 26px;
+    line-height: 1.1;
   }
 
   p {
@@ -777,6 +941,10 @@ position: relative;
 
 #accredations {
   display: none;
+
+  @include bp(min768) {
+    display: block;
+  }
 
 .accredations-upper {
   align-items: flex-start;
@@ -807,180 +975,116 @@ position: relative;
 }
 
 
-// Media Queries
 
-@media (min-width: 375px) {
-
-
-}
-
-@media (max-width: 479px) {
-
-.latest-card {
-  margin-top: 30px;
-}
-
-
-
-}
-
-@media (min-width: 640px) {
-
+//
+// @media (max-width: 479px) {
+//
 // .latest-card {
 //   margin-top: 30px;
-//   max-width: 100%;
 // }
-
-
-}
-
-@media (min-width:481px) and (max-width: 767px) {
-
-
-}
-
-@media (min-width: 768px) {
-
-
-// General
-
-
-  .cardspacer {
-      display: block;
-    }
-
-.container{
-    width: 750px;
-    box-sizing: border-box;
-}
-
-// Header
-
-.header-searchbar {
-  display: none;
-}
-
-.inline-search{
-  display: block;
-}
-
-.header-phone {
-  display: none;
-}
-
-.logo-container {
-}
-
-// Banner
-
-// Services
-
-.col-serv1 {
-  padding: 0;
-}
-
-.col-serv2 {
-  max-width: 345px;
-
-}
-
-#services .row {
-display: flex;
-flex-wrap: wrap;
-}
-
-.card-wrapper {
-  width: 100%;
-    padding: 0 15px;
-    box-sizing: border-box;
-}
-
-//  About
-
-// Latest
-
-.article-list {
-  }
-
-.row {
-  width: 750px;
-  display: flex;
-}
-
-.latest-card {
-}
-
-}
-
-#latest .card-wrapper:nth-child(3){
-  display: none;
-}
-
-// clients
-
-
-#clients {
-  display: block;
-
-  img {
-  height: auto;
-}
-
-}
-// Contact
-
-#contact .row {
-  flex-wrap: wrap;
-}
-
-.col-wrapper {
-  position: relative;
-  width: 50%;
-}
-
-.col-wrapper2 {
-  margin-bottom: -30px;
-}
-
-.col {
-}
-
-// accredations
-
-#accredations {
-  display: block;
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-
-}
-
-@media (max-width: 767px) {
-
-// Clients
-
-#clients {
-  display: none;
-}
-
-// contacts
-
-.col-wrapper {
-  position: relative;
-  width: auto;
-}
-
-.col-wrapper2 {
-  margin-bottom: -30px;
-}
-
-
-
-// accredations
-
-#accredations {
-  display: none;
-}
-
-
-}
+//
+//
+//
+// }
+//
+// @media (min-width: 640px) {
+//
+// // .latest-card {
+// //   margin-top: 30px;
+// //   max-width: 100%;
+// // }
+//
+//
+// }
+//
+// @media (min-width:481px) and (max-width: 767px) {
+//
+//
+// }
+//
+// @media (min-width: 768px) {
+// }
+//
+//
+// // General
+//
+//
+//
+// .container{
+//     width: 750px;
+//     box-sizing: border-box;
+// }
+//
+//
+// // Latest
+//
+// .article-list {
+//   }
+//
+// .row {
+//   width: 750px;
+//   display: flex;
+// }
+//
+// .latest-card {
+// }
+//
+//
+// // clients
+//
+//
+// #clients {
+//   display: block;
+// }
+//
+//   img {
+//   height: auto;
+// }
+//
+//
+// // Contact
+//
+//
+// .col {
+// }
+//
+// // accredations
+//
+// #accredations {
+//   display: block;
+// }
+//
+// @media (min-width: 768px) and (max-width: 992px) {
+//
+// }
+//
+// @media (max-width: 767px) {
+// }
+//
+// // Clients
+//
+// #clients {
+//   display: none;
+// }
+//
+// // contacts
+//
+// .col-wrapper {
+//   position: relative;
+//   width: auto;
+// }
+//
+// .col-wrapper2 {
+//   margin-bottom: -30px;
+// }
+//
+//
+//
+// // accredations
+//
+// #accredations {
+//   display: none;
+// }
+//
+//
+//
