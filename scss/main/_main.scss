@@ -131,7 +131,15 @@ body {
 .cardspacer345 {
   display: none;
 
-    @include bp(min768) {
+    @include bp(min768max991) {
+      display: block;
+    }
+}
+
+.cardspacer992 {
+  display: none;
+
+    @include bp(min992) {
       display: block;
     }
 }
@@ -631,6 +639,18 @@ main {
   @include bp(min768) {
     max-width: 345px;
   }
+
+  @include bp(min992) {
+    max-width: 455px;
+  }
+  }
+
+  .col-serv3 {
+
+  @include bp(min992) {
+    flex: 1;
+  }
+
   }
 
   .services-cards {
@@ -674,6 +694,15 @@ position: relative;
     line-height: 1.875rem;
     margin: 0 0 25px;
   }
+
+  @include bp(min992) {
+    background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: auto 100%;
+  }
+
+
 }
 
 #latest {
@@ -716,8 +745,12 @@ position: relative;
 padding-left: 15px;
 padding-right: 15px;
 
-@include bp(min768) {
+@include bp(min768max991) {
   max-width: 345px;
+}
+
+@include bp(min992) {
+  max-width: 455px;
 }
 }
 
@@ -743,6 +776,7 @@ padding-right: 15px;
 .latestsp {
   position: relative;
   text-transform: uppercase;
+  line-height: 24px;
 }
 
 .latestsp:after {
@@ -758,6 +792,15 @@ padding-right: 15px;
     font-size: 1rem;
     line-height: 1.5rem;
     margin: 0 0 15px;
+    font-weight: 600;
+
+    @include bp(min768max991) {
+      min-height: 3rem;
+    }
+
+    @include bp(min992) {
+      min-height: 3rem;
+    }
   }
   p {
     font-size: 0.8125rem;
@@ -806,15 +849,22 @@ padding-right: 15px;
     }
   }
 
+  .user:before {
+    content: "";
+    height: 1px;
+    display: block;
+    top: 0;
+    background-color: colours.$light-greyb;
+  }
+
   .user-grid {
     padding: 30px 0 0;
-    display: table;
+    display: flex;
     table-layout: auto;
   }
 
   .user-avatar {
-  display: table-cell;
-  vertical-align: middle;
+
   }
 
   .avatar-img {
@@ -824,8 +874,6 @@ padding-right: 15px;
   .user-details {
   line-height: 1.375rem;
   text-align: left;
-  display: table-cell;
-  vertical-align: middle;
   padding-left: 15px;
   color: colours.$med-grey;
   font-size: 0.875rem;
@@ -888,10 +936,20 @@ padding-right: 15px;
   }
 
   .textfield-group {
+
+  @include bp(min992) {
+    display: flex;
+    margin: 0 -15px;
+  }
   }
 
   .newsletter-textfields {
     margin: 0 0 15px;
+
+    @include bp(min992) {
+    flex: 1 1 450px;
+    padding: 0 15px;
+    }
   }
 
   .required {
@@ -1046,7 +1104,7 @@ padding-right: 15px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 30px;
-  margin-bottom: 20px;
+  margin: 30px 0 20px;
 }
 
 .contact-info {
@@ -1076,10 +1134,14 @@ position: relative;
   h4 {
     margin: 0 0 26px;
     line-height: 1.1;
+    text-transform: uppercase;
   }
 
   p {
     font-size: 1rem;
+  }
+  .section-container {
+    padding: 47px 0 43px;
   }
 }
 
@@ -1093,17 +1155,27 @@ position: relative;
 .accredations-upper {
   align-items: flex-start;
   display: flex;
-  line-height: 20px;
+
+  @include bp(min768) {
+
+  img {
+    vertical-align: top;
+  }
+}
 }
 
 .accredations-lower {
   margin-top: 20px;
   display: flex;
+
+  img {
+    vertical-align: top;
+  }
 }
 
 .accredations-img  {
   padding: 0 20px;
-  flex: 1 1 auto;
+  flex-grow: 1;
 
   img {
     width: 100%;
@@ -1111,124 +1183,10 @@ position: relative;
 
   }
 
+      .googlepartner {
+        height: 82px;
+        width: 220px;
+      }
+
 }
-
-    .googlepartner {
-      display: inline-block;
-    }
 }
-
-
-
-//
-// @media (max-width: 479px) {
-//
-// .latest-card {
-//   margin-top: 30px;
-// }
-//
-//
-//
-// }
-//
-// @media (min-width: 640px) {
-//
-// // .latest-card {
-// //   margin-top: 30px;
-// //   max-width: 100%;
-// // }
-//
-//
-// }
-//
-// @media (min-width:481px) and (max-width: 767px) {
-//
-//
-// }
-//
-// @media (min-width: 768px) {
-// }
-//
-//
-// // General
-//
-//
-//
-// .container{
-//     width: 750px;
-//     box-sizing: border-box;
-// }
-//
-//
-// // Latest
-//
-// .article-list {
-//   }
-//
-// .row {
-//   width: 750px;
-//   display: flex;
-// }
-//
-// .latest-card {
-// }
-//
-//
-// // clients
-//
-//
-// #clients {
-//   display: block;
-// }
-//
-//   img {
-//   height: auto;
-// }
-//
-//
-// // Contact
-//
-//
-// .col {
-// }
-//
-// // accredations
-//
-// #accredations {
-//   display: block;
-// }
-//
-// @media (min-width: 768px) and (max-width: 992px) {
-//
-// }
-//
-// @media (max-width: 767px) {
-// }
-//
-// // Clients
-//
-// #clients {
-//   display: none;
-// }
-//
-// // contacts
-//
-// .col-wrapper {
-//   position: relative;
-//   width: auto;
-// }
-//
-// .col-wrapper2 {
-//   margin-bottom: -30px;
-// }
-//
-//
-//
-// // accredations
-//
-// #accredations {
-//   display: none;
-// }
-//
-//
-//
