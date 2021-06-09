@@ -156,11 +156,11 @@ span {
     padding: 0 15px;
 
     @include bp(min768) {
-      width: 970px;
+      width: 720px;
     }
 
-    @include bp(min768) {
-      width: 720px;
+    @include bp(min992) {
+      width: 940px;
     }
 
 }
@@ -250,6 +250,42 @@ header {
 }
 }
 
+.support-button-container {
+  display: none;
+  color: colours.$white;
+
+  @include bp(min992) {
+    display: block;
+  }
+
+}
+
+.contact-button-container {
+  display: none;
+  color: colours.$white;
+
+  @include bp(min992) {
+    display: block;
+  }
+
+}
+
+.inline-search-L {
+  display: none;
+
+  @include bp(min992) {
+    display: block;
+  }
+}
+
+.inline-search {
+
+@include bp(min992) {
+  display: none;
+}
+
+}
+
 .in-searchbar {
   border-radius: 3px;
   background: colours.$btn-grey;
@@ -263,6 +299,10 @@ display: flex;
   color: #555;
   width: 144px;
   box-shadow: inset 0 0 1px colours.$btn-grey;
+
+    @include bp(min992) {
+      display: none;
+    }
 }
 
 .in-search:focus {
@@ -346,20 +386,128 @@ align-self: center;
 // Nav
 
 nav {
-  font-size: 1.125rem;
-
-
-.main-nav {
-  background-color: colours.$dark-grey;
   display: none;
+  font-size: 1.125rem;
+  background-color: colours.$dark-grey;
+  border: 1px solid colours.$med-grey;
+
+    @include bp(min992) {
+    display: block;
+  }
+
+
+.main-nav-inner {
+  display: none;
+
+    @include bp(min992) {
+    display: flex;
+  }
+
+}
+
+.main-nav-button {
+  color: colours.$white;
+  border-left: 1px solid colours.$med-grey;
+  text-align: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.main-nav-button:nth-child(6) {
+  border-right: 1px solid colours.$med-grey;
+}
+
+.mn-web .fa-code {
+  color: colours.$clr-webdesign;
+}
+
+.main-nav-button .fa-desktop {
+  color: colours.$clr-itsupport;
+}
+
+.main-nav-button .fa-phone-volume {
+  color: colours.$clr-telecoms;
+}
+
+.main-nav-button .fa-th {
+  color: colours.$clr-software;
+}
+
+.main-nav-button .fa-chart-line {
+  color: colours.$clr-marketing;
+}
+
+.main-nav-button .fa-shield-alt {
+  color: colours.$clr-security;
+}
+
+.main-nav-button i {
+font-size: 1.45rem;
+  padding-bottom: 10px;
+}
+
+.main-nav-button a {
+  font-size: 1.125rem;
+  padding: 19px 0 18px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.main-nav-button small {
+  font-size: .625rem;
+  padding-bottom: 1px;
+  display: block;
+}
+
+
+
+}
+
+// End nav
+.mn:hover {
+  color: colours.$white;
+    .fas{
+    color: colours.$white;
+  }
+}
+
+.mn-web:hover {
+  background-color: colours.$clr-webdesign;
+}
+
+.mn-it:hover {
+  background-color: colours.$clr-itsupport;
+}
+
+.mn-tele:hover {
+  background-color: colours.$clr-telecoms;
+}
+
+.mn-software:hover {
+  background-color: colours.$clr-software;
+}
+
+.mn-dm:hover {
+  background-color: colours.$clr-marketing;
+}
+
+.mn-cs:hover {
+  background-color: colours.$clr-security;
 }
 
 .sub-nav {
   display: none;
 }
 
+.subnav-inner {
+  display: flex;
+  position: relative;
+}
+
 .webdesign-nav {
-  display: none;
+  display: flex;
+  background-color: colours.$clr-webdesign;
 }
 
 .it-nav {
@@ -381,10 +529,6 @@ nav {
 .security-nav {
   display: none;
 }
-
-}
-
-// End nav
 
 main {
 
