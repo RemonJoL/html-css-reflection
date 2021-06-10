@@ -12,6 +12,7 @@
   color: white;
   font-size: 1.063rem;
   display: inline-block;
+  border: 1px solid transparent;
 }
 
 .btn-lg {
@@ -32,6 +33,11 @@ padding: 5px 20px;
   border-radius: 3px;
 }
 
+.btn-inline-search:hover {
+  background-color: #84858f;
+  border-color: #797a85;
+}
+
 .btn-inverse {
   text-decoration: none;
   padding: 5px 15px;
@@ -48,11 +54,15 @@ padding: 5px 20px;
   color: white;
   padding: 5px 15px;
   border-radius: 3px;
-  margin-left: 20px;
   display: block;
   position: relative;
   height: 46px;
   box-sizing: content-box;
+}
+
+.btn-menu:hover {
+  background-color: #22242e;
+  border-color: #191a22;
 }
 
 .marketing {
@@ -65,13 +75,30 @@ padding: 5px 20px;
   background: colours.$clr-itsupport;
   line-height: 46px;
   font-size: 1.125rem;
+  .fas {
+    vertical-align: middle;
+    font-size: 1.45rem;
+  }
+}
+
+.btn-support:hover {
+  background-color: #2a6ec6;
+  border-color: #2665b5;
 }
 
 .btn-contact {
   background: colours.$btn-grey;
-  margin: 0 20px;
   line-height: 46px;
   font-size: 1.125rem;
+  .far {
+    vertical-align: middle;
+    font-size: 1.45rem;
+  }
+}
+
+.btn-contact:hover {
+  background-color: #84858f;
+  border-color: #797a85;
 }
 
 .btn-submit {
@@ -113,6 +140,14 @@ padding: 5px 20px;
 
 }
 
+
+
+#banner .btn:hover {
+  background-color: #26ab5f;
+  border-color: #239a55;
+}
+
+
 .software {
   background: colours.$clr-software;
   margin: 0 auto;
@@ -149,7 +184,23 @@ padding: 5px 20px;
   font-size: 1.75rem;
   background-color: rgba(0,0,0,.25);
   text-align: center;
-  line-height: 2.85rem;
+  line-height: 2.7rem;
+}
+
+.btn-fb:hover {
+  background-color: #3b5998;
+}
+
+.btn-twitter:hover {
+  background-color: #00aced;
+}
+
+.btn-instagram:hover {
+  background-color: #d93175;
+}
+
+.btn-in:hover {
+  background-color: #0077b5;
 }
 
 @media (min-width: 768px) {

@@ -19,7 +19,7 @@
   $bp-min960: "(min-width: 960px)";
   $bp-min992: "(min-width: 992px)";
   $bp-min1200: "(min-width: 1200px)";
-  $bp-min1260: "min-width: 1260px)";
+  $bp-min1260: "(min-width: 1260px)";
   $bp-min1600: "(min-width: 1600px)";
 
 
@@ -29,7 +29,7 @@
   @else if $point == min1260 {
     @media #{$bp-min1260} { @content; }
   }
-  @else if $point == in1200 {
+  @else if $point == min1200 {
     @media #{$bp-min1200} { @content; }
   }
   @else if $point == min992max1259 {
@@ -139,7 +139,15 @@ body {
 .cardspacer992 {
   display: none;
 
-    @include bp(min992) {
+    @include bp(min992max1259) {
+      display: block;
+    }
+}
+
+.cardspacer1260 {
+  display: none;
+
+    @include bp(min1260) {
       display: block;
     }
 }
@@ -171,10 +179,40 @@ span {
       width: 940px;
     }
 
+    @include bp(min1260) {
+      width: 1170px;
+    }
+
 }
 
 .row {
 margin: 0 -15px 0;
+}
+
+.col-serv2 {
+
+@include bp(min768) {
+  width: 345px;
+}
+
+@include bp(min992) {
+  width: 455px;
+}
+
+@include bp(min1260) {
+  width: 270px;
+}
+}
+
+.col-serv3 {
+
+@include bp(min992max1259) {
+  flex: 1;
+}
+
+@include bp(min1260) {
+  width: 370px;
+}
 }
 
 // header
@@ -222,6 +260,7 @@ header {
 
 
 .header-logo-container {
+  padding: 0 15px;
   display: flex;
 
   @include bp(min768) {
@@ -229,21 +268,53 @@ header {
   }
 }
 
+.hlc-992 {
+
+@include bp(min992) {
+  width: 41.66666667%;
+}
+}
+
+.hlc-1260 {
+
+@include bp(min1260) {
+  width: 33.33%;
+}
+}
+
 .logo-container {
-  padding-left: 15px;
+}
+
+.header-button-inner> *+* {
+    margin-left: 20px;
+    flex: 1 1 auto;
 }
 
 .header-button-container{
   display: flex;
   height: 70px;
-  padding-right: 15px;
+  padding: 0 15px;
   justify-content: flex-end;
-  flex:1;
 
   @include bp(min768) {
     width: 50%;
     justify-content: flex-end;
   }
+}
+
+.btc-992 {
+
+@include bp(min992) {
+  width: 58.33333333%;
+}
+
+}
+
+.btc-1260 {
+
+@include bp(min1260) {
+  width: 66.66666667%;
+}
 }
 
 .header-button-inner {
@@ -278,18 +349,14 @@ header {
 
 }
 
-.inline-search-L {
-  display: none;
-
-  @include bp(min992) {
-    display: block;
-  }
-}
-
 .inline-search {
+  overflow: hidden;
+    border-radius: 3px;
 
 @include bp(min992) {
-  display: none;
+}
+
+@include bp(min1260) {
 }
 
 }
@@ -310,6 +377,11 @@ display: flex;
 
     @include bp(min992) {
       display: none;
+    }
+
+    @include bp(min1260) {
+      display: block;
+      width: 210px;
     }
 }
 
@@ -586,6 +658,11 @@ main {
     line-height: 2.25rem;
     font-size: 1.25rem;
   }
+
+    @include bp(min992) {
+      text-align: left;
+  }
+
 }
 
 .banner-button-container {
@@ -634,25 +711,6 @@ main {
     padding: 0 15px;
   }
 
-  .col-serv2 {
-
-  @include bp(min768) {
-    max-width: 345px;
-  }
-
-  @include bp(min992) {
-    max-width: 455px;
-  }
-  }
-
-  .col-serv3 {
-
-  @include bp(min992) {
-    flex: 1;
-  }
-
-  }
-
   .services-cards {
     margin-top: -30px;
     text-align: center;
@@ -675,6 +733,98 @@ main {
   display: flex;
   flex-wrap: wrap;
   }
+
+
+
+  .card-sv:hover {
+    color: colours.$white;
+
+    .icon {
+      background-color: colours.$white;
+    }
+
+    .btn {
+      background-color: colours.$white;
+    }
+
+    .h2:after {
+      background-color: colours.$white;
+    }
+  }
+
+  .sw-card:hover {
+    background-color: colours.$clr-software;
+
+    .icon-serv {
+      color: colours.$clr-software;
+    }
+
+    .btn {
+      color: colours.$clr-software;
+    }
+  }
+
+  .it-card:hover {
+    background-color: colours.$clr-itsupport;
+
+    .icon-serv {
+      color: colours.$clr-itsupport;
+    }
+
+    .btn {
+      color: colours.$clr-itsupport;
+    }
+  }
+
+  .markting-card:hover {
+    background-color: colours.$clr-marketing;
+
+    .icon-serv {
+      color: colours.$clr-marketing;
+    }
+
+    .btn {
+      color: colours.$clr-marketing;
+    }
+  }
+
+  .telecoms-card:hover {
+    background-color: colours.$clr-telecoms;
+
+    .icon-serv {
+      color: colours.$clr-telecoms;
+    }
+
+    .btn {
+      color: colours.$clr-telecoms;
+    }
+  }
+
+  .webdesign-card:hover {
+    background-color: colours.$clr-webdesign;
+
+    .icon-serv {
+      color: colours.$clr-webdesign;
+    }
+
+    .btn {
+      color: colours.$clr-webdesign;
+    }
+  }
+
+  .cs-card:hover {
+    background-color: colours.$clr-security;
+
+    .icon-serv {
+      color: colours.$clr-security;
+    }
+
+    .btn {
+      color: colours.$clr-security;
+    }
+  }
+
+
 }
 
 // End Services
@@ -683,9 +833,20 @@ main {
 position: relative;
   background-color: colours.$dark-grey;
   color: white;
-  .container-about {
+
+
+  .about-inner {
     text-align: left;
+
+    @include bp(min1260) {
+      width: 50%;
+    }
   }
+
+  .h1 {
+    margin-top: -6px;
+  }
+
   a {
     color: colours.$dark-grey;
   }
@@ -701,8 +862,6 @@ position: relative;
     background-position: 100%;
     background-size: auto 100%;
   }
-
-
 }
 
 #latest {
@@ -711,6 +870,12 @@ position: relative;
 @include bp(min768) {
   .card-wrapper:nth-child(3){
   display: none;
+}
+}
+
+@include bp(min1260) {
+  .card-wrapper:nth-child(3){
+  display: block;
 }
 }
 
@@ -757,18 +922,23 @@ padding-right: 15px;
 .latest-card {
   margin-top: 30px;
   position: relative;
+
+  @include bp(min1260) {
+  }
 }
 
 .latest-cnt-header {
     display: block;
     position:  relative;
-    padding: 0 15px;
 
   span {
     padding: 40px 0;
     text-transform: uppercase;
     font-size: 1.25rem;
     font-weight: 600;
+  }
+
+  @include bp(min768) {
   }
 }
 
@@ -818,17 +988,31 @@ padding-right: 15px;
 
     img {
     width: 100%;
+    transition: transform 0.2s ease;
+    }
+
+    img:hover {
+      @include bp(min992) {
+      transform: scale(1.1);
+      opacity: 75%;
+      }
+
     }
   }
 
   .header-tag {
   position: absolute;
   z-index: 1;
-  height: 1rem;
-  padding: 3px;
+  padding: 3px 10px;
   margin-top: 10px;
   right: 0;
   color: white;
+  text-align: center;
+  line-height: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+
   a:hover {
     text-decoration: underline;
   }
@@ -840,6 +1024,26 @@ padding-right: 15px;
       border-top: none;
       text-align: left;
       box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+
+      .itsupport:hover {
+        background-color: #2a6ec6;
+        border-color: #2665b5;
+      }
+
+      .webdesign:hover {
+        background-color: #7e57a0;
+        border-color: #735093;
+      }
+
+      .telecoms:hover {
+        background-color: #c42e2a;
+        border-color: #b32a27;
+      }
+
+      img {
+      vertical-align: top;
+    }
+
   }
 
   .user {
@@ -874,7 +1078,7 @@ padding-right: 15px;
   .user-details {
   line-height: 1.375rem;
   text-align: left;
-  padding-left: 15px;
+  padding-left: 20px;
   color: colours.$med-grey;
   font-size: 0.875rem;
     strong {
@@ -901,11 +1105,15 @@ padding-right: 15px;
 .clients-inner {
   display: flex;
   padding: 0 15px;
+  justify-content: space-around;
 }
 
 .img-link {
   padding: 0 20px;
 
+  img {
+    vertical-align: top;
+  }
 }
 
 .img-link img:nth-child(2) {
@@ -1060,6 +1268,10 @@ padding-right: 15px;
     text-decoration: none;
     color: white;
   }
+
+  a:hover {
+    text-decoration: underline;
+  }
   ul {
     list-style: none;
     padding: 0;
@@ -1077,6 +1289,10 @@ padding-right: 15px;
   .col-wrapper {
     position: relative;
     width: 50%;
+
+    @include bp(min1260) {
+    width: 25%;
+    }
   }
 
   }
@@ -1156,12 +1372,16 @@ position: relative;
   align-items: flex-start;
   display: flex;
 
-  @include bp(min768) {
+  @include bp(max1259) {
 
   img {
     vertical-align: top;
   }
-}
+  }
+
+  @include bp(min1260) {
+    justify-content: space-around;
+  }
 }
 
 .accredations-lower {
@@ -1171,22 +1391,35 @@ position: relative;
   img {
     vertical-align: top;
   }
+
+  @include bp(min1260) {
+    justify-content: space-around;
+  }
 }
 
 .accredations-img  {
   padding: 0 20px;
   flex-grow: 1;
+  text-align: center;
+
+  @include bp(min1260) {
+  flex: 0 1 auto;
+  }
 
   img {
     width: 100%;
     height: auto;
-
   }
 
-      .googlepartner {
-        height: 82px;
-        width: 220px;
-      }
+  .googlepartner {
+    height: 82px;
+    width: 220px;
+  }
+
+
+  @include bp(min1260) {
+    height: 100%;
+  }
 
 }
 }
