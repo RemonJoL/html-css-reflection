@@ -27,9 +27,9 @@ padding: 5px 20px;
 
 .btn-inline-search {
   background-color: colours.$btn-grey;
-  line-height: 46px;
-  font-size: 1.5rem;
-  padding: 5px 20px;
+  line-height: 44px;
+  font-size: 1.45rem;
+  padding: 7px 18px 3px;
   border-radius: 3px;
 }
 
@@ -73,7 +73,7 @@ padding: 5px 20px;
 
 .btn-support {
   background: colours.$clr-itsupport;
-  line-height: 46px;
+  line-height: 44px;
   font-size: 1.125rem;
   .fas {
     vertical-align: middle;
@@ -88,7 +88,7 @@ padding: 5px 20px;
 
 .btn-contact {
   background: colours.$btn-grey;
-  line-height: 46px;
+  line-height: 44px;
   font-size: 1.125rem;
   .far {
     vertical-align: middle;
@@ -120,20 +120,20 @@ padding: 5px 20px;
 }
 
 .banner-button {
-  background: colours.$btn-grey;
-  border-radius: 50%;
   height: 11px;
   width: 11px;
+  background: colours.$btn-grey;
+  border-radius: 50%;
   display: block;
   position: relative;
-  border: 6px solid rgba(0,0,0,0.0);
-  background-clip: content-box;
+  border: 6px solid transparent;
+  margin: 5px;
 }
 
 .banner-button:focus {
   background: colours.$white;
   outline: none;
-  border: 5px solid rgba(0,0,0,0.0);
+  border: 5px solid transparent;
   background-clip: content-box;
   box-shadow:  0 0 0 1px white;
   display: inline-block;

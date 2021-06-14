@@ -82,7 +82,7 @@ body {
   letter-spacing: .4px;
 }
 
-* :after, :before {
+*, :after, :before {
   box-sizing: border-box;
 }
 
@@ -108,7 +108,7 @@ body {
 
 .h2, h2{
   font-size: 1.125rem;
-  margin: 0 0 11px;
+  margin: 0 0 15px;
   position: relative;
   line-height: 1.1;
 }
@@ -152,6 +152,24 @@ body {
     }
 }
 
+
+
+.col-spacer-sm {
+
+@include bp(max767) {
+  margin-bottom: 30px;
+}
+}
+
+
+
+.col-spacer-md {
+
+@include bp(max1259) {
+  margin-bottom: 30px;
+}
+}
+
 span {
   display: inline-block;
 
@@ -169,18 +187,20 @@ span {
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    // box-sizing: border-box;
 
     @include bp(min768) {
-      width: 720px;
+      width: 750px;
     }
 
     @include bp(min992) {
-      width: 940px;
+      width: 970px;
     }
 
     @include bp(min1260) {
-      width: 1170px;
+      width: 1200px;
     }
 
 }
@@ -189,29 +209,32 @@ span {
 margin: 0 -15px 0;
 }
 
-.col-serv2 {
+.col2 {
 
 @include bp(min768) {
-  width: 345px;
+  width: 50%;
 }
 
 @include bp(min992) {
-  width: 455px;
-}
-
-@include bp(min1260) {
-  width: 270px;
+  width: 485px;
 }
 }
 
-.col-serv3 {
+.col3-lg {
 
 @include bp(min992max1259) {
   flex: 1;
 }
 
 @include bp(min1260) {
-  width: 370px;
+  width: 400px;
+}
+}
+
+.col4-lg {
+
+@include bp(min1260) {
+  width: 300px;
 }
 }
 
@@ -245,11 +268,6 @@ header {
 .header-wrapper {
   padding: 20px 0;
   position: relative;
-  height: auto;
-
-  @include bp(min768) {
-    height: 70px;
-  }
 
 }
 
@@ -260,27 +278,39 @@ header {
 
 
 .header-logo-container {
-  padding: 0 15px;
+  padding-left: 15px;
   display: flex;
+  box-sizing: border-box;
+  margin-right: auto;
 
   @include bp(min768) {
+    padding: 0 15px;
     width: 50%;
+    align-self: flex-start;
+  }
+
+  @include bp(min992) {
+    width: 41.66666667%;
+  }
+
+  @include bp(min1260) {
+    width: 33.33333333%;
   }
 }
 
-.hlc-992 {
-
-@include bp(min992) {
-  width: 41.66666667%;
-}
-}
-
-.hlc-1260 {
-
-@include bp(min1260) {
-  width: 33.33%;
-}
-}
+// .hlc-992 {
+//
+// @include bp(min992) {
+//   width: 41.66666667%;
+// }
+// }
+//
+// .hlc-1260 {
+//
+// @include bp(min1260) {
+//   width: 33.33333333%;
+// }
+// }
 
 .logo-container {
 }
@@ -293,10 +323,10 @@ header {
 .header-button-container{
   display: flex;
   height: 70px;
-  padding: 0 15px;
-  justify-content: flex-end;
+  padding-right: 15px;
 
   @include bp(min768) {
+  padding: 0 15px;
     width: 50%;
     justify-content: flex-end;
   }
@@ -372,8 +402,10 @@ display: flex;
   padding: 5px 15px;
   border: 1px solid colours.$light-greyb;
   color: #555;
-  width: 144px;
+  width: 174px;
   box-shadow: inset 0 0 1px colours.$btn-grey;
+  font-size: 0.85rem;
+  font-weight: 400;
 
     @include bp(min992) {
       display: none;
@@ -381,7 +413,7 @@ display: flex;
 
     @include bp(min1260) {
       display: block;
-      width: 210px;
+      width: 240px;
     }
 }
 
@@ -469,7 +501,6 @@ nav {
   display: none;
   font-size: 1.125rem;
   background-color: colours.$dark-grey;
-  border: 1px solid colours.$med-grey;
 
     @include bp(min992) {
     display: block;
@@ -485,66 +516,84 @@ nav {
 
 }
 
+
 .main-nav-button {
   color: colours.$white;
-  border-left: 1px solid colours.$med-grey;
   text-align: center;
   display: flex;
-  flex: 1;
   justify-content: center;
-}
+  width: 100%;
+  border-right: 1px solid hsla(0,0%,100%,.1);
+  border-left: 1px solid rgba(0,0,0,.25);
 
-.main-nav-button:nth-child(6) {
-  border-right: 1px solid colours.$med-grey;
-}
+   i {
+  font-size: 1.45rem;
+    padding-bottom: 10px;
+  }
 
-.mn-web .fa-code {
-  color: colours.$clr-webdesign;
-}
+  a {
+   font-size: 1.125rem;
+   padding: 19px 0 18px;
+   line-height: 1;
+   text-transform: uppercase;
+ }
 
-.main-nav-button .fa-desktop {
-  color: colours.$clr-itsupport;
-}
-
-.main-nav-button .fa-phone-volume {
-  color: colours.$clr-telecoms;
-}
-
-.main-nav-button .fa-th {
-  color: colours.$clr-software;
-}
-
-.main-nav-button .fa-chart-line {
-  color: colours.$clr-marketing;
-}
-
-.main-nav-button .fa-shield-alt {
-  color: colours.$clr-security;
-}
-
-.main-nav-button i {
-font-size: 1.45rem;
-  padding-bottom: 10px;
-}
-
-.main-nav-button a {
-  font-size: 1.125rem;
-  padding: 19px 0 18px;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.main-nav-button small {
+ small {
   font-size: .625rem;
   padding-bottom: 1px;
   display: block;
 }
 
-
-
 }
 
-// End nav
+.main-nav-inner {
+  border-left: 1px solid hsla(0,0%,100%,.1);
+  border-right: 1px solid rgba(0,0,0,.25);
+}
+
+.subnav {
+  display: none;
+  font-size: 0.8125rem;
+  line-height: 45px;
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  top: 209px;
+  left: 0;
+  color: colours.$white;
+
+ a:nth-of-type(-n+5):after {
+   content: "-";
+   padding-left: 20px;
+
+     @include bp(min1260) {
+     padding-left: 30px;
+     }
+ }
+
+  a:nth-of-type(1n+2) {
+    padding-left: 20px;
+
+      @include bp(min1260) {
+      padding-left: 30px;
+      }
+  }
+
+    @include bp(min1260) {
+    font-size: 1rem;
+    }
+}
+
+.subnav:hover {
+  display: block;
+  z-index: 2;
+}
+
+.mn {
+  display: flex;
+  flex: 1;
+}
+
 .mn:hover {
   color: colours.$white;
     .fas{
@@ -552,63 +601,129 @@ font-size: 1.45rem;
   }
 }
 
-.mn-web:hover {
-  background-color: colours.$clr-webdesign;
-}
-
-.mn-it:hover {
-  background-color: colours.$clr-itsupport;
-}
-
-.mn-tele:hover {
-  background-color: colours.$clr-telecoms;
-}
-
-.mn-software:hover {
-  background-color: colours.$clr-software;
-}
-
-.mn-dm:hover {
-  background-color: colours.$clr-marketing;
-}
-
-.mn-cs:hover {
-  background-color: colours.$clr-security;
-}
-
-.sub-nav {
-  display: none;
-}
-
-.subnav-inner {
+.mnb:hover ~ .subnav {
   display: flex;
-  position: relative;
+  z-index: 2;
+  align-content: flex-start;
+
+  }
+
+// WEB DESIGN
+
+.webnav:hover {
+  background-color: colours.$clr-webdesign;
 }
 
 .webdesign-nav {
-  display: flex;
-  background-color: colours.$clr-webdesign;
+  background-color: #79539a;
+
 }
 
-.it-nav {
-  display: none;
+.main-nav-button .fa-code {
+  color: colours.$clr-webdesign;
 }
+
+// IT SUPPORT
+
+.itnav:hover {
+  background-color: colours.$clr-itsupport;
+
+}
+
+.it-nav{
+  background-color: #286abd;
+
+}
+
+.main-nav-button .fa-desktop {
+  color: colours.$clr-itsupport;
+}
+
+// TELECOMS SERVICES
+
+.telenav:hover {
+  background-color: colours.$clr-telecoms;
+
+}
+
+.mn-tele:hover ~ .telecoms-nav {
+  display: flex;
+  z-index: 2;
+  align-content: flex-start;
+
+  }
 
 .telecoms-nav {
-  display: none;
+  background-color: #bc2c28;
+}
+
+.main-nav-button .fa-phone-volume {
+  color: colours.$clr-telecoms;
+}
+
+// BESPOKE SOFTWARE
+
+.softwarenav:hover {
+  background-color: colours.$clr-software;
+
 }
 
 .software-nav {
-  display: none;
+  background-color: #526781;
+
+}
+
+.main-nav-button .fa-th {
+  color: colours.$clr-software;
+}
+
+// DIGITAL MARKETING
+
+.marketingnav:hover {
+  background-color: colours.$clr-marketing;
+
 }
 
 .marketing-nav {
-  display: none;
+  background-color: #25a25a;
+}
+
+.main-nav-button .fa-chart-line {
+  color: colours.$clr-marketing;
+}
+
+// CYBER SECURITY
+
+.csnav:hover {
+  background-color: colours.$clr-security;
 }
 
 .security-nav {
-  display: none;
+  background-color: #de093f;
 }
+
+.main-nav-button .fa-shield-alt {
+  color: colours.$clr-security;
+}
+
+.subnav-inner {
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+
+    @include bp(min992) {
+      width: 940px;
+    }
+
+    @include bp(min1260) {
+      width: 1170px;
+    }
+}
+
+}
+
+// End nav
 
 main {
 
@@ -696,6 +811,8 @@ main {
 
   .h2 {
     padding: 0 0 17px;
+    display: block;
+    margin-bottom: 11px;
   }
 
   .row {
@@ -837,6 +954,8 @@ position: relative;
 
   .about-inner {
     text-align: left;
+    box-sizing: border-box;
+    padding: 0 15px;
 
     @include bp(min1260) {
       width: 50%;
@@ -856,6 +975,11 @@ position: relative;
     margin: 0 0 25px;
   }
 
+  i {
+    margin-right: -4px;
+    margin-left: 12px;
+  }
+
   @include bp(min992) {
     background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
     background-repeat: no-repeat;
@@ -866,6 +990,7 @@ position: relative;
 
 #latest {
 position: relative;
+box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
 
 @include bp(min768) {
   .card-wrapper:nth-child(3){
@@ -910,12 +1035,8 @@ position: relative;
 padding-left: 15px;
 padding-right: 15px;
 
-@include bp(min768max991) {
-  max-width: 345px;
-}
-
 @include bp(min992) {
-  max-width: 455px;
+  max-width: 485px;
 }
 }
 
@@ -1091,8 +1212,6 @@ padding-right: 15px;
   position: relative;
   display: none;
 
-  box-shadow: inset 0 3px 35px rgba(0, 0, 0, 0.1);
-
   img {
     max-width: 100%;
   }
@@ -1162,6 +1281,7 @@ padding-right: 15px;
 
   .required {
     display: inline-block;
+    line-height: 1.42857143;
   }
 
   .newsletter-field {
@@ -1214,8 +1334,8 @@ padding-right: 15px;
   background-color: colours.$light-grey;
   border: 3px solid colours.$dark-grey;
   border-radius: 3px;
-  width: 26px;
-  height: 26px;
+  width: 32px;
+  height: 32px;
   margin: 0 20px 0 0;
 }
 
@@ -1303,14 +1423,7 @@ padding-right: 15px;
 }
 
 .col {
-  flex: 1 0 50%;
-  text-align: left;
-  margin-bottom: 30px;
-  padding: 0 15px;
-}
-
-.col2 {
-  flex: 1 0 50%;
+  width: 50%;
   text-align: left;
   padding: 0 15px;
 }
@@ -1373,10 +1486,6 @@ position: relative;
   display: flex;
 
   @include bp(max1259) {
-
-  img {
-    vertical-align: top;
-  }
   }
 
   @include bp(min1260) {
@@ -1401,6 +1510,7 @@ position: relative;
   padding: 0 20px;
   flex-grow: 1;
   text-align: center;
+  line-height: 1.4;
 
   @include bp(min1260) {
   flex: 0 1 auto;
