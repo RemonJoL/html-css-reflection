@@ -3,7 +3,7 @@
 
 
 .btn {
-  height: auto;
+  font-family: inherit;
   line-height: 35px;
   text-decoration: none;
   text-transform: uppercase;
@@ -21,16 +21,11 @@ line-height: 50px;
 padding: 5px 20px;
 }
 
-.btn-img {
-  padding: 0 20px;
-}
-
 .btn-inline-search {
   background-color: colours.$btn-grey;
   line-height: 44px;
   font-size: 1.45rem;
   padding: 7px 18px 3px;
-  border-radius: 3px;
 }
 
 .btn-inline-search:hover {
@@ -38,15 +33,14 @@ padding: 5px 20px;
   border-color: #797a85;
 }
 
-.btn-inverse {
-  text-decoration: none;
-  padding: 5px 15px;
-  border-radius: 3px;
+.btn-culture {
   color: colours.$dark-grey;
   background: white;
-  display: inline-block;
-  line-height: 35px;
-  font-size: 1.063rem;
+}
+
+.btn-inverse:hover {
+  background-color: #ebebeb;
+  border-color: #e0e0e0;
 }
 
 .btn-menu {
@@ -112,17 +106,18 @@ padding: 5px 20px;
 
 .btn-dark-grey {
   background: colours.$dark-grey;
-  display: flex;
-  margin-bottom: auto;
-  color: white;
-  display: inline-block;
-  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.btn-dark-grey:hover {
+  background-color: #22242e;
+  border-color: #191a22;
 }
 
 .banner-button {
   height: 11px;
   width: 11px;
-  background: colours.$btn-grey;
+  background: hsla(0,0%,100%,.5);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -173,18 +168,13 @@ padding: 5px 20px;
   margin: 0 auto;
 }
 
-.newsletter-btn {
-  width: 2rem;
-  height: 2rem;
-  display: inline-block;
-  margin: 0 20px 0 0;
-}
-
 .socialmedia-btn {
   font-size: 1.75rem;
   background-color: rgba(0,0,0,.25);
   text-align: center;
   line-height: 2.7rem;
+  margin-top: 30px;
+  width: 100%;
 }
 
 .btn-fb:hover {

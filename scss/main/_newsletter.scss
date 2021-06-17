@@ -1,0 +1,123 @@
+@use "utility/colours";
+@import "utility/mixins";
+
+#signup {
+  background-color: colours.$light-grey;
+  text-align: left;
+  position: relative;
+  color: colours.$dark-grey;
+}
+
+.signup-form {
+  padding: 0 30px;
+}
+
+.textfield-group {
+
+  @include bp(min992) {
+    display: flex;
+    margin: 0 -15px;
+  }
+}
+
+.newsletter-textfields {
+  margin: 0 0 15px;
+
+  @include bp(min992) {
+  flex: 1 1 450px;
+  padding: 0 15px;
+  }
+}
+
+.required {
+  display: inline-block;
+  line-height: 1.42857143;
+}
+
+.newsletter-field {
+  width: 100%;
+  height: 47px;
+  font-size: 14px;
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  color: colours.$med-grey;
+}
+
+.newsletter-field:focus {
+  padding: 15px;
+  outline: none;
+  box-shadow: 0 0 3px 1px colours.$clr-itsupport;
+}
+
+.required {
+  display: block;
+margin-bottom: 5px;
+}
+
+.required:after {
+  content:" *";
+  color: red;
+}
+
+
+.checkbox-area {
+  display: flex;
+  margin: 0 0 15px;
+}
+
+.checkbox-cnt {
+  cursor: pointer;
+}
+
+
+.checkbox-cnt input {
+  display: none;
+  cursor: pointer;
+}
+
+
+.checkbox-style {
+  position: relative;
+  border: 3px solid colours.$dark-grey;
+  border-radius: 3px;
+  width: 32px;
+  height: 32px;
+  margin-right:20px;
+}
+
+.checkbox-cnt input:checked ~ .checkbox-style {
+  background-color: colours.$dark-grey;
+}
+
+.checkbox-style:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-cnt input:checked ~ .checkbox-style:after {
+  display: block;
+}
+
+.checkbox-cnt .checkbox-style:after {
+  right: 40%;
+  top: 10%;
+  width: 8px;
+  height: 16px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkbox-text {
+  display: inline-block;
+  line-height: 2em;
+  flex:1;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: 600;
+}

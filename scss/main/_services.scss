@@ -1,0 +1,123 @@
+@use "utility/colours";
+@import "utility/mixins";
+
+#services {
+  color: colours.$med-grey;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .services-cards {
+    margin-top: -30px;
+    text-align: center;
+
+  }
+
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 30px;
+    padding: 30px;
+    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  }
+
+  .button-box {
+  display: flex;
+  flex-wrap: wrap;
+  }
+  
+
+
+
+  .card-sv:hover {
+    color: colours.$white;
+
+    .icon {
+      background-color: colours.$white;
+    }
+
+    .btn {
+      background-color: colours.$white;
+    }
+
+    .h2:after {
+      background-color: colours.$white;
+    }
+  }
+
+  .sw-card:hover {
+    background-color: colours.$clr-software;
+
+    .icon-serv {
+      color: colours.$clr-software;
+    }
+
+    .btn {
+      color: colours.$clr-software;
+    }
+  }
+
+  .it-card:hover {
+    background-color: colours.$clr-itsupport;
+
+    .icon-serv {
+      color: colours.$clr-itsupport;
+    }
+
+    .btn {
+      color: colours.$clr-itsupport;
+    }
+  }
+
+  .markting-card:hover {
+    background-color: colours.$clr-marketing;
+
+    .icon-serv {
+      color: colours.$clr-marketing;
+    }
+
+    .btn {
+      color: colours.$clr-marketing;
+    }
+  }
+
+  .telecoms-card:hover {
+    background-color: colours.$clr-telecoms;
+
+    .icon-serv {
+      color: colours.$clr-telecoms;
+    }
+
+    .btn {
+      color: colours.$clr-telecoms;
+    }
+  }
+
+  .webdesign-card:hover {
+    background-color: colours.$clr-webdesign;
+
+    .icon-serv {
+      color: colours.$clr-webdesign;
+    }
+
+    .btn {
+      color: colours.$clr-webdesign;
+    }
+  }
+
+  .cs-card:hover {
+    background-color: colours.$clr-security;
+
+    .icon-serv {
+      color: colours.$clr-security;
+    }
+
+    .btn {
+      color: colours.$clr-security;
+    }
+  }
+
+
+}

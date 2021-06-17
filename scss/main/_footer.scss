@@ -1,0 +1,43 @@
+@use "utility/colours";
+@import "utility/mixins";
+
+#contact{
+  background-color: colours.$dark-grey;
+  flex-wrap: wrap;
+  color: white;
+  position: relative;
+
+  .section {
+    padding: 47px 0 43px;
+  }
+
+  @include bp(min768) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  }
+
+  .col-wrapper {
+    width: 50%;
+
+    @include bp(min1260) {
+    width: 25%;
+    }
+  }
+
+}
+
+.social-media-grp {
+  display: flex;
+  flex-wrap: wrap;
+  width: inherit;
+  width: 100%;
+  margin: -24px 0 20px;
+}
+
+.social-media-btn-cnt{
+  padding: 0 15px;
+  width: 50%;
+}

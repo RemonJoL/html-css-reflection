@@ -1,0 +1,51 @@
+@use "utility/colours";
+@import "utility/mixins";
+
+#banner {
+
+  height: 100%;
+}
+
+.banner-img-container {
+  background: url(https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.webp),
+  linear-gradient(270deg,transparent 25%,#000);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: white;
+  height: 100%;
+}
+
+.banner-inner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner-content {
+
+  text-align: center;
+
+    @include bp(min992) {
+      text-align: left;
+  }
+
+}
+
+.banner-button-container {
+  position: relative;
+  bottom: -22%;
+
+  ul {
+    list-style: none;
+    text-align: center;
+    padding: 0 0;
+    position: relative;
+    margin: 0;
+    }
+  li {
+    margin: 0 2px;
+    display: inline-block;
+    position: relative;
+  }
+}

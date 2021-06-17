@@ -2,8 +2,158 @@
 
 a {
   text-decoration: none;
-  // color: inherit;
+  color: inherit;
 }
 a:visited {
   color:inherit;
+}
+
+
+.p {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  margin-bottom: 13px;
+  display: block;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: inherit;
+  font-weight: 500;
+}
+.h1 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin: 0 0 28px;
+  line-height: 1.1;
+}
+
+.h2 {
+  font-size: 1.125rem;
+  margin: 0 0 15px;
+  position: relative;
+  line-height: 1.1;
+}
+
+h4 {
+  font-weight: 400;
+  margin: 0 0 26px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+#nav {
+
+ i {
+font-size: 1.45rem;
+  padding-bottom: 10px;
+}
+
+a {
+ padding-top: 19px;
+ padding-bottom: 18px;
+ line-height: 1;
+ text-transform: uppercase;
+}
+
+.small {
+font-size: .625rem;
+padding-bottom: 1px;
+display: block;
+}
+}
+
+#services .h2 {
+  padding: 0 0 17px;
+  display: block;
+  margin-bottom: 11px;
+}
+
+.h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 28px;
+  height: 3px;
+  background-color: #333645;
+}
+
+
+#banner {
+
+.h1 {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.p {
+  margin: 0 0 35px;
+  line-height: 2.25rem;
+  font-size: 1.25rem;
+}
+
+}
+
+#about {
+
+.h1 {
+  color: white;
+  margin-top: -6px;
+}
+
+p {
+  line-height: 1.875rem;
+  color: white;
+  font-size: 1rem;
+}
+
+i {
+  margin-right: -4px;
+  margin-left: 12px;
+}
+
+}
+
+#latest {
+
+  p {
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    margin: 0 0 25px;
+    color: colours.$med-grey;
+  }
+}
+
+#signup {
+  h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 0 15px;
+    line-height: 1.1;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+
+#contact {
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 }

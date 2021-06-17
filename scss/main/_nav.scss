@@ -1,0 +1,179 @@
+@use "utility/colours";
+@import "utility/mixins";
+
+nav {
+  display: none;
+  font-size: 1.125rem;
+  background-color: colours.$dark-grey;
+  color: colours.$white;
+
+    @include bp(min992) {
+    display: block;
+  }
+
+}
+
+
+.main-nav-inner {
+  border-left: 1px solid hsla(0,0%,100%,.1);
+  border-right: 1px solid rgba(0,0,0,.25);
+  display: none;
+
+    @include bp(min992) {
+    display: flex;
+  }
+
+}
+
+
+.main-nav-button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-right: 1px solid hsla(0,0%,100%,.1);
+  border-left: 1px solid rgba(0,0,0,.25);
+}
+
+.main-nav-button:hover ~ .subnav {
+  display: flex;
+  align-content: flex-start;
+
+}
+
+.mn {
+  flex: 1;
+}
+
+.mn:hover {
+    .fas{
+    color: colours.$white;
+  }
+}
+
+// Subnav
+
+.subnav {
+  display: none;
+  font-size: 0.8125rem;
+  line-height: 45px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+
+ a:nth-of-type(-n+5):after {
+   content: "-";
+   padding-left: 20px;
+
+     @include bp(min1260) {
+     padding-left: 30px;
+     }
+ }
+
+  a:nth-of-type(1n+2) {
+    padding-left: 20px;
+
+      @include bp(min1260) {
+      padding-left: 30px;
+      }
+  }
+
+    @include bp(min1260) {
+    font-size: 1rem;
+    }
+}
+
+.subnav:hover {
+  display: block;
+}
+
+// WEB DESIGN
+
+.webnav:hover {
+  background-color: colours.$clr-webdesign;
+}
+
+.webdesign-nav {
+  background-color: #79539a;
+
+}
+
+.main-nav-button .fa-code {
+  color: colours.$clr-webdesign;
+}
+
+// IT SUPPORT
+
+.itnav:hover {
+  background-color: colours.$clr-itsupport;
+
+}
+
+.it-nav{
+  background-color: #286abd;
+
+}
+
+.main-nav-button .fa-desktop {
+  color: colours.$clr-itsupport;
+}
+
+// TELECOMS SERVICES
+
+.telenav:hover {
+  background-color: colours.$clr-telecoms;
+
+}
+
+.telecoms-nav {
+  background-color: #bc2c28;
+}
+
+.main-nav-button .fa-phone-volume {
+  color: colours.$clr-telecoms;
+}
+
+// BESPOKE SOFTWARE
+
+.softwarenav:hover {
+  background-color: colours.$clr-software;
+
+}
+
+.software-nav {
+  background-color: #526781;
+
+}
+
+.main-nav-button .fa-th {
+  color: colours.$clr-software;
+}
+
+// DIGITAL MARKETING
+
+.marketingnav:hover {
+  background-color: colours.$clr-marketing;
+
+}
+
+.marketing-nav {
+  background-color: #25a25a;
+}
+
+.main-nav-button .fa-chart-line {
+  color: colours.$clr-marketing;
+}
+
+// CYBER SECURITY
+
+.csnav:hover {
+  background-color: colours.$clr-security;
+}
+
+.security-nav {
+  background-color: #de093f;
+}
+
+.main-nav-button .fa-shield-alt {
+  color: colours.$clr-security;
+}

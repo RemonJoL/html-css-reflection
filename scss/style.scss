@@ -1,5 +1,7 @@
 @use "utility/colours";
 @use "utility/mixins";
+@use "utility/spacers";
+
 //Components partials
 
 @use "text/text";
@@ -13,3 +15,13 @@
 
 //Main partials
 @use "main/main";
+@use "main/header";
+@use "main/nav";
+@use "main/banner";
+@use "main/services";
+@use "main/about";
+@use "main/latest";
+@use "main/clients";
+@use "main/newsletter";
+@use "main/footer";
+@use "main/accredations";

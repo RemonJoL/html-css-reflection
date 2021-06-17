@@ -1,0 +1,203 @@
+@use "utility/colours";
+@import "utility/mixins";
+
+#latest {
+position: relative;
+box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
+
+@include bp(min768) {
+  .card-wrapper:nth-child(3){
+  display: none;
+}
+
+}
+
+@include bp(min1260) {
+  .card-wrapper:nth-child(3){
+  display: block;
+}
+
+}
+
+}
+
+
+#latest .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.latest-mainheader {
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+
+.card-wrapper {
+padding-left: 15px;
+padding-right: 15px;
+
+@include bp(max767) {
+  width: 100%;
+}
+
+@include bp(min992) {
+  max-width: 485px;
+}
+
+}
+
+.latest-card {
+  margin-top: 30px;
+  position: relative;
+
+  @include bp(min1260) {
+  }
+
+}
+
+.latest-cnt-header {
+  display: block;
+  position:  relative;
+
+  span {
+    padding: 40px 0;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  @include bp(min768) {
+  }
+}
+
+
+.latestsp {
+  position: relative;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+.latestsp:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  display: block;
+  background-color: #333645;
+  bottom: 0;
+}
+  h3 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0 0 15px;
+    font-weight: 600;
+
+    @include bp(min768max991) {
+      min-height: 3rem;
+    }
+
+    @include bp(min992) {
+      min-height: 3rem;
+    }
+  }
+
+  .latest-header {
+    position: relative;
+    display: flex;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+
+    img {
+    width: 100%;
+    transition: transform 0.2s ease;
+    }
+
+    img:hover {
+      @include bp(min992) {
+      transform: scale(1.1);
+      opacity: 75%;
+      }
+
+    }
+  }
+
+  .header-tag {
+  position: absolute;
+  z-index: 1;
+  padding: 3px 10px;
+  margin-top: 10px;
+  right: 0;
+  color: white;
+  text-align: center;
+  line-height: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+
+  a:hover {
+    text-decoration: underline;
+  }
+  }
+
+  .latest-content {
+    padding: 30px;
+      border: 1px solid #ccc;
+      border-top: none;
+      text-align: left;
+      box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+
+      .itsupport:hover {
+        background-color: #2a6ec6;
+        border-color: #2665b5;
+      }
+
+      .webdesign:hover {
+        background-color: #7e57a0;
+        border-color: #735093;
+      }
+
+      .telecoms:hover {
+        background-color: #c42e2a;
+        border-color: #b32a27;
+      }
+
+      img {
+      vertical-align: top;
+    }
+
+  }
+
+  .user {
+    margin: 30px 0 0;
+  }
+
+  .user:before {
+    content: "";
+    height: 1px;
+    display: block;
+    top: 0;
+    background-color: colours.$light-greyb;
+  }
+
+  .user-grid {
+    padding: 30px 0 0;
+    display: flex;
+  }
+
+  .user-avatar {
+
+  }
+
+  .avatar-img {
+  border-radius: 50%;
+  }
+
+  .user-details {
+  line-height: 1.375rem;
+  text-align: left;
+  padding-left: 20px;
+  color: colours.$med-grey;
+  font-size: 0.875rem;
+    strong {
+      color: colours.$dark-grey;
+    }
+  }

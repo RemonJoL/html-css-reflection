@@ -1,0 +1,39 @@
+@use "utility/colours";
+@import "utility/mixins";
+
+#clients {
+  position: relative;
+  display: none;
+
+  @include bp(min768) {
+    display: block;
+  }
+}
+
+.clients-inner {
+  display: flex;
+  padding: 0 15px;
+  justify-content: space-around;
+}
+
+.img-link {
+  padding: 0 20px;
+  flex-shrink: 1;
+
+  img {
+    vertical-align: top;
+      width: 100%;
+  }
+}
+
+.img-link img:nth-child(2) {
+  display: none;
+}
+
+.img-link:hover img:nth-child(2) {
+  display: block;
+}
+
+.img-link:hover img:nth-child(1) {
+  display: none;
+}

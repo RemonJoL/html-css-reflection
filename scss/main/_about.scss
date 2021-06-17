@@ -1,0 +1,23 @@
+@use "utility/colours";
+@import "utility/mixins";
+
+#about {
+position: relative;
+  background-color: colours.$dark-grey;
+
+  @include bp(min992) {
+    background-image: url(https://www.netmatters.co.uk/assets/images/branded.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: auto 100%;
+  }
+}
+
+
+.about-inner {
+  padding: 0 15px;
+
+  @include bp(min1260) {
+    width: 50%;
+  }
+}

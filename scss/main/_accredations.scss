@@ -1,0 +1,53 @@
+@use "utility/colours";
+@import "utility/mixins";
+
+#accredations {
+  display: none;
+
+  @include bp(min768) {
+    display: block;
+  }
+  }
+
+.accredations-upper {
+  align-items: flex-start;
+  display: flex;
+
+  @include bp(max1259) {
+  }
+
+  @include bp(min1260) {
+    justify-content: space-around;
+  }
+}
+
+.accredations-lower {
+  margin-top: 20px;
+  display: flex;
+
+  @include bp(min1260) {
+    justify-content: space-around;
+  }
+}
+
+.accredations-img  {
+  padding: 0 20px;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 1.4;
+
+  @include bp(min1260) {
+  flex: 0 1 auto;
+  }
+
+  .googlepartner {
+    height: 82px;
+    width: 220px;
+  }
+
+
+  @include bp(min1260) {
+    height: 100%;
+  }
+
+}

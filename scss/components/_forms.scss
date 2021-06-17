@@ -1,1 +1,6 @@
 @use "utility/colours";
+@import "utility/mixins";
+
+input {
+  font-family: inherit;
+}
