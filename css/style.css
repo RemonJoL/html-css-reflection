@@ -194,6 +194,47 @@ h4 {
   margin: 0 0 25px;
   color: #666;
 }
+#latest h3 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0 0 15px;
+  font-weight: 600;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #latest h3 {
+    min-height: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  #latest h3 {
+    min-height: 3rem;
+  }
+}
+
+#clients h3 {
+  font-size: 1.125rem;
+  padding-bottom: 15px;
+  margin: 0 0 11px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+#clients h3:after {
+  content: " ";
+  background-color: white;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 28px;
+  height: 3px;
+  display: block;
+  position: absolute;
+  top: 53px;
+}
+#clients .client-descr p {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  margin-bottom: 0;
+}
 
 #signup h2 {
   font-size: 2rem;
@@ -1211,10 +1252,6 @@ nav {
   }
 }
 
-.latest-card {
-  margin-top: 30px;
-  position: relative;
-}
 .latest-cnt-header {
   display: block;
   position: relative;
@@ -1239,23 +1276,6 @@ nav {
   display: block;
   background-color: #333645;
   bottom: 0;
-}
-
-h3 {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  margin: 0 0 15px;
-  font-weight: 600;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  h3 {
-    min-height: 3rem;
-  }
-}
-@media (min-width: 992px) {
-  h3 {
-    min-height: 3rem;
-  }
 }
 
 .latest-header {
@@ -1375,11 +1395,51 @@ h3 {
       justify-content: space-around;
 }
 
-.img-link {
+.client {
   padding: 0 20px;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
+.client:hover > .client-descr-box {
+  display: block;
+}
+
+.client-descr-box {
+  bottom: 100%;
+  position: absolute;
+}
+
+.client-descr {
+  display: block;
+  background: #333645;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  max-width: 260px;
+}
+
+.arrow {
+  top: 100%;
+}
+
+.arrow:after {
+  content: "";
+  display: inline-block;
+  border-width: 35px 36px 0;
+  border-color: #333645 transparent transparent;
+  border-style: solid;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 .img-link img {
   vertical-align: top;
   width: 100%;

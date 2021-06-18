@@ -45,15 +45,6 @@ padding-right: 15px;
 
 }
 
-.latest-card {
-  margin-top: 30px;
-  position: relative;
-
-  @include bp(min1260) {
-  }
-
-}
-
 .latest-cnt-header {
   display: block;
   position:  relative;
@@ -85,20 +76,6 @@ padding-right: 15px;
   background-color: #333645;
   bottom: 0;
 }
-  h3 {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin: 0 0 15px;
-    font-weight: 600;
-
-    @include bp(min768max991) {
-      min-height: 3rem;
-    }
-
-    @include bp(min992) {
-      min-height: 3rem;
-    }
-  }
 
   .latest-header {
     position: relative;
