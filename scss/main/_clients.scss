@@ -30,7 +30,8 @@
 .client-descr-box {
   display: none;
   bottom: 100%;
-  width: 260px;
+  left: -100px;
+  right: -100px;
   position: absolute;
   margin-bottom: 50px;
 }
