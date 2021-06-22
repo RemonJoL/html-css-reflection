@@ -6,11 +6,10 @@
 }
 
 .banner-img-container {
-  background: url(https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.webp),
-  linear-gradient(270deg,transparent 25%,#000);
+  background: linear-gradient(270deg,transparent 25%,#000), url(https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.jpg);
   background-size: cover;
   background-position: center;
-  background-blend-mode: overlay;
+  background-blend-mode: hard-light;
   color: white;
   height: 100%;
 }

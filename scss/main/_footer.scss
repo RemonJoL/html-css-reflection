@@ -19,7 +19,11 @@
   }
 
   .col-wrapper {
+    width: 100%;
+
+    @include bp(min768) {
     width: 50%;
+    }
 
     @include bp(min1260) {
     width: 25%;

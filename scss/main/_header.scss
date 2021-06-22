@@ -22,7 +22,6 @@ header .row {
 
 .header-logo-container {
   padding-left: 15px;
-  display: flex;
   margin-right: auto;
 
   @include bp(min768) {
@@ -41,8 +40,23 @@ header .row {
 }
 
 .header-phone {
+  line-height: 1rem;
+  position: relative;
   @include bp(min768) {
     display: none;
+  }
+}
+
+.header-phone:hover {
+
+  a:after {
+    content: " ";
+    background: colours.$dark-grey;
+    height: 3px;
+    width: 25px;
+    left: 14px;
+    position: absolute;
+    margin-top: 3px;
   }
 }
 
@@ -71,11 +85,23 @@ header .row {
 
 #activate-inls:checked ~ .in-searchbar-int > .in-search-int {
   display: block;
+  visibility: visible;
+  opacity: 1;
+  animation: fadein 1s ease;
+}
+
+@keyframes fadein {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }
 
 .in-searchbar-int {
   border-radius: 3px;
-  background: colours.$btn-grey;
   display: none;
   order: 2;
 
@@ -95,6 +121,10 @@ header .row {
   font-weight: 400;
   display: none;
   order: -1;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 600ms, visibility 600ms;
+          transition: opacity 600ms, visibility 600ms;
 }
 
 .in-search-int::placeholder {
@@ -230,6 +260,7 @@ header .row {
 }
 
 .searchbar {
+  color: colours.$dark-grey;
   margin-top: 11px;
   background-color: #ddd;
   box-shadow: inset 0 0 0 1px #ddd;

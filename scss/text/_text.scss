@@ -44,6 +44,10 @@ h4 {
   text-transform: uppercase;
 }
 
+.header-logo-container a {
+    // display: flex;
+}
+
 #nav {
 
  i {
@@ -138,7 +142,6 @@ i {
     line-height: 1.5rem;
     margin: 0 0 15px;
     font-weight: 600;
-    color: colours.$med-grey;
 
     @include bp(min768max991) {
       min-height: 3rem;
@@ -191,6 +194,10 @@ i {
 
   a {
     text-decoration: underline;
+  }
+
+  a:hover {
+    color: #121419;
   }
 }
 
