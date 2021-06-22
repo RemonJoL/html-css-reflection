@@ -2,7 +2,7 @@
 @import "utility/mixins";
 
 #about {
-position: relative;
+  position: relative;
   background-color: colours.$dark-grey;
 
   @include bp(min992) {

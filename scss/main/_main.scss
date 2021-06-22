@@ -29,24 +29,22 @@ span {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  // box-sizing: border-box;
 
-    @include bp(min768) {
-      width: 750px;
-    }
+  @include bp(min768) {
+    width: 750px;
+  }
 
-    @include bp(min992) {
-      width: 970px;
-    }
+  @include bp(min992) {
+    width: 970px;
+  }
 
-    @include bp(min1260) {
-      width: 1200px;
-    }
-
+  @include bp(min1260) {
+    width: 1200px;
+  }
 }
 
 .row {
-margin: 0 -15px 0;
+  margin: 0 -15px 0;
 }
 
 //  / Container divs
@@ -67,34 +65,29 @@ margin: 0 -15px 0;
 }
 
 .col1 {
-
-@include bp(min992) {
-  width: 33.333333333%;
-}
-
+  @include bp(min992) {
+    width: 33.333333333%;
+  }
 }
 
 .col2 {
+  @include bp(min768) {
+    width: 50%;
+  }
 
-@include bp(min768) {
-  width: 50%;
-}
-
-@include bp(min992) {
-  width: 485px;
-}
+  @include bp(min992) {
+    width: 485px;
+  }
 }
 
 .col3-lg {
-
-@include bp(min1260) {
-  width: 400px;
-}
+  @include bp(min1260) {
+    width: 400px;
+  }
 }
 
 .col4-lg {
-
-@include bp(min1260) {
-  width: 300px;
-}
+  @include bp(min1260) {
+    width: 300px;
+  }
 }

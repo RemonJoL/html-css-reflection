@@ -4,25 +4,25 @@
 .cardspacer345 {
   display: none;
 
-    @include bp(min768max991) {
-      display: block;
-    }
+  @include bp(min768max991) {
+    display: block;
+  }
 }
 
 .cardspacer992 {
   display: none;
 
-    @include bp(min992max1259) {
-      display: block;
-    }
+  @include bp(min992max1259) {
+    display: block;
+  }
 }
 
 .cardspacer1260 {
   display: none;
 
-    @include bp(min1260) {
-      display: block;
-    }
+  @include bp(min1260) {
+    display: block;
+  }
 }
 
 .service-card-spacer {
@@ -31,17 +31,15 @@
 
 
 .col-spacer-sm {
-
-@include bp(max767) {
-  margin-bottom: 30px;
-}
+  @include bp(max767) {
+    margin-bottom: 30px;
+  }
 }
 
 
 
 .col-spacer-md {
-
-@include bp(max1259) {
-  margin-bottom: 30px;
-}
+  @include bp(max1259) {
+    margin-bottom: 30px;
+  }
 }

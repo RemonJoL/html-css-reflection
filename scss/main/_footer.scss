@@ -12,11 +12,10 @@
   }
 
   @include bp(min768) {
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   .col-wrapper {
@@ -26,7 +25,6 @@
     width: 25%;
     }
   }
-
 }
 
 .social-media-grp {

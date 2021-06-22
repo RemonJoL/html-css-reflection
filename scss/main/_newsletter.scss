@@ -65,14 +65,9 @@ margin-bottom: 5px;
   margin: 0 0 15px;
 }
 
-.checkbox-cnt {
-  cursor: pointer;
-}
-
 
 .checkbox-cnt input {
   display: none;
-  cursor: pointer;
 }
 
 
@@ -120,4 +115,5 @@ margin-bottom: 5px;
 
 label {
   font-weight: 600;
+  cursor: pointer;
 }

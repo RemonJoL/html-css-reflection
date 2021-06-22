@@ -13,7 +13,6 @@ nav {
 
 }
 
-
 .main-nav-inner {
   border-left: 1px solid hsla(0,0%,100%,.1);
   border-right: 1px solid rgba(0,0,0,.25);
@@ -24,7 +23,6 @@ nav {
   }
 
 }
-
 
 .main-nav-button {
   text-align: center;
@@ -94,7 +92,7 @@ nav {
 }
 
 .webdesign-nav {
-  background-color: #79539a;
+  background-color: colours.$clr-webdesignhover;
 
 }
 
@@ -110,7 +108,7 @@ nav {
 }
 
 .it-nav{
-  background-color: #286abd;
+  background-color: colours.$clr-itsupporthover;
 
 }
 
@@ -126,7 +124,7 @@ nav {
 }
 
 .telecoms-nav {
-  background-color: #bc2c28;
+  background-color: colours.$clr-telecomshover;
 }
 
 .main-nav-button .fa-phone-volume {
@@ -141,7 +139,7 @@ nav {
 }
 
 .software-nav {
-  background-color: #526781;
+  background-color: colours.$clr-softwarehover;
 
 }
 
@@ -157,7 +155,7 @@ nav {
 }
 
 .marketing-nav {
-  background-color: #25a25a;
+  background-color: colours.$clr-marketinghover;
 }
 
 .main-nav-button .fa-chart-line {
@@ -171,7 +169,7 @@ nav {
 }
 
 .security-nav {
-  background-color: #de093f;
+  background-color: colours.$clr-securityhover;
 }
 
 .main-nav-button .fa-shield-alt {

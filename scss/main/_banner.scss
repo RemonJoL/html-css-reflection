@@ -2,7 +2,6 @@
 @import "utility/mixins";
 
 #banner {
-
   height: 100%;
 }
 
@@ -22,6 +21,7 @@
   justify-content: center;
   flex-direction: column;
 }
+
 .banner-content {
 
   text-align: center;
@@ -29,7 +29,6 @@
     @include bp(min992) {
       text-align: left;
   }
-
 }
 
 .banner-button-container {
