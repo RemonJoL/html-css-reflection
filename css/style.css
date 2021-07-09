@@ -128,6 +128,10 @@ h4 {
   text-transform: uppercase;
 }
 
+.header-menu a {
+  width: 100%;
+}
+
 #nav i {
   font-size: 1.45rem;
   padding-bottom: 10px;
@@ -137,6 +141,7 @@ h4 {
   padding-bottom: 18px;
   line-height: 1;
   text-transform: uppercase;
+  width: 100%;
 }
 #nav .small {
   font-size: 0.625rem;
@@ -428,6 +433,7 @@ h4 {
   line-height: 2.7rem;
   margin-top: 30px;
   width: 100%;
+  border-radius: 0;
 }
 
 .btn-fb:hover {
@@ -1643,9 +1649,10 @@ nav {
 
 .newsletter-field:focus {
   padding: 15px;
-  outline: none;
-  -webkit-box-shadow: 0 0 3px 1px #4183d7;
-          box-shadow: 0 0 3px 1px #4183d7;
+  border-color: #5bc0de;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(91, 192, 222, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
 .required {
