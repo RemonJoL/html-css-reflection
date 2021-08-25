@@ -322,11 +322,6 @@ h4 {
   border-color: #191a22;
 }
 
-.marketing {
-  background-color: #2ecc71;
-  margin: 0 auto;
-}
-
 .btn-support {
   background: #4183d7;
   line-height: 44px;
@@ -376,8 +371,8 @@ h4 {
 }
 
 .banner-button {
-  height: 11px;
-  width: 11px;
+  height: 10px;
+  width: 10px;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   display: block;
@@ -386,7 +381,9 @@ h4 {
   margin: 5px;
 }
 
-.banner-button:focus {
+.active {
+  height: 21px;
+  width: 21px;
   background: white;
   outline: none;
   border: 5px solid transparent;
@@ -394,26 +391,7 @@ h4 {
   -webkit-box-shadow: 0 0 0 1px white;
           box-shadow: 0 0 0 1px white;
   display: inline-block;
-}
-
-#banner .btn:hover {
-  background-color: #26ab5f;
-  border-color: #239a55;
-}
-
-.software {
-  background: #67809F;
-  margin: 0 auto;
-}
-
-.itsupport {
-  background: #4183d7;
-  margin: 0 auto;
-}
-
-.telecoms {
-  background: #d64541;
-  margin: 0 auto;
+  margin: auto 5px;
 }
 
 .webdesign {
@@ -421,9 +399,53 @@ h4 {
   margin: 0 auto;
 }
 
+.webdesign:hover {
+  background: #79539a;
+}
+
+.itsupport {
+  background: #4183d7;
+  margin: 0 auto;
+}
+
+.itsupport:hover {
+  background: #286abd;
+}
+
+.telecoms {
+  background: #d64541;
+  margin: 0 auto;
+}
+
+.telecoms:hover {
+  background: #bc2c28;
+}
+
+.software {
+  background: #67809F;
+  margin: 0 auto;
+}
+
+.software:hover {
+  background: #526781;
+}
+
+.marketing {
+  background-color: #2ecc71;
+  margin: 0 auto;
+}
+
+.marketing:hover {
+  background-color: #25a25a;
+}
+
 .security {
   background: #f62459;
   margin: 0 auto;
+}
+
+.security:hover {
+  background: #de093f;
 }
 
 .socialmedia-btn {
@@ -469,6 +491,10 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.banner-img {
+  height: 100%;
 }
 
 input {
@@ -1070,6 +1096,7 @@ nav {
   position: absolute;
   width: 100%;
   left: 0;
+  z-index: 5;
 }
 .subnav a:nth-of-type(-n+5):after {
   content: "-";
@@ -1171,17 +1198,18 @@ nav {
 }
 
 #banner {
+  position: relative;
   height: 100%;
+  overflow: hidden;
 }
 
 .banner-img-container {
-  background: -webkit-gradient(linear, right top, left top, color-stop(25%, transparent), to(#000)), url(https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.jpg);
-  background: linear-gradient(270deg, transparent 25%, #000), url(https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.jpg);
-  background-size: cover;
+  position: relative;
   background-position: center;
   background-blend-mode: hard-light;
   color: white;
   height: 100%;
+  width: 100%;
 }
 
 .banner-inner {
@@ -1196,6 +1224,13 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, right top, left top, color-stop(25%, transparent), to(#000));
+  background: linear-gradient(270deg, transparent 25%, #000);
 }
 
 .banner-content {
@@ -1208,8 +1243,10 @@ nav {
 }
 
 .banner-button-container {
-  position: relative;
-  bottom: -22%;
+  position: absolute;
+  bottom: 4%;
+  width: 100%;
+  z-index: 2;
 }
 .banner-button-container ul {
   list-style: none;
@@ -1470,15 +1507,6 @@ nav {
   text-align: left;
   -webkit-box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-}
-.latest-content .itsupport:hover {
-  background-color: #286abd;
-}
-.latest-content .webdesign:hover {
-  background-color: #79539a;
-}
-.latest-content .telecoms:hover {
-  background-color: #bc2c28;
 }
 .latest-content img {
   vertical-align: top;

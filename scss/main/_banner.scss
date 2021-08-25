@@ -2,16 +2,18 @@
 @import "utility/mixins";
 
 #banner {
+  position: relative;
   height: 100%;
+  overflow: hidden;
 }
 
 .banner-img-container {
-  background: linear-gradient(270deg,transparent 25%,#000), url(https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.jpg);
-  background-size: cover;
+  position: relative;
   background-position: center;
   background-blend-mode: hard-light;
   color: white;
   height: 100%;
+  width: 100%;
 }
 
 .banner-inner {
@@ -19,6 +21,12 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(270deg,transparent 25%,#000)
 }
 
 .banner-content {
@@ -31,8 +39,10 @@
 }
 
 .banner-button-container {
-  position: relative;
-  bottom: -22%;
+  position: absolute;
+  bottom: 4%;
+  width: 100%;
+  z-index: 2;
 
   ul {
     list-style: none;

@@ -60,12 +60,6 @@ padding: 5px 20px;
   border-color: #191a22;
 }
 
-.marketing {
-  background-color: colours.$clr-marketing;
-  margin: 0 auto;
-
-}
-
 .btn-support {
   background: colours.$clr-itsupport;
   line-height: 44px;
@@ -115,8 +109,8 @@ padding: 5px 20px;
 }
 
 .banner-button {
-  height: 11px;
-  width: 11px;
+  height: 10px;
+  width: 10px;
   background: hsla(0,0%,100%,.5);
   border-radius: 50%;
   display: block;
@@ -125,37 +119,16 @@ padding: 5px 20px;
   margin: 5px;
 }
 
-.banner-button:focus {
+.active {
+  height: 21px;
+  width: 21px;
   background: colours.$white;
   outline: none;
   border: 5px solid transparent;
   background-clip: content-box;
   box-shadow:  0 0 0 1px white;
   display: inline-block;
-
-}
-
-
-
-#banner .btn:hover {
-  background-color: #26ab5f;
-  border-color: #239a55;
-}
-
-
-.software {
-  background: colours.$clr-software;
-  margin: 0 auto;
-}
-
-.itsupport {
-  background: colours.$clr-itsupport;
-  margin: 0 auto;
-}
-
-.telecoms {
-  background: colours.$clr-telecoms;
-  margin: 0 auto;
+  margin: auto 5px;
 }
 
 .webdesign {
@@ -163,9 +136,54 @@ padding: 5px 20px;
   margin: 0 auto;
 }
 
+.webdesign:hover {
+  background: colours.$clr-webdesignhover;
+}
+
+.itsupport {
+  background: colours.$clr-itsupport;
+  margin: 0 auto;
+}
+
+.itsupport:hover {
+  background: colours.$clr-itsupporthover;
+}
+
+.telecoms {
+  background: colours.$clr-telecoms;
+  margin: 0 auto;
+}
+
+.telecoms:hover {
+  background: colours.$clr-telecomshover;
+}
+
+.software {
+  background: colours.$clr-software;
+  margin: 0 auto;
+}
+
+.software:hover {
+  background: colours.$clr-softwarehover;
+}
+
+.marketing {
+  background-color: colours.$clr-marketing;
+  margin: 0 auto;
+}
+
+
+.marketing:hover {
+  background-color: colours.$clr-marketinghover;
+}
+
 .security {
   background: colours.$clr-security;
   margin: 0 auto;
+}
+
+.security:hover {
+  background: colours.$clr-securityhover;
 }
 
 .socialmedia-btn {

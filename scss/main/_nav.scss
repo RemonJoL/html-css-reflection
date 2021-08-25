@@ -58,6 +58,7 @@ nav {
   position: absolute;
   width: 100%;
   left: 0;
+  z-index: 5;
 
  a:nth-of-type(-n+5):after {
    content: "-";
