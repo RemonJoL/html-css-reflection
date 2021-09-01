@@ -17,6 +17,31 @@ span {
 
 }
 
+.main {
+  position: relative;
+  background-color: colours.$white;
+  z-index: 10;
+  transition: all 0.5s ease;
+  left: 0;
+}
+
+.main-active {
+  left: -275px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.sidemenu-overlay {
+  background-color: rgba(0,0,0,0.35);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  position: absolute;
+  visibility: hidden;
+}
+
 // Container divs
 
 .section {

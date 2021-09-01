@@ -19,15 +19,6 @@
   align-self: center;
 }
 
-.btn-menu-icon:before, .btn-menu-icon:after{
-  content: "";
-  background-color: white;
-  height: 3px;
-  width: 33px;
-  display: block;
-  position: absolute;
-}
-
 .btn-menu-icon{
   content: "";
   background-color: white;
@@ -38,12 +29,44 @@
   position: absolute;
 }
 
+.btn-menu-icon:before, .btn-menu-icon:after{
+  content: "";
+  background-color: white;
+  height: 3px;
+  width: 33px;
+  display: block;
+  position: absolute;
+}
+
+.btn-menu-icon, .btn-menu-icon:before, .btn-menu-icon:after{
+    transition: transform 0.12s linear, top 0.22s linear 0.12s;
+}
+
 .btn-menu-icon:before {
-  top: -0.5rem;
+  top: -8px;
 }
 
 .btn-menu-icon:after{
-  bottom: -0.5rem;
+  top: 8px;
+}
+
+// burger button animation
+.btn-menu-icon-cnt.open .btn-menu-icon {
+transform: rotate(225deg);
+}
+
+.btn-menu-icon-cnt.open .btn-menu-icon:before {
+    top: 0px;
+}
+
+.btn-menu-icon-cnt.open .btn-menu-icon:after {
+  top: 0px;
+    transform: rotate(90deg);
+}
+.btn-menu-icon-cnt.open .btn-menu-icon,
+.btn-menu-icon-cnt.open .btn-menu-icon:before,
+.btn-menu-icon-cnt.open .btn-menu-icon:after {
+    transition: top 0.12s linear, transform 0.12s linear 0.12s;
 }
 
 .header-search-icon {
