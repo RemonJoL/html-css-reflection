@@ -625,7 +625,7 @@ span {
 .main {
   position: relative;
   background-color: white;
-  z-index: 10;
+  z-index: 1;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   left: 0;
@@ -734,12 +734,79 @@ span {
   height: 100vh;
 }
 
-.header-wrapper {
-  padding: 20px 0;
+.header-full {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: block;
+  height: 110px;
+}
+@media (min-width: 768px) {
+  .header-full {
+    top: 168px;
+  }
+}
+@media (min-width: 992px) {
+  .header-full {
+    top: 209px;
+  }
+}
+
+.stickyheader-container .header-container {
+  position: fixed;
+  top: -110px;
+  z-index: 2;
+  width: 100%;
+  -webkit-transition: top 0.25s ease-out;
+  transition: top 0.25s ease-out;
+}
+@media (min-width: 768px) {
+  .stickyheader-container .header-container {
+    top: -168px;
+  }
+}
+@media (min-width: 992px) {
+  .stickyheader-container .header-container {
+    top: -209px;
+  }
+}
+
+.header-container {
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  background: white;
+  -webkit-box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
-header .row {
+.scroll-down {
+  top: -110px;
+  -webkit-transition: top 0.25s ease-out;
+  transition: top 0.25s ease-out;
+}
+@media (min-width: 768px) {
+  .scroll-down {
+    top: -168px;
+  }
+}
+@media (min-width: 992px) {
+  .scroll-down {
+    top: -209px;
+  }
+}
+
+.scroll-up {
+  top: 0;
+  -webkit-transition: top 0.25s ease-out;
+  transition: top 0.25s ease-out;
+}
+
+.header-wrapper {
+  padding: 20px 0;
+}
+
+.header-container .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
