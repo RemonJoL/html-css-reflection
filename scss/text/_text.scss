@@ -1,6 +1,10 @@
 @use "utility/colours";
 @import "utility/mixins";
 
+//-------------------------------------------------------------------------------
+// Text Styles
+//-------------------------------------------------------------------------------
+
 a {
   text-decoration: none;
   color: inherit;
@@ -10,6 +14,9 @@ a:visited {
   color:inherit;
 }
 
+span {
+  display: inline-block;
+}
 
 .p {
   font-size: 0.8125rem;
@@ -19,56 +26,89 @@ a:visited {
   display: block;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: inherit;
-  font-weight: 500;
-}
-.h1 {
-  font-size: 2.25rem;
-  font-weight: 400;
-  margin: 0 0 28px;
-  line-height: 1.1;
-}
-
-.h2 {
-  font-size: 1.125rem;
-  margin: 0 0 15px;
-  position: relative;
-  line-height: 1.1;
-}
-
-h4 {
-  font-weight: 400;
-  margin: 0 0 26px;
-  line-height: 1.1;
-  text-transform: uppercase;
-}
-
 .header-menu a {
   width: 100%;
 }
 
+strong {
+  font-weight: 700;
+}
+
+//-------------------------------------------------------------------------------
+// Header Styles
+//-------------------------------------------------------------------------------
+
+.h1, .h2, .h3, .h4, {
+  color: colours.$dark-grey;
+}
+
+.h2, .h3, .h4, {
+  color: colours.$dark-grey;
+  font-weight: 400;
+  margin: 0 0 15px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.h1 {
+  font-size: 2.25rem;
+  margin: 0 0 28px;
+  color: colours.$dark-grey;
+}
+
+.h2 {
+  font-size: 1.125rem;
+  position: relative;
+}
+
+.h3 {
+  font-size: 1.625rem;
+  color: colours.$dark-grey;
+}
+
+.h4, h4 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.h5, h5 {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+//-------------------------------------------------------------------------------
+// Nav Text Styles
+//-------------------------------------------------------------------------------
+
 #nav {
 
- i {
-font-size: 1.45rem;
-  padding-bottom: 10px;
+  i {
+    font-size: 1.45rem;
+    padding-bottom: 10px;
+  }
+
+  a {
+   padding-top: 19px;
+   padding-bottom: 18px;
+   line-height: 1;
+   text-transform: uppercase;
+   width: 100%;
+  }
+
+  .small {
+    font-size: .625rem;
+    padding-bottom: 1px;
+    display: block;
+  }
 }
 
-a {
- padding-top: 19px;
- padding-bottom: 18px;
- line-height: 1;
- text-transform: uppercase;
- width: 100%;
-}
-
-.small {
-font-size: .625rem;
-padding-bottom: 1px;
-display: block;
-}
-}
+//-------------------------------------------------------------------------------
+// Services Text Styles
+//-------------------------------------------------------------------------------
 
 #services .h2 {
   padding: 0 0 17px;
@@ -88,42 +128,57 @@ display: block;
   background-color: #333645;
 }
 
+//-------------------------------------------------------------------------------
+// Banner Text Styles
+//-------------------------------------------------------------------------------
 
 #banner {
 
-.h1 {
-  font-size: 3rem;
-  margin-bottom: 25px;
-  text-transform: uppercase;
+  .h1 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .p {
+    margin: 0 0 35px;
+    line-height: 2.25rem;
+    font-size: 1.25rem;
+  }
+
+  .fa, .fas {
+    margin-left: 6px;
+  }
 }
 
-.p {
-  margin: 0 0 35px;
-  line-height: 2.25rem;
-  font-size: 1.25rem;
-}
-
-}
+//-------------------------------------------------------------------------------
+// About Text Styles
+//-------------------------------------------------------------------------------
 
 #about {
 
-.h1 {
-  color: white;
-  margin-top: -6px;
+  .h1 {
+    color: white;
+    margin-top: -6px;
+  }
+
+  p {
+    line-height: 1.875rem;
+    color: white;
+    font-size: 1rem;
+    margin: 0 0 25px;
+  }
+
+  i {
+    margin-right: -4px;
+    margin-left: 12px;
+  }
 }
 
-p {
-  line-height: 1.875rem;
-  color: white;
-  font-size: 1rem;
-}
-
-i {
-  margin-right: -4px;
-  margin-left: 12px;
-}
-
-}
+//-------------------------------------------------------------------------------
+// About Text Styles
+//-------------------------------------------------------------------------------
 
 #latest {
 
@@ -154,6 +209,10 @@ i {
     }
   }
 }
+
+//-------------------------------------------------------------------------------
+// Client Text Styles
+//-------------------------------------------------------------------------------
 
 #clients {
 
@@ -186,6 +245,10 @@ i {
   }
 }
 
+//-------------------------------------------------------------------------------
+// Newsletter Text Styles
+//-------------------------------------------------------------------------------
+
 #signup {
   h2 {
     font-size: 2rem;
@@ -203,32 +266,66 @@ i {
   }
 }
 
+.required {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.required:after {
+  content:" *";
+  color: red;
+}
+
+.checkbox-text {
+  display: inline-block;
+  line-height: 2em;
+  flex:1;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+//-------------------------------------------------------------------------------
+// Footer Text Styles
+//-------------------------------------------------------------------------------
 
 #contact {
 
+  a:hover {
+    text-decoration: underline;
+  }
 
-a:hover {
-  text-decoration: underline;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-}
+//-------------------------------------------------------------------------------
+// Sidemenu Text Styles
+//-------------------------------------------------------------------------------
 
 #sidemenu {
-
 
   small {
     display: block;
     font-size: 0.625rem;
+    padding-bottom: 1px;
   }
 
   span {
     display: block;
     font-size: 1.438rem;
+    padding-bottom: 10px;
+    line-height: 1rem;
+  }
+
+  .fa, .fas {
+    margin-top: 3px;
+    font-size: 1.25rem;
   }
 }

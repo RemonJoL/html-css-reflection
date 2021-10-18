@@ -1,6 +1,10 @@
 @use "utility/colours";
 @import "utility/mixins";
 
+//-------------------------------------------------------------------------------
+// Clients Structure
+//-------------------------------------------------------------------------------
+
 #clients {
   position: relative;
   display: none;
@@ -22,6 +26,10 @@
   justify-content: center;
   position: relative;
 }
+
+//-------------------------------------------------------------------------------
+// Clients Tooltip
+//-------------------------------------------------------------------------------
 
 .client:hover > .client-descr-box {
   display: block;
@@ -60,24 +68,4 @@
   left: 50%;
   top: 100%;
   transform: translateX(-50%);
-}
-
-.img-link {
-
-  img {
-    vertical-align: top;
-    width: 100%;
-  }
-}
-
-.img-link img:nth-child(2) {
-  display: none;
-}
-
-.img-link:hover img:nth-child(2) {
-  display: block;
-}
-
-.img-link:hover img:nth-child(1) {
-  display: none;
 }

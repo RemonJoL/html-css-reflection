@@ -1,6 +1,10 @@
 @use "utility/colours";
 @import "utility/mixins";
 
+//-------------------------------------------------------------------------------
+// Footer Structure
+//-------------------------------------------------------------------------------
+
 #contact{
   background-color: colours.$dark-grey;
   flex-wrap: wrap;

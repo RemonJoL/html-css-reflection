@@ -1,6 +1,12 @@
 @use "utility/colours";
 @import "utility/mixins";
 
+//-------------------------------------------------------------------------------
+// Spacers
+//-------------------------------------------------------------------------------
+
+// Cardspacers
+
 .cardspacer345 {
   display: none;
 
@@ -29,14 +35,13 @@
   margin-top: 30px;
 }
 
+// Column Spacers
 
 .col-spacer-sm {
   @include bp(max767) {
     margin-bottom: 30px;
   }
 }
-
-
 
 .col-spacer-md {
   @include bp(max1259) {

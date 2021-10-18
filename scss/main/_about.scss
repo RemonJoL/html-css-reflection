@@ -1,6 +1,10 @@
 @use "utility/colours";
 @import "utility/mixins";
 
+//-------------------------------------------------------------------------------
+// About Structure
+//-------------------------------------------------------------------------------
+
 #about {
   position: relative;
   background-color: colours.$dark-grey;
@@ -12,7 +16,6 @@
     background-size: auto 100%;
   }
 }
-
 
 .about-inner {
   padding: 0 15px;

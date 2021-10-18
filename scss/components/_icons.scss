@@ -1,8 +1,8 @@
 @use "utility/colours";
 
-.fa-bars {
-  font-size: 2rem;
-}
+//-------------------------------------------------------------------------------
+// Icons
+//-------------------------------------------------------------------------------
 
 .icon {
   width: 60px;
@@ -48,25 +48,6 @@
 
 .btn-menu-icon:after{
   top: 8px;
-}
-
-// burger button animation
-.btn-menu-icon-cnt.open .btn-menu-icon {
-transform: rotate(225deg);
-}
-
-.btn-menu-icon-cnt.open .btn-menu-icon:before {
-    top: 0px;
-}
-
-.btn-menu-icon-cnt.open .btn-menu-icon:after {
-  top: 0px;
-    transform: rotate(90deg);
-}
-.btn-menu-icon-cnt.open .btn-menu-icon,
-.btn-menu-icon-cnt.open .btn-menu-icon:before,
-.btn-menu-icon-cnt.open .btn-menu-icon:after {
-    transition: top 0.12s linear, transform 0.12s linear 0.12s;
 }
 
 .header-search-icon {

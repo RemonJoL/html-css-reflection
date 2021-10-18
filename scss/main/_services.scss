@@ -1,6 +1,10 @@
 @use "utility/colours";
 @import "utility/mixins";
 
+//-------------------------------------------------------------------------------
+// Services Structure
+//-------------------------------------------------------------------------------
+
 #services {
   color: colours.$med-grey;
 
@@ -17,21 +21,25 @@
     box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   }
 
+  .card:hover .h2{
+    color: colours.$white;
+  }
+
 .services-cards {
   margin-top: -30px;
   text-align: center;
 }
 
-
-
 }
+
 .button-box {
   display: flex;
   flex-wrap: wrap;
 }
 
-
-
+//-------------------------------------------------------------------------------
+// Services Cards Hover States
+//-------------------------------------------------------------------------------
 
 .card-sv:hover {
   color: colours.$white;

@@ -1,11 +1,87 @@
 @use "utility/colours";
+@import "utility/mixins";
 
 .logo {
   max-width: 100%;
   display: flex;
 }
 
+//-------------------------------------------------------------------------------
+// Banner Images
+//-------------------------------------------------------------------------------
 
-.banner-img {
-  height: 100%;
+#banner picture {
+  display: none;
+}
+
+.banner-img-web {
+  background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-3wAI.jpg");
+}
+
+.banner-img-it {
+  background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.jpg");
+}
+
+.banner-img-telecoms {
+  background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-5yqm.jpg");
+}
+
+.banner-img-software {
+  background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-sqvx.jpg");
+}
+
+.banner-img-marketing {
+  background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-JQsO.jpg");
+}
+
+.banner-img-security {
+  background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-lQs1.jpg");
+}
+
+//-------------------------------------------------------------------------------
+// Clients Images
+//-------------------------------------------------------------------------------
+
+.img-link {
+
+  img {
+    vertical-align: top;
+    width: 100%;
+  }
+}
+
+.img-link img:nth-child(2) {
+  display: none;
+}
+
+.img-link:hover img:nth-child(2) {
+  display: block;
+}
+
+.img-link:hover img:nth-child(1) {
+  display: none;
+}
+
+//-------------------------------------------------------------------------------
+// Accredations Img
+//-------------------------------------------------------------------------------
+
+.accredations-img  {
+  padding: 0 20px;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 1.4;
+
+  @include bp(min1260) {
+  flex: 0 1 auto;
+  }
+
+  @include bp(min1260) {
+    height: 100%;
+  }
+}
+
+.googlepartner {
+  height: 82px;
+  width: 220px;
 }

@@ -1,6 +1,10 @@
 @use "utility/colours";
 @import "utility/mixins";
 
+//-------------------------------------------------------------------------------
+// Banner Structure
+//-------------------------------------------------------------------------------
+
 #banner {
   position: relative;
   height: 100%;
@@ -10,10 +14,10 @@
 .banner-img-container {
   position: relative;
   background-position: center;
-  background-blend-mode: hard-light;
   color: white;
   height: 100%;
   width: 100%;
+  background-size: cover;
 }
 
 .banner-inner {
@@ -26,7 +30,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(270deg,transparent 25%,#000)
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.4) 100%);
+
+  @include bp(min992) {
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+  }
 }
 
 .banner-content {
@@ -56,4 +64,17 @@
     display: inline-block;
     position: relative;
   }
+}
+
+//-------------------------------------------------------------------------------
+// Banner Dots
+//-------------------------------------------------------------------------------
+
+.slick-dots {
+  bottom: 38px;
+}
+
+.slick-dots li button {
+  height: 35px;
+  width: 35px;
 }

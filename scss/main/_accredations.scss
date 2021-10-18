@@ -1,8 +1,13 @@
 @use "utility/colours";
 @import "utility/mixins";
 
+//-------------------------------------------------------------------------------
+// Newsletter Structure
+//-------------------------------------------------------------------------------
+
 #accredations {
   display: none;
+  background-color: colours.$white;
 
   @include bp(min768) {
     display: block;
@@ -25,24 +30,4 @@
   @include bp(min1260) {
     justify-content: space-around;
   }
-}
-
-.accredations-img  {
-  padding: 0 20px;
-  flex-grow: 1;
-  text-align: center;
-  line-height: 1.4;
-
-  @include bp(min1260) {
-  flex: 0 1 auto;
-  }
-
-  @include bp(min1260) {
-    height: 100%;
-  }
-}
-
-.googlepartner {
-  height: 82px;
-  width: 220px;
 }

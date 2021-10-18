@@ -14,257 +14,610 @@
     <title>Netmatters | Full Service Digital Agency | Norwich, Norfolk | Netmatters</title>
   </head>
   <body>
+    <!-- Cookie PopUp Main -->
+    <div class="cookie-app">
+      <!-- Cookie Popup -->
+      <div class="cookie-message-container">
+        <div class="cookie-header">
+          <h3>Cookies Policy</h3>
+        </div>
+        <div class="cookie-content">
+          <p class="p1">
+            We use cookies to obtain aggregate data regarding site traffic and interaction,
+            in order to identify user trends and obtain insights in order to continually improve our site.
+            These cookies enable us to improve your customer experience as you use our site and help provide you with relevant online marketing.
+          </p>
+          <p class="p2">
+            You can see a list of the other companies who use cookies on this website,
+            by visiting cookie settings at the bottom of each page.
+            For full details of how we use your personal information,
+            and your rights in relation to it,
+            view our privacy policy.
+          </p>
+        </div>
+        <div class="cookie-btn-container">
+          <div class="cookie-btn-divider">
+            <a id="cookieSettingsBtn" class="btn-contact cookie-btn" href="#">change settings</a>
+          </div>
+          <div class="cookie-btn-divider">
+            <a id="cookieAcceptBtn" class="webdesign cookie-btn" href="#">accept cookies</a>
+          </div>
+        </div>
+      </div>
+      <!-- /Cookie Popup -->
+
+      <!-- Cookie Settings -->
+      <div class="cookie-settings">
+        <div class="container">
+          <div class="h3">Cookies Preferences</div>
+
+          <div class="h5">
+            Netmatters uses cookies on their website.
+            Cookies are small text files that are stored on your computer or other device by websites that you visit.
+            This page explains the cookies we use and what we use them for, and lets you turn them on or off.
+            (Some cookies are necessary in order for our website to work properly.)
+            We also explain below which other companies use cookies on our website and what they use them for,
+            and lets you turn those other companies' cookies on or off.
+          </div>
+
+          <div class="h5">
+            Our website uses cookies in order to make the website easier to use, to support the provision of information and functionality to you,
+            as well as to provide us with information about how the website is used so that we can make sure it is as up to date,
+            relevant and error free as we can. We also use cookies to try to ensure that our online adverts reflect the interests of web users.
+            Further information about the types of cookies that are used on our website is set out box below.
+          </div>
+
+          <div class="h5">
+            As well as the options provided below, you can choose to restrict or block cookies through your browser settings at any time.
+            For more information about how to do this, and about cookies in general, you can visit
+          <a href="https://www.allaboutcookies.org">www.allaboutcookies.org</a>
+           and
+          <a href="https://www.youronlinechoices.eu">www.youronlinechoices.eu</a>
+          . However, please be aware that restricting or blocking cookies set on our website may impact the functionality or performance of the website,
+          or prevent you from using certain services provided through the website
+          </div>
+
+          <div class="h5">
+            Please note that third parties (including, for example, advertising networks and providers of external services like website analysis services)
+            may also use cookies, over which we have no control, although we may receive services from these third parties (including, for example,
+            for targeted advertising purposes and website analytics). These cookies are likely to be performance cookies or targeting cookies
+            (as described below).
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="h1">Functional Cookies</div>
+
+          <div class="h5">
+            Functional cookies allow our website to remember choices you make, such as your user name, log in details or language preferences,
+            and any customisations you make to pages on our website during your visit.
+          </div>
+
+          <div class="h4">
+            <strong>Examples of how we use these cookies include:</strong>
+          </div>
+          <ul>
+            <li>
+              <h5>Live chat</h5>
+            </li>
+          </ul>
+          <div class="cookie-choice-container">
+            <button type="button" onclick="cookieToggleOn(0)" class="btn webdesign cookie-disable">
+              disable
+            </button>
+            <button type="button" onclick="cookieToggleOff(0)" class="btn cookie-btn-disabled cookie-enable">
+              enable
+            </button>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="h1">Performance & Analytics</div>
+
+          <div class="h5">
+            These cookies help us understand how people use our website.
+            They collect information such as which pages on our website visitors go to most often, which features they use,
+            and which websites people have visited before they visit ours.
+            We use this information to improve our website and provide a better user experience.
+          </div>
+
+          <div class="h4">
+            <strong>Examples of how we use these cookies include:</strong>
+          </div>
+          <ul>
+            <li>
+              Monitoring and providing statistics on how our website is used.
+            </li>
+            <li>
+              Helping us improve our website by measuring any errors that occur.
+            </li>
+            <li>
+              Testing the website's design and operability.
+            </li>
+          </ul>
+          <div class="cookie-choice-container">
+            <div onclick="cookieToggleOn(1)" class="btn webdesign cookie-disable">
+              disable
+            </div>
+            <div onclick="cookieToggleOff(1)" class="btn cookie-btn-disabled cookie-enable">
+              enable
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="h5">
+            Different web browsers may use different methods for managing cookies. Please follow the instructions below,
+            from the web browser manufacturers directly, to configure your browser settings*.
+          </div>
+
+          <ul>
+            <li>
+              <a href="https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies">Microsoft Internet Explorer (IE)</a>
+            </li>
+            <li>
+              <a href="https://support.google.com/chrome/answer/95647?hl=en">Google Chrome</a>
+            </li>
+            <li>
+              <a href="https://support.apple.com/en-gb/guide/safari/manage-cookies-and-website-data-sfri11471/mac">Safari</a>
+            </li>
+            <li>
+              <a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences">Firefox</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="container">
+
+          <div id="cookie-table-toggle" class="btn cookie-details-btn">Show detailed preferences</div>
+
+          <div class="cookie-details-table-outer">
+            <table class="cookie-table" style="display: none;">
+              <thead>
+                <tr>
+                  <td colspan="1"><span>Company</span></td>
+                  <td colspan="1"><span>Domain</span></td>
+                  <td></td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td colspan="1">
+                    <span class="company-details" onclick="cookieDetails(0)">
+                      <span class="expand-collapse">+</span>
+                      <span>Lead Forensics</span>
+                    </span>
+                  </td>
+                  <td colspan="1">https://www.leadforensics.com/</td>
+                  <td>
+                    <div class="cookie-choice-table">
+                      <div onclick="cookieToggleOn(2)" class="btn webdesign cookie-disable">
+                        disable
+                      </div>
+                      <div onclick="cookieToggleOff(2)" class="btn cookie-btn-disabled cookie-enable">
+                        enable
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="cookie-details-table-hidden" style="display: none;">
+                  <td colspan="3">
+                    <div>
+                      <div>
+                        Netmatters use a paid for software on our website which allows us access to information on the company you work for.
+                        This is done through the business' registered IP address and only allows us access to the information such as contact details,
+                        year founded, SIC codes and other information about the business. It also records the behaviour of the user from the company on the website,
+                        such as page views, time on the site, "goals" completed and other similar metrics.
+                        We use this data to help us improve lead generation through the website as this tool allows us access to see which businesses
+                        have visited the website but have not converted by calling, emailing or sending a contact form.
+                      </div>
+                      <div>
+                        <div class="btn cookie-btn-hidden"><a href="#" target="_blank">terms & conditions</a></div>
+                        <div class="btn cookie-btn-hidden"><a href="#" target="_blank">privacy policy</a></div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <td colspan="1">
+                    <span class="company-details" onclick="cookieDetails(1)">
+                      <span class="expand-collapse">+</span>
+                      <span>Hotjar Ltd</span>
+                    </span>
+                  </td>
+                  <td colspan="1">hotjar.com</td>
+                  <td>
+                    <div class="cookie-choice-table">
+                      <div onclick="cookieToggleOn(3)" class="btn webdesign cookie-disable">
+                        disable
+                      </div>
+                      <div onclick="cookieToggleOff(3)" class="btn cookie-btn-disabled cookie-enable">
+                        enable
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="cookie-details-table-hidden" style="display: none;">
+                  <td colspan="3">
+                    <div>
+                      <div class="btn cookie-btn-hidden"><a href="#" target="_blank">terms & conditions</a></div>
+                      <div class="btn cookie-btn-hidden"><a href="#" target="_blank">privacy policy</a></div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <td colspan="1">
+                    <span class="company-details" onclick="cookieDetails(2)">
+                      <span class="expand-collapse">+</span>
+                      <span>Linkedin Corporation</span>
+                    </span>
+                  </td>
+                  <td colspan="1">licdn.com</td>
+                  <td>
+                    <div class="cookie-choice-table">
+                      <div onclick="cookieToggleOn(4)" class="btn webdesign cookie-disable">
+                        disable
+                      </div>
+                      <div onclick="cookieToggleOff(4)" class="btn cookie-btn-disabled cookie-enable">
+                        enable
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="cookie-details-table-hidden" style="display: none;">
+                  <td colspan="3">
+                    <div>
+                      <div class="btn cookie-btn-hidden"><a href="#" target="_blank">terms & conditions</a></div>
+                      <div class="btn cookie-btn-hidden"><a href="#" target="_blank">privacy policy</a></div>
+                    </div>
+                  </td>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <td colspan="1">
+                    <span class="company-details" onclick="cookieDetails(3)">
+                      <span class="expand-collapse">+</span>
+                      <span>Facebook Inc.</span>
+                    </span>
+                  </td>
+                  <td colspan="1">facebook.com, facebook.net</td>
+                  <td>
+                    <div class="cookie-choice-table">
+                      <div onclick="cookieToggleOn(5)" class="btn webdesign cookie-disable">
+                        disable
+                      </div>
+                      <div onclick="cookieToggleOff(5)" class="btn cookie-btn-disabled cookie-enable">
+                        enable
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="cookie-details-table-hidden" style="display: none;">
+                  <td colspan="3">
+                      <div>
+                        Facebook is an online social networking service that enables its users to connect with friends and family as well as make new connections.
+                      </div>
+                      <div>
+                        <div class="btn cookie-btn-hidden"><a href="#" target="_blank">terms & conditions</a></div>
+                        <div class="btn cookie-btn-hidden"><a href="#" target="_blank">privacy policy</a></div>
+                      </div>
+                  </td>
+                </tr>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <td colspan="1">
+                    <span class="company-details" onclick="cookieDetails(4)">
+                      <span class="expand-collapse">+</span>
+                      <span>Google Inc.</span>
+                    </span>
+                  </td>
+                  <td colspan="1">google.com, googletagmanager.com, google-analytics.com</td>
+                  <td>
+                    <div class="cookie-choice-table">
+                      <div onclick="cookieToggleOn(6)" class="btn webdesign cookie-disable">
+                        disable
+                      </div>
+                      <div onclick="cookieToggleOff(6)" class="btn cookie-btn-disabled cookie-enable">
+                        enable
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="cookie-details-table-hidden" style="display: none;">
+                  <td colspan="3">
+                    <div>
+                      <div class="btn cookie-btn-hidden"><a href="#" target="_blank">terms & conditions</a></div>
+                      <div class="btn cookie-btn-hidden"><a href="#" target="_blank">privacy policy</a></div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <td colspan="1">
+                    <span class="company-details" onclick="cookieDetails(5)">
+                      <span class="expand-collapse">+</span>
+                      <span>Tawk.to Inc.</span>
+                    </span>
+                  </td>
+                  <td colspan="1">tawk.io</td>
+                  <td>
+                    <div class="cookie-choice-table">
+                      <div onclick="cookieToggleOn(7)" class="btn webdesign cookie-disable">
+                        disable
+                      </div>
+                      <div onclick="cookieToggleOff(7)" class="btn cookie-btn-disabled cookie-enable">
+                        enable
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="cookie-details-table-hidden" style="display: none;">
+                  <td colspan="3">
+                    <div>
+                      <div class="btn cookie-btn-hidden"><a href="#" target="_blank">terms & conditions</a></div>
+                      <div class="btn cookie-btn-hidden"><a href="#" target="_blank">privacy policy</a></div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+          <div class="cookie-details-confirmation">
+            <div class="btn btn-grey" id="cancel-settings">cancel</div>
+            <div class="webdesign btn" id="accept-settings">accept cookies</div>
+          </div>
+
+        </div>
+        <!-- /Cookie Settings -->
+
+    </div>
+    <!-- /Cookie PopUp Main -->
+
     <main class="main">
-<!-- Header -->
+
+    <!-- Sidemenu -->
     <div class="sidemenu-overlay">
 
     </div>
+    <!-- /Sidemenu -->
 
+    <div class="page-full">
+
+      <!-- Header -->
       <header>
-
         <div class="top-page">
-
           <div class="header-full">
+            <div class="header-container">
+              <div class="header-wrapper">
+                <div class="container">
 
-          <div class="header-container">
-            <div class="header-wrapper">
+                    <div class="row">
+                      <div class="header-logo-container hlc-992 hlc-1260">
+                        <a href="#"><img class="logo" src="https://www.netmatters.co.uk/assets/images/f-logo.png" alt="Netmatters"></a>
+                      </div>
 
-              <div class="container">
+                      <div class="header-phone">
+                        <a href="#"><i class="fas fa-phone-volume phone-top"></i></a>
+                      </div>
 
-                  <div class="row">
+                      <div class="header-button-container btc-992 btc-1260">
+                        <div class="header-button-inner">
+                          <input type="checkbox" name="searchbarhidecheckbox" id="activate-inls">
 
-                    <div class="header-logo-container hlc-992 hlc-1260">
-                      <a href="#"><img class="logo" src="https://www.netmatters.co.uk/assets/images/f-logo.png" alt="Netmatters"></a>
-                    </div>
-
-                    <div class="header-phone">
-                      <a href="#"><i class="fas fa-phone-volume phone-top"></i></a>
-                    </div>
-
-                    <div class="header-button-container btc-992 btc-1260">
-
-                      <div class="header-button-inner">
-
-                        <input type="checkbox" name="searchbarhidecheckbox" id="activate-inls">
-
-                        <form class="in-searchbar-int" action="index.html" method="post">
-                            <label for="activate-inls" class="btn btn-inline-search"><a href="#"><i class="fas fa-search"></i></a></label>
-                          <input class="in-search-int" type="text" name="searchbar-inl-int" placeholder="Search...">
-                        </form>
-
-                        <div class="button-container">
-                          <a class="btn btn-support" href="#"><i class="fas fa-mouse"></i> Support</a>
-                        </div>
-
-                        <div class="button-container">
-                          <a class="btn btn-contact" href="#"><i class="far fa-paper-plane"></i>Contact</a>
-                        </div>
-
-                        <div class="inline-search">
-                          <form class="in-searchbar" action="index.html" method="post">
-                            <input class="in-search" type="text" name="searchbar-inl" placeholder="Search...">
-                            <span class="btn btn-inline-search"><a href="#"><i class="fas fa-search"></i></a></span>
+                          <form class="in-searchbar-int" action="index.html" method="post">
+                              <label for="activate-inls" class="btn btn-inline-search"><a href="#"><i class="fas fa-search"></i></a></label>
+                            <input class="in-search-int" type="text" name="searchbar-inl-int" placeholder="Search...">
                           </form>
-                        </div>
 
-                        <div class="header-menu">
-                          <a href="#">
-                            <div class="header-menu-btn">
-                              <span class="btn-menu">
-                                <span class="btn-menu-icon-cnt">
-                                  <span class="btn-menu-icon"></span>
-                                </span>
-                                <span class="menu-title">
-                                  menu
-                                </span>
-                              </span>
-                            </div>
-                          </a>
-                        </div>
+                          <div class="button-container">
+                            <a class="btn btn-support" href="#"><i class="fas fa-mouse"></i> Support</a>
+                          </div>
 
+                          <div class="button-container">
+                            <a class="btn btn-contact" href="#"><i class="far fa-paper-plane"></i>Contact</a>
+                          </div>
+
+                          <div class="inline-search">
+                            <form class="in-searchbar" action="index.html" method="post">
+                              <input class="in-search" type="text" name="searchbar-inl" placeholder="Search...">
+                              <span class="btn btn-inline-search"><a href="#"><i class="fas fa-search"></i></a></span>
+                            </form>
+                          </div>
+
+                          <div class="header-menu">
+                            <a href="#">
+                              <div class="header-menu-btn">
+                                <span class="btn-menu">
+                                  <span class="btn-menu-icon-cnt">
+                                    <span class="btn-menu-icon"></span>
+                                  </span>
+                                  <span class="menu-title">
+                                    menu
+                                  </span>
+                                </span>
+                              </div>
+                            </a>
+                          </div>
+
+                        </div>
                       </div>
 
                     </div>
 
-                  </div>
-
-                <form class="searchbar" action="index.html" method="post">
-                    <input class="main-search" type="text" name="searchbar-sm" value="" placeholder="Search...">
-                    <a class="btn btn-submit" href="#"><i class="fas fa-search"></i></a>
-                </form>
-
-              </div>
-
-            </div>
-
-          <!-- Nav -->
-
-          <nav id="nav">
-
-            <div class="container">
-
-              <div class="main-nav-inner">
-
-                <div class="webnav mn">
-                  <div class="main-nav-button mn-web">
-                    <a href="#">
-                      <i class="fas fa-code"></i>
-                      <br>
-                      <span class="small">WEB</span>
-                      DESIGN
-                    </a>
-                  </div>
-
-                  <div class="webdesign-nav subnav">
-                    <div class="container">
-                    <a href="#">STYLISH WEBSITES</a>
-                    <a href="#">ECOMMERCE STORES</a>
-                    <a href="#">BRANDING</a>
-                    <a href="#">APPS</a>
-                    <a href="#">WEB HOSTING</a>
-                    <a href="#">PAY MONTHLY WEBSITES</a>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="itnav mn">
-                  <div class="main-nav-button mn-it">
-                    <a href="#">
-                      <i class="fas fa-desktop"></i>
-                      <br>
-                      <span class="small">IT</span>
-                      SUPPORT
-                    </a>
-                  </div>
-
-                  <div class="it-nav subnav">
-                    <div class="container">
-                      <a href="#">MANAGED IT</a>
-                      <a href="#">BUSINESS IT</a>
-                      <a href="#">OFFICE 365</a>
-                      <a href="#">CONSULTANCY</a>
-                      <a href="#">CLOUD PROVIDER</a>
-                      <a href="#">DATA BACKUP</a>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="telenav mn">
-                  <div class="main-nav-button mn-tele">
-                    <a href="#">
-                      <i class="fas fa-phone-volume"></i>
-                      <br>
-                      <span class="small">TELECOMS</span>
-                      SERVICES
-                    </a>
-                  </div>
-
-                  <div class="telecoms-nav subnav">
-                    <div class="container">
-                      <a href="#">GIGABIT VOUCHER</a>
-                      <a href="#">HOSTED VOIP</a>
-                      <a href="#">BUSINESS VOIP</a>
-                      <a href="#">BUSINESS BROADBAND</a>
-                      <a href="#">LEASED LINE</a>
-                      <a href="#">3CX SYSTEMS</a>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="softwarenav mn">
-                  <div class="main-nav-button mn-software">
-                    <a href="#">
-                      <i class="fas fa-th"></i>
-                      <br>
-                      <span class="small">BESPOKE</span>
-                      SOFTWARE
-                    </a>
-                  </div>
-
-                  <div class="software-nav subnav">
-                    <div class="container">
-                      <a href="#">WORKFLOW</a>
-                      <a href="#">AUTOMATION</a>
-                      <a href="#">INTEGRATION</a>
-                      <a href="#">DATABASE</a>
-                      <a href="#">SHAREPOINT</a>
-                      <a href="#">BUSINESS MANAGEMENT</a>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="marketingnav mn">
-                  <div class="main-nav-button mn-dm">
-                    <a href="#">
-                      <i class="fas fa-chart-line"></i>
-                      <br>
-                      <span class="small">DIGITAL</span>
-                      MARKETING
-                    </a>
-                  </div>
-
-                  <div class="marketing-nav subnav">
-                    <div class="container">
-                      <a href="#">SEARCH (SEO)</a>
-                      <a href="#">PAID (PPC)</a>
-                      <a href="#">CONVERSION (CRO)</a>
-                      <a href="#">EMAIL</a>
-                      <a href="#">SOCIAL MEDIA</a>
-                      <a href="#">CONTENT</a>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="csnav mn">
-                  <div class="main-nav-button mn-cs">
-                    <a href="#">
-                      <i class="fas fa-shield-alt"></i>
-                      <br>
-                      <span class="small">CYBER</span>
-                      SECURITY
-                    </a>
-                  </div>
-
-                  <div class="security-nav subnav">
-                    <div class="container">
-                      <a href="#">ASSESSMENT</a>
-                      <a href="#">MANAGEMENT</a>
-                      <a href="#">PENETRATION TESTING</a>
-                      <a href="#">CYBER ESSENTIALS</a>
-                      <a href="#">PCI/DSS</a>
-                      <a href="#">HACKER PREVENTION</a>
-                    </div>
-                  </div>
+                  <form class="searchbar" action="index.html" method="post">
+                      <input class="main-search" type="text" name="searchbar-sm" value="" placeholder="Search...">
+                      <a class="btn btn-submit" href="#"><i class="fas fa-search"></i></a>
+                  </form>
 
                 </div>
 
               </div>
 
+            <!-- Nav -->
+            <nav id="nav">
+
+              <div class="container">
+                <div class="main-nav-inner">
+
+                  <div class="webnav mn">
+                    <div class="main-nav-button mn-web">
+                      <a href="#">
+                        <i class="fas fa-code"></i>
+                        <br>
+                        <span class="small">WEB</span>
+                        DESIGN
+                      </a>
+                    </div>
+
+                    <div class="webdesign-nav subnav">
+                      <div class="container">
+                      <a href="#">STYLISH WEBSITES</a>
+                      <a href="#">ECOMMERCE STORES</a>
+                      <a href="#">BRANDING</a>
+                      <a href="#">APPS</a>
+                      <a href="#">WEB HOSTING</a>
+                      <a href="#">PAY MONTHLY WEBSITES</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="itnav mn">
+                    <div class="main-nav-button mn-it">
+                      <a href="#">
+                        <i class="fas fa-desktop"></i>
+                        <br>
+                        <span class="small">IT</span>
+                        SUPPORT
+                      </a>
+                    </div>
+
+                    <div class="it-nav subnav">
+                      <div class="container">
+                        <a href="#">MANAGED IT</a>
+                        <a href="#">BUSINESS IT</a>
+                        <a href="#">OFFICE 365</a>
+                        <a href="#">CONSULTANCY</a>
+                        <a href="#">CLOUD PROVIDER</a>
+                        <a href="#">DATA BACKUP</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="telenav mn">
+                    <div class="main-nav-button mn-tele">
+                      <a href="#">
+                        <i class="fas fa-phone-volume"></i>
+                        <br>
+                        <span class="small">TELECOMS</span>
+                        SERVICES
+                      </a>
+                    </div>
+
+                    <div class="telecoms-nav subnav">
+                      <div class="container">
+                        <a href="#">GIGABIT VOUCHER</a>
+                        <a href="#">HOSTED VOIP</a>
+                        <a href="#">BUSINESS VOIP</a>
+                        <a href="#">BUSINESS BROADBAND</a>
+                        <a href="#">LEASED LINE</a>
+                        <a href="#">3CX SYSTEMS</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="softwarenav mn">
+                    <div class="main-nav-button mn-software">
+                      <a href="#">
+                        <i class="fas fa-th"></i>
+                        <br>
+                        <span class="small">BESPOKE</span>
+                        SOFTWARE
+                      </a>
+                    </div>
+
+                    <div class="software-nav subnav">
+                      <div class="container">
+                        <a href="#">WORKFLOW</a>
+                        <a href="#">AUTOMATION</a>
+                        <a href="#">INTEGRATION</a>
+                        <a href="#">DATABASE</a>
+                        <a href="#">SHAREPOINT</a>
+                        <a href="#">BUSINESS MANAGEMENT</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="marketingnav mn">
+                    <div class="main-nav-button mn-dm">
+                      <a href="#">
+                        <i class="fas fa-chart-line"></i>
+                        <br>
+                        <span class="small">DIGITAL</span>
+                        MARKETING
+                      </a>
+                    </div>
+
+                    <div class="marketing-nav subnav">
+                      <div class="container">
+                        <a href="#">SEARCH (SEO)</a>
+                        <a href="#">PAID (PPC)</a>
+                        <a href="#">CONVERSION (CRO)</a>
+                        <a href="#">EMAIL</a>
+                        <a href="#">SOCIAL MEDIA</a>
+                        <a href="#">CONTENT</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="csnav mn">
+                    <div class="main-nav-button mn-cs">
+                      <a href="#">
+                        <i class="fas fa-shield-alt"></i>
+                        <br>
+                        <span class="small">CYBER</span>
+                        SECURITY
+                      </a>
+                    </div>
+
+                    <div class="security-nav subnav">
+                      <div class="container">
+                        <a href="#">ASSESSMENT</a>
+                        <a href="#">MANAGEMENT</a>
+                        <a href="#">PENETRATION TESTING</a>
+                        <a href="#">CYBER ESSENTIALS</a>
+                        <a href="#">PCI/DSS</a>
+                        <a href="#">HACKER PREVENTION</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </nav>
+            <!-- /Nav -->
             </div>
-
-          </nav>
-
-          <!-- /Nav -->
           </div>
-
-          </div>
-
-
 
         <!-- Banner -->
         <section id="banner">
 
           <div class="your-class">
-            <div class="banner-img-container banner-web">
-              <img class="banner-img" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-3wAI.jpg">
-
+            <div class="banner-img-container banner-web banner-img-web">
               <div class="banner-inner">
-
                 <div class="banner-content">
                   <div class="container">
                       <div class="h1">
@@ -274,144 +627,112 @@
                          For businesses looking to make a strong <br>
                          and effective first impression.
                       </div>
-                      <a class="btn btn-lg webdesign" href="#">Find out more <i class="fas fa-arrow-right"></i></a>
+                      <a class="btn btn-lg webdesign btn-letterspace" href="#">Find out more <i class="fas fa-arrow-right"></i></a>
                   </div>
                 </div>
-
               </div>
-
             </div>
 
-                      <div class="banner-img-container banner-it">
-                        <img class="banner-img" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-57sJ.jpg">
-
-                        <div class="banner-inner">
-
-                          <div class="banner-content">
-                            <div class="container">
-                                <div class="h1">
-                                  IT Support
-                                </div>
-                                <div class="p">
-                                   Fast and cost-effective IT support<br>
-                                   services for your business.
-                                </div>
-                                <a class="btn btn-lg itsupport" href="#">Find out more <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                          </div>
-
-                        </div>
-
+            <div class="banner-img-container banner-it banner-img-it">
+              <div class="banner-inner">
+                <div class="banner-content">
+                  <div class="container">
+                      <div class="h1">
+                        IT Support
                       </div>
-
-                      <div class="banner-img-container banner-telecoms">
-                        <img class="banner-img" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-5yqm.jpg">
-
-                        <div class="banner-inner">
-
-                          <div class="banner-content">
-                            <div class="container">
-                                <div class="h1">
-                                  Telecoms Services
-                                </div>
-                                <div class="p">
-                                   A new approach to connectivity, see how <br>
-                                   we can help your business.
-                                </div>
-                                <a class="btn btn-lg telecoms" href="#">Find out more <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                          </div>
-
-                        </div>
-
+                      <div class="p">
+                         Fast and cost-effective IT support<br>
+                         services for your business.
                       </div>
+                      <a class="btn btn-lg itsupport btn-letterspace" href="#">Find out more <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                      <div class="banner-img-container banner-software">
-                        <img class="banner-img" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-sqvx.jpg">
-
-                        <div class="banner-inner">
-
-                          <div class="banner-content">
-                            <div class="container">
-                                <div class="h1">
-                                  Bespoke Software
-                                </div>
-                                <div class="p">
-                                   Bring your business together<br>
-                                   with solutions that grow with you.
-                                </div>
-                                <a class="btn btn-lg software" href="#">Find out more <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                          </div>
-
-                        </div>
-
+            <div class="banner-img-container banner-telecoms banner-img-telecoms">
+              <div class="banner-inner">
+                <div class="banner-content">
+                  <div class="container">
+                      <div class="h1">
+                        Telecoms Services
                       </div>
-
-                      <div class="banner-img-container banner-marketing">
-                        <img class="banner-img" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-JQsO.jpg">
-
-                        <div class="banner-inner">
-
-                          <div class="banner-content">
-                            <div class="container">
-                                <div class="h1">
-                                  Digital Marketing
-                                </div>
-                                <div class="p">
-                                   Generating you new business through<br>
-                                   results-driven marketing activities.
-                                </div>
-                                <a class="btn btn-lg marketing" href="#">SEE HOW WE CAN HELP YOU <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                          </div>
-
-                        </div>
-
+                      <div class="p">
+                         A new approach to connectivity, see how <br>
+                         we can help your business.
                       </div>
+                      <a class="btn btn-lg telecoms btn-letterspace" href="#">Find out more <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                      <div class="banner-img-container banner-security">
-                        <img class="banner-img" src="https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-lQs1.jpg">
-
-                        <div class="banner-inner">
-
-                          <div class="banner-content">
-                            <div class="container">
-                                <div class="h1">
-                                  Cyber Security
-                                </div>
-                                <div class="p">
-                                   Keeping businesses and their customers<br>
-                                   sensitive information protected.
-                                </div>
-                                <a class="btn btn-lg security" href="#">Find out more <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                          </div>
-
-                        </div>
-
+            <div class="banner-img-container banner-software banner-img-software">
+              <div class="banner-inner">
+                <div class="banner-content">
+                  <div class="container">
+                      <div class="h1">
+                        Bespoke Software
                       </div>
+                      <div class="p">
+                         Bring your business together<br>
+                         with solutions that grow with you.
+                      </div>
+                      <a class="btn btn-lg software btn-letterspace" href="#">Find out more <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="banner-img-container banner-marketing banner-img-marketing">
+              <div class="banner-inner">
+                <div class="banner-content">
+                  <div class="container">
+                      <div class="h1">
+                        Digital Marketing
+                      </div>
+                      <div class="p">
+                         Generating you new business through<br>
+                         results-driven marketing activities.
+                      </div>
+                      <a class="btn btn-lg marketing btn-letterspace" href="#">SEE HOW WE CAN HELP YOU <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="banner-img-container banner-security banner-img-security">
+              <div class="banner-inner">
+                <div class="banner-content">
+                  <div class="container">
+                      <div class="h1">
+                        Cyber Security
+                      </div>
+                      <div class="p">
+                         Keeping businesses and their customers<br>
+                         sensitive information protected.
+                      </div>
+                      <a class="btn btn-lg security btn-letterspace" href="#">Find out more <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </section>
-
       </div>
-
     </header>
+    <!-- /Header -->
 
-  <!-- /Header -->
-
-  <!-- Main -->
-
+    <!-- Main -->
     <div class="main-content">
 
       <!-- Services -->
       <section id="services">
-
         <div class="section">
 
           <div class="container">
-
             <div class="services-cards">
-
               <div class="row">
 
                 <div class="col-serv1 col1 col3-lg">
@@ -562,12 +883,10 @@
                 </div>
 
               </div>
-
+            </div>
           </div>
 
         </div>
-      </div>
-
       </section>
       <!-- /Services -->
 
@@ -575,7 +894,6 @@
       <section id="about">
 
         <div class="section container">
-
           <div class="row">
 
             <div class="about-inner">
@@ -587,7 +905,6 @@
             </div>
 
           </div>
-
         </div>
 
       </section>
@@ -607,13 +924,10 @@
         <div class="section">
 
           <div class="container">
-
             <div class="article-list">
-
               <div class="row">
 
                 <div class="card-wrapper col2 col3-lg col-spacer-sm">
-
                   <div class="latest-header">
                     <a href="#"><img class="latest-header-img" src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/senior-it-support-Vfd9.jpg" alt="Graduation"></a>
                     <span class="header-tag itsupport"><a href="#">Careers</a></span>
@@ -622,7 +936,7 @@
                   <div class="card latest-content">
                     <h3 class="itsupport-txt"><a href="#">Senior IT Support Technician <br class="cardspacer345">&nbsp;</a></h3>
                     <p>Salary Ra... <br class="cardspacer345">&nbsp;<br class="cardspacer345">&nbsp;<br class="cardspacer992">&nbsp;<br class="cardspacer1260">&nbsp;<br class="cardspacer1260">&nbsp;</p>
-                    <a class="btn itsupport" href="#">READ MORE</a>
+                    <a class="btn itsupport btn-letterspace" href="#">READ MORE</a>
 
                     <div class="user">
                       <div class="user-grid">
@@ -636,13 +950,10 @@
                         </div>
                       </div>
                     </div>
-
                   </div>
-
                 </div>
 
                 <div class="card-wrapper col2 col3-lg col-spacer-sm">
-
                   <div class="latest-header">
                     <a href="#"><img class="latest-header-img" src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/congratulations-to-lloyd-D2cu.jpg" alt="Graduation"></a>
                     <span class="header-tag webdesign"><a href="#">News</a></span>
@@ -651,7 +962,7 @@
                   <div class="latest-content">
                     <h3 class="webdesign-txt"><a href="#"> Congratulations to Lloyd Cox for Graduating t...</a></h3>
                     <p>We are pleased to announce that after a year spent on our Netmatters Scion Coalition Scheme (... </p>
-                    <a class="btn webdesign" href="#">READ MORE</a>
+                    <a class="btn webdesign btn-letterspace" href="#">READ MORE</a>
 
                     <div class="user">
                       <div class="user-grid">
@@ -665,13 +976,10 @@
                         </div>
                       </div>
                     </div>
-
                   </div>
-
                 </div>
 
                 <div class="card-wrapper col3-lg">
-
                   <div class="latest-header">
                     <a href="#"><img class="latest-header-img" src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/april-2021-notables-CIV3.jpg" alt="Graduation"></a>
                     <span class="header-tag telecoms"><a href="#">News</a></span>
@@ -680,7 +988,7 @@
                   <div class="latest-content">
                     <h3 class="telecoms-txt"><a href="#">April 2021 Notables</a></h3>
                     <p>Every month we celebrate the most notable of employees here at Netmatters. Each department he...</p>
-                    <a class="btn telecoms text-white" href="#">READ MORE</a>
+                    <a class="btn telecoms text-white btn-letterspace" href="#">READ MORE</a>
 
                     <div class="user">
                       <div class="user-grid">
@@ -696,37 +1004,30 @@
                     </div>
 
                   </div>
-
                 </div>
 
               </div>
-
             </div>
-
           </div>
 
         </div>
-
       </section>
-    <!-- /Latest -->
+      <!-- /Latest -->
 
-    <!-- Clients -->
+      <!-- Clients -->
       <section id="clients">
-
         <div class="section">
 
           <div class="container">
-
             <div class="row">
-
               <div class="clients-inner">
 
                 <div class="client">
                   <div class="client-descr-box busseys">
-                  <div class="client-descr">
-                    <h3>Busseys</h3>
-                    <p>One of the UK's leading Ford dealerships.</p>
-                    <div class="arrow"></div>
+                    <div class="client-descr">
+                      <h3>Busseys</h3>
+                      <p>One of the UK's leading Ford dealerships.</p>
+                      <div class="arrow"></div>
                     </div>
                   </div>
                   <a class="img-link" href="#">
@@ -737,65 +1038,59 @@
 
                 <div class="client">
                   <div class="client-descr-box crane">
-                  <div class="client-descr">
-                  <h3>Crane Garden Builders</h3>
-                  <p>Leading manufacturer and supplier of high-end garden rooms, summerhouses, workshops and sheds in the UK.</p>
-                  <div class="arrow"></div>
+                    <div class="client-descr">
+                      <h3>Crane Garden Builders</h3>
+                      <p>Leading manufacturer and supplier of high-end garden rooms, summerhouses, workshops and sheds in the UK.</p>
+                      <div class="arrow"></div>
+                    </div>
+                  </div>
+                  <a class="img-link" href="#">
+                    <img src="https://www.netmatters.co.uk/uploads/page/1/home-BsyK.jpg" alt="">
+                    <img src="https://www.netmatters.co.uk/uploads/page/1/home-MjHw.png" alt="">
+                  </a>
                 </div>
-                </div>
-                <a class="img-link" href="#">
-                  <img src="https://www.netmatters.co.uk/uploads/page/1/home-BsyK.jpg" alt="">
-                  <img src="https://www.netmatters.co.uk/uploads/page/1/home-MjHw.png" alt="">
-                </a>
-              </div>
 
                 <div class="client">
                   <div class="client-descr-box beat">
-                  <div class="client-descr">
-                  <h3>Beat</h3>
-                  <p>The UK's eating disorder charity founded in 1989.</p>
-                  <div class="arrow"></div>
+                    <div class="client-descr">
+                      <h3>Beat</h3>
+                      <p>The UK's eating disorder charity founded in 1989.</p>
+                      <div class="arrow"></div>
+                    </div>
+                  </div>
+                  <a class="img-link" href="#">
+                    <img src="https://www.netmatters.co.uk/uploads/page/1/home-RfLc.jpg" alt="">
+                    <img src="https://www.netmatters.co.uk/uploads/page/1/home-ukEL.png" alt="">
+                  </a>
                 </div>
-                </div>
-                <a class="img-link" href="#">
-                  <img src="https://www.netmatters.co.uk/uploads/page/1/home-RfLc.jpg" alt="">
-                  <img src="https://www.netmatters.co.uk/uploads/page/1/home-ukEL.png" alt="">
-                </a>
-              </div>
 
                 <div class="client">
                   <div class="client-descr-box northerndiver">
-                  <div class="client-descr">
-                  <h3>Northern Diver</h3>
-                  <p>Global water based equipment manufacturers for sport, military, commercial and rescue businesses.</p>
-                  <div class="arrow"></div>
+                    <div class="client-descr">
+                      <h3>Northern Diver</h3>
+                      <p>Global water based equipment manufacturers for sport, military, commercial and rescue businesses.</p>
+                      <div class="arrow"></div>
+                    </div>
+                  </div>
+                  <a class="img-link" href="#">
+                    <img src="https://www.netmatters.co.uk/uploads/page/1/home-jHUl.jpg" alt="">
+                    <img src="https://www.netmatters.co.uk/uploads/page/1/home-kGn4.png" alt="">
+                  </a>
                 </div>
-                </div>
-                <a class="img-link" href="#">
-                  <img src="https://www.netmatters.co.uk/uploads/page/1/home-jHUl.jpg" alt="">
-                  <img src="https://www.netmatters.co.uk/uploads/page/1/home-kGn4.png" alt="">
-                </a>
-              </div>
 
               </div>
-
             </div>
-
           </div>
 
         </div>
-
       </section>
     <!-- /Clients -->
 
     <!--  Newsletter Sign up -->
-
       <section id="signup">
-
         <div class="section">
 
           <div class="container">
-
             <div class="signup-form">
 
               <h2>Email Newsletter Sign-Up</h2>
@@ -816,45 +1111,36 @@
                 </div>
               </div>
 
-                <div class="checkbox-area">
-                  <div class="checkbox-cnt">
-                    <input id="newsletter-checkbox" class="checkbox-style" type="checkbox" name="newsletter-checkbox" value="">
-                    <label class="checkbox-style" for="newsletter-checkbox"></label>
-                  </div>
-                  <label class="checkbox-text" for="newsletter-checkbox">
-                    Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data.
-                  </label>
+              <div class="checkbox-area">
+                <div class="checkbox-cnt">
+                  <input id="newsletter-checkbox" class="checkbox-style" type="checkbox" name="newsletter-checkbox" value="">
+                  <label class="checkbox-style" for="newsletter-checkbox"></label>
                 </div>
+                <label class="checkbox-text" for="newsletter-checkbox">
+                  Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data.
+                </label>
+              </div>
 
               <button class="btn btn-dark-grey" type="button" name="btn-subscribe">SUBSCRIBE</button>
 
             </div>
-
           </div>
 
         </div>
-
       </section>
       <!-- / Newsletter signup -->
-
     </div>
+    <!-- /Main -->
 
-<!-- /Main -->
-
-<!-- Footer -->
-
+    <!-- Footer -->
     <footer>
-
       <section id="contact">
-
         <div class="section">
 
           <div class="container">
-
             <div class="row">
 
               <div class="col-wrapper col col-spacer-sm col-spacer-md">
-
                   <h4>ABOUT NETMATTERS</h4>
                   <ul class="p">
                     <li><a href="#">News</a></li>
@@ -866,11 +1152,9 @@
                     <li><a href="#">Terms & Conditions</a></li>
                     <li><a href="#">UK Domains</a></li>
                   </ul>
-
               </div>
 
               <div class="col-wrapper col col-spacer-sm">
-
                   <h4>WYMONDHAM BRANCH</h4>
                     <ul class="p">
                       <li>11 Penfold Drive</li>
@@ -881,7 +1165,6 @@
                       <li> &nbsp; </li>
                       <li>Tel: <a href="#">01603 70 40 20</a></li>
                     </ul>
-
               </div>
 
               <div class="col-wrapper col-wrapper2 col col-spacer-sm">
@@ -900,28 +1183,25 @@
                 <div class="c-social-media">
                   <h4>SOCIAL media</h4>
                   <div class="row">
-                  <div class="social-media-grp">
-                    <div class="social-media-btn-cnt">
-                    <a class="socialmedia-btn btn-fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <div class="social-media-grp">
+                      <div class="social-media-btn-cnt">
+                      <a class="socialmedia-btn btn-fb" href="#"><i class="fab fa-facebook-f"></i></a>
+                      </div>
+
+                      <div class="social-media-btn-cnt">
+                      <a class="socialmedia-btn btn-twitter" href="#"><i class="fab fa-twitter"></i></a>
+                      </div>
+
+
+                      <div class="social-media-btn-cnt">
+                      <a class="socialmedia-btn btn-instagram" href="#"><i class="fab fa-instagram"></i></a>
+                      </div>
+
+
+                      <div class="social-media-btn-cnt">
+                      <a class="socialmedia-btn btn-in" href="#"><i class="fab fa-linkedin-in"></i></a>
+                      </div>
                     </div>
-
-                    <div class="social-media-btn-cnt">
-                    <a class="socialmedia-btn btn-twitter" href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-
-
-                    <div class="social-media-btn-cnt">
-                    <a class="socialmedia-btn btn-instagram" href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-
-
-                    <div class="social-media-btn-cnt">
-                    <a class="socialmedia-btn btn-in" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-
-
-                  </div>
-
                   </div>
                   <ul class="p">
                     <li><a href="#">Sitemap</a></li>
@@ -929,27 +1209,22 @@
                     <li>All rights reserved</li>
                   </ul>
                 </div>
-
               </div>
 
             </div>
-
           </div>
 
         </div>
-
       </section>
-    <!-- /Info -->
-
+      <!-- /Info -->
     </footer>
-<!-- /Footer -->
+    <!-- /Footer -->
 
+    <!-- Accredations -->
     <section id="accredations">
-
       <div class="section">
 
         <div class="container">
-
           <div class="accredations-upper">
 
             <div class="accredations-img">
@@ -995,14 +1270,17 @@
             </div>
 
           </div>
-
         </div>
 
       </div>
-
     </section>
+    <!-- /Accredations -->
+
+    </div>
   </main>
-  
+  <!-- /Main -->
+
+  <!-- Sidemenu -->
   <div id="sidemenu">
     <div class="sidemenu-upper">
       <ul class="sidemenu-list">
@@ -1012,12 +1290,12 @@
           <small>web</small>
           design</a>
           <ul class="sidemenu-sublist">
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">stylish websites</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">ecommerce stores</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">branding</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">apps</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">web hosting</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">pay monthly websites</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">stylish websites</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">ecommerce stores</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">branding</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">apps</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">web hosting</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">pay monthly websites</a></li>
           </ul>
         </li>
         <li class="sidemenu-top-item"><a class="sidemenu-upper-header sidemenu-header" href="#">
@@ -1025,25 +1303,25 @@
           <small>it</small>
           support</a>
           <ul class="sidemenu-sublist">
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">managed it</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">business it</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">office 365</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">consultancy</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">cloud provider</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">data backup</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">managed it</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">business it</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">office 365</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">consultancy</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">cloud provider</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">data backup</a></li>
           </ul>
         </li>
         <li class="sidemenu-top-item"><a class="sidemenu-upper-header sidemenu-header" href="#">
-          <span class="telecoms-txt"><i class="fas fa-phone-volume"></span></i>
+          <span class="telecoms-txt"><i class="fas fa-phone-volume"></i></span>
           <small>telecoms</small>
           services</a>
           <ul class="sidemenu-sublist">
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">gigabit voucher</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">hosted voip</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">business voip</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">business broadband</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">leased line</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">3cx systems</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">gigabit voucher</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">hosted voip</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">business voip</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">business broadband</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">leased line</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">3cx systems</a></li>
           </ul>
         </li>
         <li class="sidemenu-top-item"><a class="sidemenu-upper-header sidemenu-header" href="#">
@@ -1051,13 +1329,13 @@
           <small>bespoke</small>
           software</a>
           <ul class="sidemenu-sublist">
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">workflow</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">automation</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">integration</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">database</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">sharepoint</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">management</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">navision</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">workflow</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">automation</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">integration</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">database</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">sharepoint</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">management</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">navision</a></li>
           </ul>
         </li>
         <li class="sidemenu-top-item"><a class="sidemenu-upper-header sidemenu-header" href="#">
@@ -1065,12 +1343,12 @@
           <small>digital</small>
           marketing</a>
           <ul class="sidemenu-sublist">
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">Search (seo)</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">paid (ppc)</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">conversion (cro)</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">email</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">social media</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">content</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">Search (seo)</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">paid (ppc)</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">conversion (cro)</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">email</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">social media</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">content</a></li>
           </ul>
         </li>
         <li class="sidemenu-top-item"><a class="sidemenu-upper-header sidemenu-header" href="#">
@@ -1078,12 +1356,12 @@
           <small>cyber</small>
           security</a>
           <ul class="sidemenu-sublist">
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">assessment</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">management</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">penetration testing</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">cyber essentials</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">pci/dss</a></li>
-          <li class="sidemenu-upper-item sidemenu-item"><a href="#">hacker prevention</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">assessment</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">management</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">penetration testing</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">cyber essentials</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">pci/dss</a></li>
+            <li class="sidemenu-upper-item sidemenu-item"><a href="#">hacker prevention</a></li>
           </ul>
         </li>
       </ul>
@@ -1091,19 +1369,19 @@
 
     <div class="sidemenu-lower">
       <ul class="sidemenu-list">
-        <li><a class="sidemenu-lower-header sidemenu-header" href="#">training</a>
+        <li class="sidemenu-lower-list"><a class="sidemenu-lower-header sidemenu-header" href="#">training</a>
           <ul class="sidemenu-list">
             <li class="sidemenu-item"><a class="sidemenu-lower-item" href="#"> train for a career in tech</a></li>
             <li class="sidemenu-item"><a class="sidemenu-lower-item" href="#"> scs frequently asked questions</a></li>
             <li class="sidemenu-item"><a class="sidemenu-lower-item" href="#"> scion collaborators</a></li>
           </ul>
         </li>
-        <li><a class="sidemenu-lower-header sidemenu-header" href="#">events</a>
+        <li class="sidemenu-lower-list"><a class="sidemenu-lower-header sidemenu-header" href="#">events</a>
           <ul class="sidemenu-list">
             <li class="sidemenu-item"><a class="sidemenu-lower-item" href="#"> business automation seminar</a></li>
           </ul>
         </li>
-        <li><a class="sidemenu-lower-header sidemenu-header" href="#">our company</a>
+        <li class="sidemenu-lower-list"><a class="sidemenu-lower-header sidemenu-header" href="#">our company</a>
           <ul class="sidemenu-list">
             <li class="sidemenu-item"><a class="sidemenu-lower-item" href="#"> our culture</a></li>
             <li class="sidemenu-item"><a class="sidemenu-lower-item" href="#"> our team</a></li>
@@ -1112,46 +1390,49 @@
             <li class="sidemenu-item"><a class="sidemenu-lower-item" href="#"> it support great yarmouth</a></li>
           </ul>
         </li>
-        <li><a class="sidemenu-lower-header sidemenu-header" href="#">our work</a>
+        <li class="sidemenu-lower-list"><a class="sidemenu-lower-header sidemenu-header" href="#">our work</a>
           <ul class="sidemenu-list">
             <li class="sidemenu-item"><a class="sidemenu-lower-item" href="#"> case studies</a></li>
           </ul>
         </li>
-        <li><a class="sidemenu-lower-header sidemenu-header" href="#">our knowledge</a>
+        <li class="sidemenu-lower-list"><a class="sidemenu-lower-header sidemenu-header" href="#">our knowledge</a>
           <ul class="sidemenu-list">
             <li class="sidemenu-item"><a class="sidemenu-lower-item" href="#"> guides</a></li>
             <li class="sidemenu-item"><a class="sidemenu-lower-item" href="#"> news</a></li>
             <li class="sidemenu-item"><a class="sidemenu-lower-item" href="#"> insights</a></li>
           </ul>
         </li>
-        <li><a class="sidemenu-lower-header sidemenu-header" href="#">covid risk assessments</a></li>
-        <li><a class="sidemenu-lower-header sidemenu-header" href="#">contact us</a>
+        <li class="sidemenu-lower-list"><a class="sidemenu-lower-header sidemenu-header" href="#">covid risk assessments</a></li>
+        <li class="sidemenu-lower-list"><a class="sidemenu-lower-header sidemenu-header" href="#">contact us</a>
           <ul class="sidemenu-list">
             <li class="sidemenu-item"><a class="sidemenu-lower-item" href="#"> cambridge office</a></li>
             <li class="sidemenu-item"><a class="sidemenu-lower-item" href="#"> wymondham office</a></li>
             <li class="sidemenu-item"><a class="sidemenu-lower-item" href="#"> great yarmouth office</a></li>
           </ul>
       </li>
-        <li><a class="sidemenu-lower-header sidemenu-header" href="#">support</a></li>
+        <li class="sidemenu-lower-list"><a class="sidemenu-lower-header sidemenu-header" href="#">support</a></li>
       </ul>
     </div>
 
   </div>
+  <!-- /Sidemenu -->
 
-    <script type="text/javascript" src="js\jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-      $('.your-class').slick({
-        autoplay: true,
-        dots: true,
-        arrows: false
-      });
+  <!-- Scripts -->
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript">
+  checkCookie();
+  $(document).ready(function(){
+    $('.your-class').slick({
+      autoplay: true,
+      dots: true,
+      arrows: false
     });
-    </script>
-    <script src="js/sidemenu.js"></script>
-    <!-- <script src="js/banner.js"></script> -->
+  });
+  </script>
+  <!-- Scripts -->
   </body>
 </html>

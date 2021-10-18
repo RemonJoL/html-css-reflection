@@ -1,6 +1,10 @@
 @use "utility/colours";
 @import "utility/mixins";
 
+//-------------------------------------------------------------------------------
+// Banner Structure
+//-------------------------------------------------------------------------------
+
 #sidemenu {
   width: 275px;
   top: 0;
@@ -11,16 +15,16 @@
   overflow: auto;
   color: colours.$white;
   text-transform: uppercase;
-}
 
-#sidemenu ul{
-  margin: 0;
-  list-style: none;
+  @include bp(min992){
+    width: 350px;
+  }
 }
 
 .sidemenu-header {
   list-style: none;
   display: block;
+  border-radius: 3px;
 }
 
 .sidemenu-item {
@@ -28,6 +32,14 @@
   font-size: 1rem;
   line-height: 1.42857143;
   background-color:  rgba(0,0,0,.25);
+}
+
+.sidemenu-lower .sidemenu-item {
+  display: flex;
+  font-size: 1rem;
+  line-height: 1.42857143;
+  background-color:  rgba(0,0,0,.25);
+  border-top: 1px solid rgba(0,0,0,.45);
 }
 
 .sidemenu-item:not(:first-child){
@@ -40,7 +52,7 @@
 }
 
 .sidemenu-upper-header {
-  padding: 18px 0px 18px;
+  padding: 19px 0px 18px;
   outline: 1px solid rgba(0,0,0,.25);
   border: 1px solid hsla(0,0%,100%,.1);
   font-size: 1.125rem;
@@ -62,10 +74,9 @@
 }
 
 .sidemenu-lower-header {
-  padding: 15px 20px;
-  border-top: 1px solid hsla(0,0%,100%,.1);
-  border-bottom: 1px solid rgba(0,0,0,.25);
+  padding: 20px;
   font-size: 1rem;
+  line-height: 1rem;
 }
 
 .sidemenu-lower-item {
@@ -80,12 +91,18 @@
 }
 
 .sidemenu-upper {
-  padding: 0 21px 21px;
+  padding: 21px;
   text-align: center;
+  margin-top: -40px;
 
   @include bp(min992) {
     display: none;
   }
+}
+
+.sidemenu-upper ul {
+  margin-top: 20px;
+  list-style: none;
 }
 
 .sidemenu-lower {
@@ -94,10 +111,22 @@
   text-align: left;
 }
 
+.sidemenu-lower ul {
+  margin: 0;
+  list-style: none;
+}
+
+.sidemenu-lower-list {
+  border-top: 1px solid hsla(0,0%,100%,.1);
+  border-bottom: 1px solid rgba(0,0,0,.25);
+}
+
 .sidemenu-list {
   padding: 0;
 }
 
  .sidemenu-sublist {
-   padding: 20px 0 0;
+   padding: 0;
+   border-radius: 3px;
+   overflow: hidden;
  }
