@@ -359,6 +359,10 @@ label {
   background: #999aa2;
 }
 
+.btn-grey {
+  background: #999aa2;
+}
+
 .btn-lg {
   font-size: 1.25rem;
   line-height: 50px;
@@ -465,7 +469,9 @@ label {
   margin-right: 5px;
 }
 
-.btn-contact:hover {
+.btn-contact:hover,
+.btn-grey:hover,
+.cookie-details-btn:hover {
   background-color: #84858f;
   border-color: #797a85;
 }
