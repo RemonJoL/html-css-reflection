@@ -10,10 +10,10 @@ input {
 }
 
 //-------------------------------------------------------------------------------
-// Newsletter Form Elements
+// Form Elements
 //-------------------------------------------------------------------------------
 
-.newsletter-field {
+.text-input-field {
   width: 100%;
   height: 47px;
   font-size: 14px;
@@ -22,7 +22,12 @@ input {
   color: colours.$med-grey;
 }
 
-.newsletter-field:focus {
+.textarea-field {
+  min-height: 100px;
+  height: 100px;
+}
+
+.text-input-field:focus {
   padding: 15px;
   border-color: #5bc0de;
   outline: 0;

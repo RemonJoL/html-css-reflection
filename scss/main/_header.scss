@@ -5,10 +5,14 @@
 // Header Structure
 //-------------------------------------------------------------------------------
 
-.top-page {
+.top-page,
+.top-page-nonindex {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.top-page {
   height: 100vh;
 }
 

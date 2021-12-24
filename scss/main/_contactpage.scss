@@ -1,0 +1,169 @@
+@use "utility/colours";
+@import "utility/mixins";
+
+//-------------------------------------------------------------------------------
+// Contact Page Structure
+//-------------------------------------------------------------------------------
+
+.contact-top {
+  display: none;
+  border-top: 1px solid colours.$dark-grey;
+  box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
+
+  @include bp(min768) {
+    display: flex;
+  }
+}
+
+.contact-header {
+  padding: 24px 0;
+  background: colours.$dark-grey;
+  color: colours.$white;
+  margin: 0 0 50px;
+
+  @include bp(min992) {
+    margin: 25px 0 5px;
+    background: colours.$white;
+    color: colours.$dark-grey;
+  }
+}
+
+.offices-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.office-card-outer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  @include bp(min992) {
+    flex: 1;
+  }
+}
+
+.office-card-outer:nth-of-type(2) {
+  @include bp(min992) {
+    margin: 0 30px;
+  }
+}
+
+.office-card-top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-top: none;
+  text-align: left;
+  box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
+}
+
+.office-card-header {
+  display: flex;
+  width: 100%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.office-card-title {
+  margin-bottom: 13px;
+}
+
+.office-card-content {
+  padding: 30px;
+}
+
+.office-card-phone {
+  margin-bottom: 15px;
+}
+
+.map {
+  height: 300px;
+  width: 100%;
+}
+
+.leaflet-pane,
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 0;
+}
+
+.out-of-hours {
+  display: none;
+}
+
+.form-group {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  @include bp(min992) {
+    flex-direction: row-reverse;
+  }
+}
+
+.contact-page-form-section {
+  display: flex;
+  flex-direction: column;
+
+  @include bp(min1260) {
+    flex-direction: row-reverse;
+  }
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+
+  @include bp(min1260) {
+    flex: 1;
+    padding-left: 30px;
+  }
+}
+
+.contact-form-outer {
+  background: colours.$silver;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+
+  @include bp(min992) {
+    padding: 30px 15px;
+  }
+
+  @include bp(min1260) {
+    flex: 2;
+  }
+}
+
+.contact-form-section,
+.contact-form-message-section {
+  margin-bottom: 15px;
+
+  @include bp(min992) {
+    padding: 0 15px;
+  }
+}
+
+.contact-form-section {
+
+  @include bp(min992) {
+    width: 50%;
+    padding: 0 15px;
+  }
+}
+
+.contact-form-bottom {
+
+  @include bp(min992) {
+    padding: 0 15px;
+  }
+}
+
+.contact-form-outer .checkbox-area {
+  margin-top: -7px;
+}

@@ -1,16 +1,14 @@
-@use "utility/colours";
-@use "utility/mixins";
-@use "utility/spacers";
-
 //Components partials
-
 @use "text/text";
 @use "components/buttons";
 @use "components/images";
 @use "components/forms";
 @use "components/icons";
 
-
+//Utility partials
+@use "utility/colours";
+@use "utility/mixins";
+@use "utility/spacers";
 
 
 //Main partials
@@ -27,3 +25,4 @@
 @use "main/accredations";
 @use "main/sidemenu";
 @use "main/cookie-app";
+@use "main/contactpage";
