@@ -1,3 +1,4 @@
+<?php include("inc/connection.php") ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -350,7 +351,9 @@
             <div class="article-list">
               <div class="row">
 
-                <div class="card-wrapper col2 col3-lg col-spacer-sm">
+                <?php include "inc/getnews.php"?>
+
+                <!-- <div class="card-wrapper col2 col3-lg col-spacer-sm">
                   <div class="latest-header">
                     <a href="#"><img class="latest-header-img" src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/senior-it-support-Vfd9.jpg" alt="Graduation"></a>
                     <span class="header-tag itsupport"><a href="#">Careers</a></span>
@@ -427,7 +430,7 @@
                     </div>
 
                   </div>
-                </div>
+                </div> -->
 
               </div>
             </div>

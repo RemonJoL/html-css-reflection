@@ -237,6 +237,7 @@
   <script src="js/main.js"></script>
   <script src="js/show-outofhours.js"></script>
   <script src="js/maps.js"></script>
+  <script src="js/email-validation.js"></script>
   <script type="text/javascript">
   checkCookie();
   </script>

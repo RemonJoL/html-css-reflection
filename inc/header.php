@@ -5,7 +5,7 @@
 
           <div class="row">
             <div class="header-logo-container hlc-992 hlc-1260">
-              <a href="#"><img class="logo" src="https://www.netmatters.co.uk/assets/images/f-logo.png" alt="Netmatters"></a>
+              <a href="index.php"><img class="logo" src="https://www.netmatters.co.uk/assets/images/f-logo.png" alt="Netmatters"></a>
             </div>
 
             <div class="header-phone">
@@ -16,7 +16,7 @@
               <div class="header-button-inner">
                 <input type="checkbox" name="searchbarhidecheckbox" id="activate-inls">
 
-                <form class="in-searchbar-int" action="index.html" method="post">
+                <form class="in-searchbar-int" action="index.php" method="post">
                     <label for="activate-inls" class="btn btn-inline-search"><a href="#"><i class="fas fa-search"></i></a></label>
                   <input class="in-search-int" type="text" name="searchbar-inl-int" placeholder="Search...">
                 </form>
@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="button-container">
-                  <a class="btn btn-contact" href="#"><i class="far fa-paper-plane"></i>Contact</a>
+                  <a class="btn btn-contact" href="contact.php"><i class="far fa-paper-plane"></i>Contact</a>
                 </div>
 
                 <div class="inline-search">
