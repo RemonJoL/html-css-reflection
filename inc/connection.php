@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
 
-$session = new \Symfony\Component\HttpFoundation\Session\Session();;
+$session = new \Symfony\Component\HttpFoundation\Session\Session();
 $session->start();
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);

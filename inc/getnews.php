@@ -1,7 +1,5 @@
 <?php
 
-include 'connection.php';
-
 $newsQuery = $db->query('SELECT *  FROM netmatters.netmatters_news ORDER BY postID DESC LIMIT 3');
 $result = array();
 $i = 0;
