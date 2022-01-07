@@ -1,6 +1,13 @@
 {
     "require": {
         "vlucas/phpdotenv": "^5.4",
-        "doctrine/dbal": "^3.2"
+        "doctrine/dbal": "^3.2",
+        "symfony/dotenv": "^6.0",
+        "symfony/http-foundation": "^6.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
     }
 }

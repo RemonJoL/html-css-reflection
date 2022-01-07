@@ -2,9 +2,9 @@
 // Email Validation
 // ----------------------------------------------
 
-let emailField = document.getElementsByName("email");
+let emailField = document.getElementsByName("email")[0];
 
-emailField[0].addEventListener("input", function() {
+emailField.addEventListener("input", function() {
   //
   const emailFormat = /^([A-Za-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
   //       yourname   @   domain   .    com        ( .uk )
@@ -31,50 +31,50 @@ emailField[0].addEventListener("input", function() {
   the .uk of .co.uk
   */
   if(emailField.value.match(emailFormat)) {
-    emailField.classList.toggle("input-invalid");
-  }
-  else if(emailField.value == "") {
-    emailField.classList.toggle("input-invalid");
-  }
-  else {
     emailField.classList.remove("input-invalid");
   }
-});
-
-// Declares variables for DOM elements used in function
-const submitBtn = document.querySelector(".submit-button");
-const greenDots = document.querySelectorAll(".green-dot");
-const confirmation = document.querySelector(".contact-confirmation-container");
-// Declares green dot counter
-let greenDotCounter;
-
-// Adds click functionality to submit button
-submitBtn.addEventListener("click", function(){
-  // Resets green dot counter to 0
-  greenDotCounter = 0;
-  // Loops through green dots and checks how many are displayed
-  for(let i=0;i<greenDots.length;i++){
-    if(greenDots[i].style.display === "block"){
-      greenDotCounter++;
-    }
-  }
-  // If all green dots are visible:
-  if(greenDotCounter === 5){
-    // Displays popup message confirming contact form content has been sent, then hides popup
-    confirmation.innerText = "Message Sent!";
-    confirmation.style.display = "block";
-    setTimeout(function(){
-      confirmation.style.display = "none";
-    }, 2000);
-    event.preventDefault();
+  else if(emailField.value == "") {
+    emailField.classList.add("input-invalid");
   }
   else {
-    // Displays popup message saying valid information has to be entered, then hides popup
-    confirmation.innerText = "Please make sure all fields are filled in correctly";
-    confirmation.style.display = "block";
-    setTimeout(function(){
-      confirmation.style.display = "none";
-    }, 2000);
-    event.preventDefault();
+    emailField.classList.add("input-invalid");
   }
 });
+
+// // Declares variables for DOM elements used in function
+// const submitBtn = document.querySelector(".submit-button");
+// const greenDots = document.querySelectorAll(".green-dot");
+// const confirmation = document.querySelector(".contact-confirmation-container");
+// // Declares green dot counter
+// let greenDotCounter;
+//
+// // Adds click functionality to submit button
+// submitBtn.addEventListener("click", function(){
+//   // Resets green dot counter to 0
+//   greenDotCounter = 0;
+//   // Loops through green dots and checks how many are displayed
+//   for(let i=0;i<greenDots.length;i++){
+//     if(greenDots[i].style.display === "block"){
+//       greenDotCounter++;
+//     }
+//   }
+//   // If all green dots are visible:
+//   if(greenDotCounter === 5){
+//     // Displays popup message confirming contact form content has been sent, then hides popup
+//     confirmation.innerText = "Message Sent!";
+//     confirmation.style.display = "block";
+//     setTimeout(function(){
+//       confirmation.style.display = "none";
+//     }, 2000);
+//     event.preventDefault();
+//   }
+//   else {
+//     // Displays popup message saying valid information has to be entered, then hides popup
+//     confirmation.innerText = "Please make sure all fields are filled in correctly";
+//     confirmation.style.display = "block";
+//     setTimeout(function(){
+//       confirmation.style.display = "none";
+//     }, 2000);
+//     event.preventDefault();
+//   }
+// });

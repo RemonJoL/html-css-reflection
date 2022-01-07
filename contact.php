@@ -20,6 +20,7 @@
     <title>Netmatters | Full Service Digital Agency | Norwich, Norfolk | Netmatters</title>
   </head>
   <body>
+    <?php include 'inc/connection.php';?>
     <!-- Cookie PopUp Main -->
       <?php include 'inc/cookie-app.php' ?>
     <!-- /Cookie PopUp Main -->
@@ -161,35 +162,41 @@
             </div>
             <!-- /Contact Text -->
             <!-- Contact Form -->
-            <div class="contact-form-outer">
+            <form id="contact-form" class="contact-form-outer" method="post" action="inc/post.php">
+              <?php
+                  echo display_notice();
+
+                  echo display_errors();
+
+              ?>
 
               <div class="form-group">
                 <div class="contact-form-section">
                   <label class="required" for="name">Your Name</label>
-                  <input class="text-input-field" type="text" name="name" value="">
+                  <input class="text-input-field" type="text" id="name" name="name" required>
                 </div>
 
                 <div class="contact-form-section">
                   <label class="required" for="email">Your Email</label>
-                  <input class="text-input-field" type="text" name="email" value="">
+                  <input class="text-input-field" type="text" id="email" name="email" required>
                 </div>
               </div>
 
               <div class="form-group">
                 <div class="contact-form-section">
                   <label class="required" for="phone">Your Telephone Number</label>
-                  <input class="text-input-field" type="text" name="phone" value="">
+                  <input class="text-input-field" type="text" id="telephone" name="telephone" required>
                 </div>
 
                 <div class="contact-form-section">
                   <label class="required" for="subject">Subject</label>
-                  <input class="text-input-field" type="text" name="subject" value="">
+                  <input class="text-input-field" type="text" id="subject" name="subject" required>
                 </div>
               </div>
 
               <div class="contact-form-message-section">
                 <label class="required" for="message">Message</label>
-                <textarea class="text-input-field textarea-field" name="message" rows="8" cols="80"></textarea>
+                <textarea class="text-input-field textarea-field" id="message" name="message" rows="8" cols="80" required></textarea>
               </div>
 
               <div class="contact-form-bottom">
@@ -204,11 +211,11 @@
                 </div>
 
                 <div class="contact-form-button">
-                  <button class="btn webdesign" type="button" name="button">send enquiry</button>
+                  <button class="btn webdesign" type="submit" name="button" value="Submit">send enquiry</button>
                 </div>
               </div>
 
-            </div>
+            </form>
             <!-- /Contact Form -->
           </div>
         </div>
