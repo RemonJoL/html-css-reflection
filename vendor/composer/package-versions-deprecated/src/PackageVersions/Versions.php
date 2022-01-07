@@ -44,12 +44,12 @@ final class Versions
   'psr/log' => '3.0.0@fe5ea303b0887d5caefd3d431c3e61ad47037001',
   'symfony/deprecation-contracts' => 'v3.0.0@c726b64c1ccfe2896cb7df2e1331c357ad1c8ced',
   'symfony/dotenv' => 'v6.0.2@5c43c5515e549a8c2c426be36d40f47daf196968',
-  'symfony/http-foundation' => 'v6.0.2@ac1cd9b84bdea9a3a06cd2127e910afc8b276798',
+  'symfony/http-foundation' => 'v5.4.2@ce952af52877eaf3eab5d0c08cc0ea865ed37313',
   'symfony/polyfill-ctype' => 'v1.24.0@30885182c981ab175d4d034db0f6f469898070ab',
   'symfony/polyfill-mbstring' => 'v1.24.0@0abb51d2f102e00a4eefcf46ba7fec406d245825',
   'symfony/polyfill-php80' => 'v1.24.0@57b712b08eddb97c762a8caa32c84e037892d2e9',
   'vlucas/phpdotenv' => 'v5.4.1@264dce589e7ce37a7ba99cb901eed8249fbec92f',
-  '__root__' => 'dev-main@63bf8662d5a3137fb0b6c57b083023e25b601ed0',
+  '__root__' => 'dev-main@5a07bf1259e22e2cec9a2c3d6e3ee11214bdd5dc',
 );
 
     private function __construct()

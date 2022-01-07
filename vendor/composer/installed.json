@@ -824,34 +824,35 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v6.0.2",
-            "version_normalized": "6.0.2.0",
+            "version": "v5.4.2",
+            "version_normalized": "5.4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "ac1cd9b84bdea9a3a06cd2127e910afc8b276798"
+                "reference": "ce952af52877eaf3eab5d0c08cc0ea865ed37313"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/ac1cd9b84bdea9a3a06cd2127e910afc8b276798",
-                "reference": "ac1cd9b84bdea9a3a06cd2127e910afc8b276798",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/ce952af52877eaf3eab5d0c08cc0ea865ed37313",
+                "reference": "ce952af52877eaf3eab5d0c08cc0ea865ed37313",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0.2",
+                "php": ">=7.2.5",
                 "symfony/deprecation-contracts": "^2.1|^3",
-                "symfony/polyfill-mbstring": "~1.1"
+                "symfony/polyfill-mbstring": "~1.1",
+                "symfony/polyfill-php80": "^1.16"
             },
             "require-dev": {
                 "predis/predis": "~1.0",
-                "symfony/cache": "^5.4|^6.0",
-                "symfony/expression-language": "^5.4|^6.0",
-                "symfony/mime": "^5.4|^6.0"
+                "symfony/cache": "^4.4|^5.0|^6.0",
+                "symfony/expression-language": "^4.4|^5.0|^6.0",
+                "symfony/mime": "^4.4|^5.0|^6.0"
             },
             "suggest": {
                 "symfony/mime": "To use the file extension guesser"
             },
-            "time": "2021-12-28T17:22:37+00:00",
+            "time": "2021-12-28T17:15:56+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -879,7 +880,7 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-foundation/tree/v6.0.2"
+                "source": "https://github.com/symfony/http-foundation/tree/v5.4.2"
             },
             "funding": [
                 {
