@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit58f7232e0da476877765cbf8038d3b39
+class ComposerStaticInitec8737c0fb71ee2aa05c2c699b4b5c1a
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -20,14 +20,10 @@ class ComposerStaticInit58f7232e0da476877765cbf8038d3b39
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\HttpFoundation\\' => 33,
-            'Symfony\\Component\\Dotenv\\' => 25,
         ),
         'P' => 
         array (
-            'Psr\\Log\\' => 8,
-            'Psr\\Cache\\' => 10,
             'PhpOption\\' => 10,
-            'PackageVersions\\' => 16,
         ),
         'G' => 
         array (
@@ -36,10 +32,6 @@ class ComposerStaticInit58f7232e0da476877765cbf8038d3b39
         'D' => 
         array (
             'Dotenv\\' => 7,
-            'Doctrine\\Deprecations\\' => 22,
-            'Doctrine\\DBAL\\' => 14,
-            'Doctrine\\Common\\Cache\\' => 22,
-            'Doctrine\\Common\\' => 16,
         ),
     );
 
@@ -60,25 +52,9 @@ class ComposerStaticInit58f7232e0da476877765cbf8038d3b39
         array (
             0 => __DIR__ . '/..' . '/symfony/http-foundation',
         ),
-        'Symfony\\Component\\Dotenv\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/dotenv',
-        ),
-        'Psr\\Log\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/log/src',
-        ),
-        'Psr\\Cache\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/cache/src',
-        ),
         'PhpOption\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
-        ),
-        'PackageVersions\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/composer/package-versions-deprecated/src/PackageVersions',
         ),
         'GrahamCampbell\\ResultType\\' => 
         array (
@@ -87,22 +63,6 @@ class ComposerStaticInit58f7232e0da476877765cbf8038d3b39
         'Dotenv\\' => 
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
-        ),
-        'Doctrine\\Deprecations\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/deprecations/lib/Doctrine/Deprecations',
-        ),
-        'Doctrine\\DBAL\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/dbal/src',
-        ),
-        'Doctrine\\Common\\Cache\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
-        ),
-        'Doctrine\\Common\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
         ),
     );
 
@@ -117,9 +77,9 @@ class ComposerStaticInit58f7232e0da476877765cbf8038d3b39
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit58f7232e0da476877765cbf8038d3b39::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit58f7232e0da476877765cbf8038d3b39::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit58f7232e0da476877765cbf8038d3b39::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitec8737c0fb71ee2aa05c2c699b4b5c1a::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitec8737c0fb71ee2aa05c2c699b4b5c1a::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitec8737c0fb71ee2aa05c2c699b4b5c1a::$classMap;
 
         }, null, ClassLoader::class);
     }
