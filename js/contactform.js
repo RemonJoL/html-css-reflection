@@ -31,6 +31,7 @@ $("form").on("submit", function(e) {
         success: function () {
           errorContainer.remove();
           contactForm.insertBefore(successContainer, contactForm.firstChild);
+          contactForm.reset()
         }
     });
   }

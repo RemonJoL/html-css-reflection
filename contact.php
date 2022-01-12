@@ -1,3 +1,4 @@
+<?php include 'inc/connection.php';?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -20,7 +21,6 @@
     <title>Netmatters | Full Service Digital Agency | Norwich, Norfolk | Netmatters</title>
   </head>
   <body>
-    <?php include 'inc/connection.php';?>
     <!-- Cookie PopUp Main -->
       <?php include 'inc/cookie-app.php' ?>
     <!-- /Cookie PopUp Main -->
