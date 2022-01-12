@@ -66,7 +66,8 @@ if(!filter_var($telephone, FILTER_VALIDATE_INT)){
 
 //attempt insertion
 try{
-    $query = $db->query("INSERT INTO netmatters.contactform_data (`name`, `email`, `telephone`, `subject`, `message`, `timestamp`) VALUES ('$name', '$email', '$telephone', '$subject', '$message', '$timestamp')");
+    // $query = $db->query("INSERT INTO remonjan_php_reflection.contactform_data (`name`, `email`, `telephone`, `subject`, `message`, `timestamp`) VALUES ('$name', '$email', '$telephone', '$subject', '$message', '$timestamp')"); //Live Environment
+    $query = $db->query("INSERT INTO netmatters.contactform_data (`name`, `email`, `telephone`, `subject`, `message`, `timestamp`) VALUES ('$name', '$email', '$telephone', '$subject', '$message', '$timestamp')"); //Local Environment
     if($query){
         $session->getFlashBag()->add("success", "Submission successful! We'll process your enquiry within 2 working days.");
         header('Location:/contact.php');
@@ -74,4 +75,5 @@ try{
 }catch(Exception $e){
     throw $e;
 }
+
 ?>

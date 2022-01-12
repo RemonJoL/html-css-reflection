@@ -164,10 +164,8 @@
             <!-- Contact Form -->
             <form id="contact-form" class="contact-form-outer" method="post" action="inc/post.php">
               <?php
-                  echo display_notice();
-
-                  echo display_errors();
-
+              echo display_notice();
+              echo display_errors();
               ?>
 
               <div class="form-group">
@@ -211,7 +209,7 @@
                 </div>
 
                 <div class="contact-form-button">
-                  <button class="btn webdesign" type="submit" name="button" value="Submit">send enquiry</button>
+                  <button id="submitBtn" class="btn webdesign" type="submit" name="button" value="Submit">send enquiry</button>
                 </div>
               </div>
 
@@ -245,6 +243,7 @@
   <script src="js/show-outofhours.js"></script>
   <script src="js/maps.js"></script>
   <script src="js/email-validation.js"></script>
+  <script src="js/contactform.js"></script>
   <script type="text/javascript">
   checkCookie();
   </script>

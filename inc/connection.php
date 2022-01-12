@@ -10,7 +10,8 @@ $dotenv->load();
 $db;
 
 try{
-    $db = new PDO("mysql:host=127.0.0.1;dbName=netmatters", "root", "");
+    // $db = new PDO("mysql:host=localhost;dbName=remonjan_php_reflection", "remonjan_admin", "UL1U?pDt;Q7="); //Live environment
+    $db = new PDO("mysql:host=127.0.0.1;dbName=netmatters", "root", ""); //Local environment
     $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     return $db;
 } catch (Exception $e) {

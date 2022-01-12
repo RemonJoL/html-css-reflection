@@ -1,27 +1,29 @@
-<?php
+<div class="card-wrapper col2 col3-lg col-spacer-sm">
+  <div class="latest-header">
+    <a href="#"><img class="latest-header-img" src="<?php echo $result[$i]["header_img"]; ?>" alt=""></a>
+    <span class="header-tag <?php echo $result[$i]["colour"]; ?>"><a href="#"><?php echo $result[$i]["category"]; ?></a></span>
+  </div>
 
-echo '<div class="card-wrapper col2 col3-lg col-spacer-sm">';
-  echo '<div class="latest-header">';
-    echo '<a href="#"><img class="latest-header-img" src="'.$result[$i]["header_img"].'" alt=""></a>';
-    echo '<span class="header-tag '.$result[$i]["colour"].'"><a href="#">'.$result[$i]["category"].'</a></span>';
-  echo '</div>';
+  <div class="card latest-content">
+    <h3 class="<?php echo $result[$i]["colour"]; ?>-txt"><a href="#"><?php echo $result[$i]["title"]; ?></a></h3>
+    <p><?php echo $result[$i]["message"]; ?></p>
+    <a class="btn <?php echo $result[$i]["colour"]; ?> btn-letterspace" href="#">READ MORE</a>
 
-  echo '<div class="card latest-content">';
-    echo '<h3 class="'.$result[$i]["colour"].'-txt"><a href="#">'.$result[$i]["title"].'</a></h3>';
-    echo '<p>'.$result[$i]["message"].'</p>';
-    echo '<a class="btn '.$result[$i]["colour"].' btn-letterspace" href="#">READ MORE</a>';
-
-    echo '<div class="user">';
-      echo '<div class="user-grid">';
-        echo '<div class="user-avatar">';
-          echo '<img class="avatar-img" src="'.$result[$i]["user_avatar"].'" alt="'.$result[$i]["user_name"].'">';
-        echo '</div>';
-        echo '<div class="user-details">';
-          echo '<strong>Posted by '.$result[$i]["user_name"].'</strong>';
-          echo '<br>';
-          echo $result[$i]["date"];
-        echo '</div>';
-      echo '</div>';
-    echo '</div>';
-  echo '</div>';
-echo '</div>';
+    <div class="user">
+      <div class="user-grid">
+        <div class="user-avatar">
+          <img class="avatar-img" src="<?php echo $result[$i]["user_avatar"]; ?>" alt="<?php echo $result[$i]["user_name"]; ?>">
+        </div>
+        <div class="user-details">
+          <strong>Posted by <?php echo $result[$i]["user_name"]; ?></strong>
+          <br>
+          <?php
+            $date = $result[$i]["date"];
+            $dateNew = new DateTime($date);
+            echo $dateNew->format("jS F Y");
+          ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
