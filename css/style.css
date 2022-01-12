@@ -305,6 +305,10 @@ label {
   color: #926fb1;
 }
 
+.offices-cards a:hover {
+  text-decoration: underline;
+}
+
 .contact-text p {
   margin: 0 0 25px;
   line-height: 1.875rem;
@@ -313,6 +317,10 @@ label {
 .contact-text .h3 {
   font-weight: 600;
   color: #926fb1;
+}
+
+.contact-text .h3:hover {
+  text-decoration: underline;
 }
 
 .contact-text strong {
@@ -2688,6 +2696,8 @@ nav {
   text-align: left;
   -webkit-box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .office-card-header {
@@ -2720,6 +2730,14 @@ nav {
 .leaflet-top,
 .leaflet-bottom {
   z-index: 0;
+}
+
+.out-of-hours-text {
+  cursor: pointer;
+}
+
+.out-of-hours-text:hover {
+  text-decoration: underline;
 }
 
 .out-of-hours {

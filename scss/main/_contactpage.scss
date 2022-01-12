@@ -62,6 +62,8 @@
   border-top: none;
   text-align: left;
   box-shadow: 0 3px 35px rgb(0 0 0 / 10%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .office-card-header {
@@ -97,6 +99,14 @@
 //-------------------------------------------------------------------------------
 // Out of Hours Section
 //-------------------------------------------------------------------------------
+
+.out-of-hours-text {
+  cursor: pointer;
+}
+
+.out-of-hours-text:hover {
+  text-decoration: underline;
+}
 
 .out-of-hours {
   display: none;

@@ -46,7 +46,7 @@
       <div class="main-content">
         <div class="contact-top">
           <div class="container">
-            <span class="contact-top-text"><strong>Home</strong></span><span class="contact-top-text">/&nbsp;&nbsp;Our Offices</span>
+            <span class="contact-top-text"><strong><a href="index.php">Home</a></strong></span><span class="contact-top-text">/&nbsp;&nbsp;Our Offices</span>
           </div>
         </div>
         <div class="h1 contact-header">
@@ -152,7 +152,7 @@
                 <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
                 <p><strong>
                   Monday - Friday 18:00 - 22:00
-                     Saturday 08:00 - 16:00
+                     Saturday 08:00 - 16:00<br>
                      Sunday 10:00 - 18:00
                 </strong>
                  </p>
@@ -182,7 +182,7 @@
 
               <div class="form-group">
                 <div class="contact-form-section">
-                  <label class="required" for="phone">Your Telephone Number</label>
+                  <label class="required" for="telephone">Your Telephone Number</label>
                   <input class="text-input-field" type="text" id="telephone" name="telephone" required>
                 </div>
 
@@ -200,10 +200,10 @@
               <div class="contact-form-bottom">
                 <div class="checkbox-area">
                   <div class="checkbox-cnt">
-                    <input id="newsletter-checkbox" class="checkbox-style" type="checkbox" name="newsletter-checkbox" value="">
-                    <label class="checkbox-style" for="newsletter-checkbox"></label>
+                    <input id="contactform-checkbox" class="checkbox-style" type="checkbox" name="contactform-checkbox" value="">
+                    <label class="checkbox-style" for="contactform-checkbox"></label>
                   </div>
-                  <label class="checkbox-text" for="newsletter-checkbox">
+                  <label class="checkbox-text" for="contactform-checkbox">
                     Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data.
                   </label>
                 </div>

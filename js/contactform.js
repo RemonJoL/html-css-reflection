@@ -14,7 +14,7 @@ successContainer.innerHTML = successMsg;
 
 // Error Message
 const errorContainer = document.createElement("div");
-const errorEmail = 'Please enter a valid email address';
+const errorEmail = 'Please make sure all the fields are filled in correctly';
 
 errorContainer.setAttribute("class", "validation-text validation-alert");
 errorContainer.innerHTML = errorEmail;
@@ -22,8 +22,8 @@ errorContainer.innerHTML = errorEmail;
 // Submit function
 $("form").on("submit", function(e) {
   e.preventDefault();
-  invalidInput = document.querySelectorAll('.input-invalid');
-  if(invalidInput.length === 0){
+  validInput = document.querySelectorAll('.input-valid');
+  if(validInput.length === 5){
     $.ajax({
         url: 'inc/post.php',
         type: 'POST',
@@ -31,11 +31,14 @@ $("form").on("submit", function(e) {
         success: function () {
           errorContainer.remove();
           contactForm.insertBefore(successContainer, contactForm.firstChild);
-          contactForm.reset()
+          setTimeout(function(){
+            successContainer.remove();
+          },5000);
         }
     });
+    contactForm.reset()
   }
-  else if(emailField.classList.contains("input-invalid")){
+  else if(validInput.length < 5){
     contactForm.insertBefore(errorContainer, contactForm.firstChild);
   }
 });

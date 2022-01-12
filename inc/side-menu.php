@@ -121,7 +121,7 @@
         </ul>
       </li>
       <li class="sidemenu-lower-list"><a class="sidemenu-lower-header sidemenu-header" href="#">covid risk assessments</a></li>
-      <li class="sidemenu-lower-list"><a class="sidemenu-lower-header sidemenu-header" href="#">contact us</a>
+      <li class="sidemenu-lower-list"><a class="sidemenu-lower-header sidemenu-header" href="contact.php">contact us</a>
         <ul class="sidemenu-list">
           <li class="sidemenu-item"><a class="sidemenu-lower-item" href="#"> cambridge office</a></li>
           <li class="sidemenu-item"><a class="sidemenu-lower-item" href="#"> wymondham office</a></li>
