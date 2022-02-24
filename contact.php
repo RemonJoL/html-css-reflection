@@ -162,7 +162,7 @@
             </div>
             <!-- /Contact Text -->
             <!-- Contact Form -->
-            <form id="contact-form" class="contact-form-outer" method="post" action="inc/post.php">
+            <form id="contact-form" class="contact-form-outer" method="POST" action="inc/post.php" enctype="application/x-www-form-urlencoded">
               <?php
               echo display_notice();
               echo display_errors();
@@ -171,30 +171,30 @@
               <div class="form-group">
                 <div class="contact-form-section">
                   <label class="required" for="name">Your Name</label>
-                  <input class="text-input-field" type="text" id="name" name="name" required>
+                  <input class="text-input-field" type="text" id="name" name="name" value="<?php echo isset($_SESSION['post-data']['name']) ? htmlspecialchars($_SESSION['post-data']['name']) : ''; ?>">
                 </div>
 
                 <div class="contact-form-section">
                   <label class="required" for="email">Your Email</label>
-                  <input class="text-input-field" type="text" id="email" name="email" required>
+                  <input class="text-input-field" type="text" id="email" name="email" value="<?php echo isset($_SESSION['post-data']["email"]) ? htmlspecialchars($_SESSION['post-data']["email"]) : ''; ?>">
                 </div>
               </div>
 
               <div class="form-group">
                 <div class="contact-form-section">
                   <label class="required" for="telephone">Your Telephone Number</label>
-                  <input class="text-input-field" type="text" id="telephone" name="telephone" required>
+                  <input class="text-input-field" type="text" id="telephone" name="telephone" value="<?php echo isset($_SESSION['post-data']["telephone"]) ? htmlspecialchars($_SESSION['post-data']["telephone"]) : ''; ?>">
                 </div>
 
                 <div class="contact-form-section">
                   <label class="required" for="subject">Subject</label>
-                  <input class="text-input-field" type="text" id="subject" name="subject" required>
+                  <input class="text-input-field" type="text" id="subject" name="subject" value="<?php echo isset($_SESSION['post-data']["subject"]) ? htmlspecialchars($_SESSION['post-data']["subject"]) : ''; ?>">
                 </div>
               </div>
 
               <div class="contact-form-message-section">
                 <label class="required" for="message">Message</label>
-                <textarea class="text-input-field textarea-field" id="message" name="message" rows="8" cols="80" required></textarea>
+                <textarea class="text-input-field textarea-field" id="message" name="message" rows="8" cols="80"><?php echo isset($_SESSION['post-data']['message']) ? htmlspecialchars($_SESSION['post-data']['message'], ENT_QUOTES) : ''; ?></textarea>
               </div>
 
               <div class="contact-form-bottom">
@@ -209,7 +209,7 @@
                 </div>
 
                 <div class="contact-form-button">
-                  <button id="submitBtn" class="btn webdesign" type="submit" name="button" value="Submit">send enquiry</button>
+                  <button id="submitBtn" class="btn webdesign" type="submit" name="Submit" value="Submit">send enquiry</button>
                 </div>
               </div>
 
@@ -242,8 +242,8 @@
   <script src="js/main.js"></script>
   <script src="js/show-outofhours.js"></script>
   <script src="js/maps.js"></script>
-  <script src="js/email-validation.js"></script>
   <script src="js/contactform.js"></script>
+  <script src="js/email-validation.js"></script>
   <script type="text/javascript">
   checkCookie();
   </script>

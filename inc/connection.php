@@ -7,13 +7,19 @@ $session->start();
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-$db;
+$db = $_ENV['DB_DATABASE'];
+$host = $_ENV['DB_HOST'];
+$username = $_ENV['DB_USERNAME'];
+$password = $_ENV['DB_PASSWORD'];
+
+$conn;
 
 try{
-    // $db = new PDO("mysql:host=localhost;dbName=remonjan_php_reflection", "remonjan_admin", "UL1U?pDt;Q7="); //Live environment
-    $db = new PDO("mysql:host=127.0.0.1;dbName=netmatters", "root", ""); //Local environment
-    $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-    return $db;
+    // $conn = new PDO("mysql:host=$host;dbName=$db", "remonjan_admin", "UL1U?pDt;Q7="); //Live environment
+    // $conn = new PDO("mysql:host=$host;dbName=$db", $username, $passwword); //Live environment
+    $conn = new PDO("mysql:host=$host;dbname=$db", $username, $password); //Local environment
+    $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    return $conn;
 } catch (Exception $e) {
     echo "Error!: " . $e->getMessage() . "<br/>";
     exit;
@@ -25,7 +31,7 @@ function display_errors(){
         return;
     }
     $messages = $session->getFlashBag()->get('error');
-    $response = '<div class="validation-text validation-alert">';
+    $response = '<div style="display:flex;" class="validation-text validation-alert">';
     foreach($messages as $message){
         $response .= "{$message}<br />";
     }

@@ -1,7 +1,7 @@
 <?php
 
 // $newsQuery = $db->query('SELECT *  FROM remonjan_php_reflection.netmatters_news ORDER BY postID DESC LIMIT 3'); //Live Environment
-$newsQuery = $db->query('SELECT *  FROM netmatters.netmatters_news ORDER BY postID DESC LIMIT 3'); //Local Environment
+$newsQuery = $conn->query('SELECT * FROM netmatters_news ORDER BY postID DESC LIMIT 3'); //Local Environment
 $result = array();
 $i = 0;
 

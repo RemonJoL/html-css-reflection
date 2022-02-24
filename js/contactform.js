@@ -19,29 +19,48 @@ const errorEmail = 'Please make sure all the fields are filled in correctly';
 errorContainer.setAttribute("class", "validation-text validation-alert");
 errorContainer.innerHTML = errorEmail;
 
+const flashMessage = document.querySelector('.validation-text');
+
+flashMessage.addEventListener('click', function () {
+  flashMessage.style.display = 'none';
+});
+
 // Submit function
-$("form").on("submit", function(e) {
-  e.preventDefault();
+$("#contact-form").on("submit", function(e) {
+  // e.preventDefault();
   validInput = document.querySelectorAll('.input-valid');
   if(validInput.length === 5){
     $.ajax({
         url: 'inc/post.php',
         type: 'POST',
-        data: $('form').serialize(),
+        data: $("#contact-form").serialize(),
         success: function () {
-          errorContainer.remove();
-          contactForm.insertBefore(successContainer, contactForm.firstChild);
-          setTimeout(function(){
-            successContainer.remove();
-          },5000);
         }
     });
-    contactForm.reset()
-  }
-  else if(validInput.length < 5){
-    contactForm.insertBefore(errorContainer, contactForm.firstChild);
   }
 });
+// $("#contact-form").on("submit", function(e) {
+//   // e.preventDefault();
+//   validInput = document.querySelectorAll('.input-valid');
+//   if(validInput.length === 5){
+//     $.ajax({
+//         url: 'inc/post.php',
+//         type: 'POST',
+//         data: $("#contact-form").serialize(),
+//         success: function () {
+//           // errorContainer.remove();
+//           // contactForm.insertBefore(successContainer, contactForm.firstChild);
+//           // setTimeout(function(){
+//           //   successContainer.remove();
+//           // },5000);
+//         }
+//     });
+//     // contactForm.reset()
+//   }
+//   else if(validInput.length < 5){
+//     // contactForm.insertBefore(errorContainer, contactForm.firstChild);
+//   }
+// });
 
 // document.getElementById('submitBtn').addEventListener("click", function(event){
 //   // document.getElementById('contact-form').submit();

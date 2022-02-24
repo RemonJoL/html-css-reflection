@@ -201,14 +201,25 @@
 }
 
 .validation-text {
-  display: flex;
   margin: 0 15px 25px;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .validation-notice {
+  display: flex;
   color: colours.$clr-marketing;
+  background: #d8ffd8;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid colours.$clr-marketing;
 }
 
 .validation-alert {
+  display: flex;
   color: colours.$clr-telecoms;
+  background: #ffd8d8;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid colours.$clr-telecoms;
 }

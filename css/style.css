@@ -745,6 +745,7 @@ input {
 .textarea-field {
   min-height: 100px;
   height: 100px;
+  resize: none;
 }
 
 .text-input-field:focus {
@@ -2860,16 +2861,31 @@ nav {
 }
 
 .validation-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0 15px 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
 }
 
 .validation-notice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #2ecc71;
+  background: #d8ffd8;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #2ecc71;
 }
 
 .validation-alert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #d64541;
+  background: #ffd8d8;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #d64541;
 }
